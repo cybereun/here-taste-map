@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="referrer" content="no-referrer" />
     <title>여기 어때 맛지도 - 래비의 블로그 맛집 지도</title>
     
     <!-- Favicon & PWA Icons -->
@@ -20,9 +19,8 @@
     <!-- Pretendard Font -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-    <!-- 100% Reliable Standalone Map Library -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Official NAVER MAPS Web SDK (v3) with Client ID -->
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=56pzmh9i6g"></script>
   </head>
   <body class="bg-gray-50 text-gray-900 antialiased select-none font-sans overflow-hidden">
     <div id="root" class="h-screen w-screen flex flex-col"></div>

@@ -34,82 +34,56 @@ export const MapView: React.FC<MapViewProps> = ({
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
 
-  const naverClientId = import.meta.env.VITE_NAVER_MAP_CLIENT_ID || '56pzmh9i6g';
-
-  // 1. 공식 네이버 지도 전용 초기화 (SDK 로더 & 안전 렌더링)
+  // 1. 공식 네이버 지도 초기화
   useEffect(() => {
-    if (!mapContainerRef.current) return;
+    if (!mapContainerRef.current || mapInstanceRef.current) return;
 
-    let isMounted = true;
+    if (typeof naver === 'undefined' || !naver.maps) {
+      console.warn('NAVER Maps SDK is loading...');
+      return;
+    }
+
     const initialLat = places.length > 0 ? places[0].lat : 35.8615;
     const initialLng = places.length > 0 ? places[0].lng : 128.6251;
 
-    const startNaverMap = () => {
-      if (!isMounted || !mapContainerRef.current || mapInstanceRef.current) return;
-
-      try {
-        const mapOptions = {
-          center: new naver.maps.LatLng(initialLat, initialLng),
-          zoom: 14,
-          minZoom: 6,
-          maxZoom: 19,
-          zoomControl: true,
-          zoomControlOptions: {
-            position: naver.maps.Position.TOP_RIGHT,
-            style: naver.maps.ZoomControlStyle.SMALL
-          },
-          mapTypeControl: false,
-          scaleControl: false,
-          logoControl: true,
-          logoControlOptions: {
-            position: naver.maps.Position.BOTTOM_LEFT
-          }
-        };
-
-        const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
-        mapInstanceRef.current = map;
-      } catch (err) {
-        console.error('[NaverMap] Initialization failed:', err);
-      }
-    };
-
-    // 네이버 SDK 로드 확인
-    if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
-      startNaverMap();
-    } else {
-      let script = document.getElementById('naver-map-sdk') as HTMLScriptElement;
-      if (!script) {
-        script = document.createElement('script');
-        script.id = 'naver-map-sdk';
-        script.type = 'text/javascript';
-        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
-        script.async = true;
-        document.head.appendChild(script);
-      }
-      script.onload = () => {
-        if (isMounted && typeof naver !== 'undefined' && naver.maps) {
-          startNaverMap();
+    try {
+      const mapOptions = {
+        center: new naver.maps.LatLng(initialLat, initialLng),
+        zoom: 14,
+        minZoom: 6,
+        maxZoom: 19,
+        zoomControl: true,
+        zoomControlOptions: {
+          position: naver.maps.Position.TOP_RIGHT,
+          style: naver.maps.ZoomControlStyle.SMALL
+        },
+        mapTypeControl: false,
+        scaleControl: false,
+        logoControl: true,
+        logoControlOptions: {
+          position: naver.maps.Position.BOTTOM_LEFT
         }
       };
+
+      const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
+      mapInstanceRef.current = map;
+    } catch (err) {
+      console.error('[NaverMap] Initialization failed:', err);
     }
 
     return () => {
-      isMounted = false;
-      // removeDOMListener 충돌 방지 안전 cleanup
       if (mapInstanceRef.current) {
         try {
           if (typeof mapInstanceRef.current.destroy === 'function') {
             mapInstanceRef.current.destroy();
           }
-        } catch (e) {
-          // ignore unmount errors
-        }
+        } catch (e) {}
         mapInstanceRef.current = null;
       }
     };
-  }, [naverClientId]);
+  }, []);
 
-  // 2. Render Markers on Naver Map
+  // 2. 네이버 지도 마커 렌더링
   useEffect(() => {
     const map = mapInstanceRef.current;
     if (!map || typeof naver === 'undefined' || !naver.maps) return;
@@ -162,7 +136,7 @@ export const MapView: React.FC<MapViewProps> = ({
       }
     });
 
-    // 화면 자동 중앙 정렬
+    // 검색 및 필터링 시 지도 중심 이동
     if (places.length === 1) {
       map.morph(new naver.maps.LatLng(places[0].lat, places[0].lng), 16);
     } else if (places.length > 1 && bounds) {
