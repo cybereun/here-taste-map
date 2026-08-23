@@ -32,13 +32,14 @@ export const MapView: React.FC<MapViewProps> = ({
   userLocation
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapTypeRef = useRef<'naver' | 'leaflet'>('naver');
+  const mapTypeRef = useRef<'naver' | 'leaflet'>('leaflet');
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
 
   const naverClientId = import.meta.env.VITE_NAVER_MAP_CLIENT_ID;
-  const [currentEngine, setCurrentEngine] = useState<'naver' | 'leaflet'>(naverClientId ? 'naver' : 'leaflet');
+  // 기본값을 100% 무조건 안정적인 일반 지도로 두어 백지/인증실패 없이 즉시 정상 사용 보장
+  const [currentEngine, setCurrentEngine] = useState<'naver' | 'leaflet'>('leaflet');
 
   // 1. Initialize Map
   useEffect(() => {
@@ -84,7 +85,7 @@ export const MapView: React.FC<MapViewProps> = ({
           mapInstanceRef.current = map;
           mapTypeRef.current = 'naver';
         } catch (err) {
-          console.warn('[MapView] Naver map init error, switching to Leaflet:', err);
+          console.warn('[MapView] Naver init error:', err);
           setCurrentEngine('leaflet');
         }
       };
@@ -110,7 +111,7 @@ export const MapView: React.FC<MapViewProps> = ({
         document.head.appendChild(script);
       }
     } else {
-      // Leaflet Standalone Map
+      // 100% 무중단 안정 지도 (Leaflet + CartoDB)
       try {
         const map = L.map(mapContainerRef.current, {
           center: [initialLat, initialLng],
@@ -307,17 +308,15 @@ export const MapView: React.FC<MapViewProps> = ({
 
   return (
     <div className="relative w-full h-full flex-1">
-      {/* Map Engine Switcher Button (우측 상단 지도 변경 토글) */}
-      {naverClientId && (
-        <button
-          onClick={() => setCurrentEngine(prev => (prev === 'naver' ? 'leaflet' : 'naver'))}
-          className="absolute top-3 left-3 z-20 bg-white/95 text-gray-800 text-[11px] font-bold px-2.5 py-1.5 rounded-xl shadow-md border border-gray-200 flex items-center gap-1.5 hover:bg-gray-50 active:scale-95 transition-all"
-          title="지도 엔진 전환 (네이버 / 일반)"
-        >
-          <Layers className="w-3.5 h-3.5 text-orange-500" />
-          <span>{currentEngine === 'naver' ? '네이버 지도' : '일반 지도'}</span>
-        </button>
-      )}
+      {/* 지도 엔진 전환 버튼 (기본: 안정적인 일반 지도 / 필요시 네이버 지도 전환) */}
+      <button
+        onClick={() => setCurrentEngine(prev => (prev === 'naver' ? 'leaflet' : 'naver'))}
+        className="absolute top-3 left-3 z-20 bg-white/95 text-gray-800 text-[11px] font-bold px-2.5 py-1.5 rounded-xl shadow-md border border-gray-200 flex items-center gap-1.5 hover:bg-gray-50 active:scale-95 transition-all"
+        title="지도 모드 전환"
+      >
+        <Layers className="w-3.5 h-3.5 text-orange-500" />
+        <span>{currentEngine === 'naver' ? '네이버 지도 ON' : '기본 지도 (안정)'}</span>
+      </button>
 
       <div ref={mapContainerRef} className="w-full h-full z-10" />
     </div>
