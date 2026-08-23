@@ -37,11 +37,9 @@ export const MapView: React.FC<MapViewProps> = ({
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
 
-  // 기본 엔진: 네이버 정품 지도
   const [engine, setEngine] = useState<'naver' | 'leaflet'>('naver');
-  const naverClientId = '0k8bt56mqk';
 
-  // 1. Initialize Active Map Engine
+  // 1. Initialize Active Map Engine (Robust Polling for Naver SDK)
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
@@ -87,7 +85,7 @@ export const MapView: React.FC<MapViewProps> = ({
           mapInstanceRef.current = map;
           mapTypeRef.current = 'naver';
         } catch (err) {
-          console.error('[NaverMap] Error init:', err);
+          console.error('[NaverMap] Init error, fallback to leaflet:', err);
           setEngine('leaflet');
         }
       };
@@ -95,20 +93,21 @@ export const MapView: React.FC<MapViewProps> = ({
       if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
         initNaver();
       } else {
-        let script = document.getElementById('naver-map-sdk') as HTMLScriptElement;
-        if (!script) {
-          script = document.createElement('script');
-          script.id = 'naver-map-sdk';
-          script.type = 'text/javascript';
-          script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
-          script.async = true;
-          document.head.appendChild(script);
-        }
-        script.onload = () => {
-          if (isMounted && typeof naver !== 'undefined' && naver.maps) {
+        // SDK 로딩 대기 (100ms 간격으로 확인)
+        let attempts = 0;
+        const interval = setInterval(() => {
+          attempts++;
+          if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
+            clearInterval(interval);
             initNaver();
+          } else if (attempts > 30) {
+            clearInterval(interval);
+            console.warn('[NaverMap] SDK load timeout, fallback to leaflet');
+            setEngine('leaflet');
           }
-        };
+        }, 100);
+
+        return () => clearInterval(interval);
       }
     } else {
       // 100% 무중단 안정 지도 (Leaflet)
@@ -149,7 +148,7 @@ export const MapView: React.FC<MapViewProps> = ({
     };
   }, [engine]);
 
-  // 2. Render Markers on Current Engine
+  // 2. Render Markers
   useEffect(() => {
     const map = mapInstanceRef.current;
     const type = mapTypeRef.current;
