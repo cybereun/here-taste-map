@@ -37,7 +37,9 @@ export const MapView: React.FC<MapViewProps> = ({
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
 
+  // 기본 엔진: 네이버 정품 지도
   const [engine, setEngine] = useState<'naver' | 'leaflet'>('naver');
+  const naverClientId = '0k8bt56mqk';
 
   // 1. Initialize Active Map Engine
   useEffect(() => {
@@ -47,7 +49,7 @@ export const MapView: React.FC<MapViewProps> = ({
     const initialLat = places.length > 0 ? places[0].lat : 35.8615;
     const initialLng = places.length > 0 ? places[0].lng : 128.6251;
 
-    // Cleanup previous map
+    // Cleanup previous map instance
     if (mapInstanceRef.current) {
       try {
         if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
@@ -60,8 +62,9 @@ export const MapView: React.FC<MapViewProps> = ({
     }
 
     if (engine === 'naver') {
-      try {
-        if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
+      const initNaver = () => {
+        if (!isMounted || !mapContainerRef.current || mapInstanceRef.current) return;
+        try {
           const mapOptions = {
             center: new naver.maps.LatLng(initialLat, initialLng),
             zoom: 14,
@@ -83,13 +86,32 @@ export const MapView: React.FC<MapViewProps> = ({
           const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
           mapInstanceRef.current = map;
           mapTypeRef.current = 'naver';
+        } catch (err) {
+          console.error('[NaverMap] Error init:', err);
+          setEngine('leaflet');
         }
-      } catch (err) {
-        console.error('[NaverMap] Error, switching to fallback:', err);
-        setEngine('leaflet');
+      };
+
+      if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
+        initNaver();
+      } else {
+        let script = document.getElementById('naver-map-sdk') as HTMLScriptElement;
+        if (!script) {
+          script = document.createElement('script');
+          script.id = 'naver-map-sdk';
+          script.type = 'text/javascript';
+          script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
+          script.async = true;
+          document.head.appendChild(script);
+        }
+        script.onload = () => {
+          if (isMounted && typeof naver !== 'undefined' && naver.maps) {
+            initNaver();
+          }
+        };
       }
     } else {
-      // 100% 무조건 완벽하게 작동하는 Leaflet 엔진
+      // 100% 무중단 안정 지도 (Leaflet)
       try {
         const map = L.map(mapContainerRef.current, {
           center: [initialLat, initialLng],
@@ -302,14 +324,14 @@ export const MapView: React.FC<MapViewProps> = ({
 
   return (
     <div className="relative w-full h-full flex-1">
-      {/* 원클릭 지도 전환 스위치 (인증 실패 시 즉시 일반 지도로 전환하여 맛집 확인 가능) */}
+      {/* 지도 엔진 전환 스위치 */}
       <button
         onClick={() => setEngine(prev => (prev === 'naver' ? 'leaflet' : 'naver'))}
         className="absolute top-3 left-3 z-20 bg-white/95 text-gray-800 text-[11px] font-bold px-2.5 py-1.5 rounded-xl shadow-md border border-gray-200 flex items-center gap-1.5 hover:bg-gray-50 active:scale-95 transition-all"
         title="지도 모드 전환"
       >
         <Layers className="w-3.5 h-3.5 text-orange-500" />
-        <span>{engine === 'naver' ? '네이버 지도 (인증중)' : '일반 지도 (정상)'}</span>
+        <span>{engine === 'naver' ? '네이버 지도' : '일반 지도'}</span>
       </button>
 
       <div ref={mapContainerRef} className="w-full h-full z-10" />
