@@ -9,8 +9,8 @@ interface MapViewProps {
   userLocation: { lat: number; lng: number } | null;
 }
 
-// Global declaration for Leaflet
-declare const L: any;
+// Global declaration for NAVER MAPS Web SDK
+declare const naver: any;
 
 const CATEGORY_EMOJIS: Record<string, string> = {
   '카페/디저트': '☕',
@@ -35,140 +35,142 @@ export const MapView: React.FC<MapViewProps> = ({
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
 
-  // Initialize Map
+  // 1. Initialize Official NAVER MAP
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return;
 
-    if (typeof L === 'undefined') {
-      console.error('Leaflet library is not loaded');
+    if (typeof naver === 'undefined' || !naver.maps) {
+      console.warn('NAVER Maps SDK is loading...');
       return;
     }
 
     const initialCenter = places.length > 0
-      ? [places[0].lat, places[0].lng]
-      : [35.86, 128.60];
+      ? new naver.maps.LatLng(places[0].lat, places[0].lng)
+      : new naver.maps.LatLng(35.8615, 128.6251); // 대구 중심
 
-    const map = L.map(mapContainerRef.current, {
+    const mapOptions = {
       center: initialCenter,
-      zoom: 13,
-      zoomControl: false,
-      attributionControl: false
-    });
-
-    // Clean Tile Layer (OSM / CartoDB Voyager Style)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      zoom: 14,
+      minZoom: 6,
       maxZoom: 19,
-      subdomains: 'abcd'
-    }).addTo(map);
+      zoomControl: true,
+      zoomControlOptions: {
+        position: naver.maps.Position.TOP_RIGHT,
+        style: naver.maps.ZoomControlStyle.SMALL
+      },
+      mapTypeControl: false,
+      scaleControl: false,
+      logoControl: true,
+      logoControlOptions: {
+        position: naver.maps.Position.BOTTOM_LEFT
+      }
+    };
 
-    // Zoom control at top-right
-    L.control.zoom({ position: 'topright' }).addTo(map);
-
+    const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
     mapInstanceRef.current = map;
 
     return () => {
-      map.remove();
-      mapInstanceRef.current = null;
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.destroy();
+        mapInstanceRef.current = null;
+      }
     };
   }, []);
 
-  // Update Markers & Automatically Center Search Results
+  // 2. Render Markers on NAVER MAP
   useEffect(() => {
     const map = mapInstanceRef.current;
-    if (!map || typeof L === 'undefined') return;
+    if (!map || typeof naver === 'undefined' || !naver.maps) return;
 
-    // Clear old markers
-    markersRef.current.forEach((marker) => marker.remove());
+    // Clear existing markers
+    markersRef.current.forEach((marker) => marker.setMap(null));
     markersRef.current.clear();
 
-    const bounds = L.latLngBounds([]);
+    const bounds = new naver.maps.LatLngBounds();
 
     places.forEach((place) => {
       if (!place.lat || !place.lng) return;
 
       const isSelected = selectedPlace?.id === place.id;
       const emoji = CATEGORY_EMOJIS[place.category] || '📍';
+      const position = new naver.maps.LatLng(place.lat, place.lng);
 
-      // 어긋남 없는 단일 깔끔 핀 디자인
-      const customIcon = L.divIcon({
-        className: 'marker-container-clean',
-        html: `
-          <div class="pin-badge ${isSelected ? 'is-selected' : ''}">
-            <div class="pin-content">
-              <span class="pin-emoji">${emoji}</span>
-              <span class="pin-name">${place.place_name}</span>
+      // 네이버 지도 전용 일체형 HTML 핀 마커
+      const marker = new naver.maps.Marker({
+        position,
+        map,
+        icon: {
+          content: `
+            <div class="pin-badge ${isSelected ? 'is-selected' : ''}">
+              <div class="pin-content">
+                <span class="pin-emoji">${emoji}</span>
+                <span class="pin-name">${place.place_name}</span>
+              </div>
+              <div class="pin-arrow"></div>
             </div>
-            <div class="pin-arrow"></div>
-          </div>
-        `,
-        iconSize: [0, 0], // CSS에서 중앙 정렬을 위해 0으로 두고 translate(-50%, -100%) 사용
-        iconAnchor: [0, 0]
+          `,
+          anchor: new naver.maps.Point(0, 0)
+        },
+        zIndex: isSelected ? 10000 : 100
       });
 
-      const marker = L.marker([place.lat, place.lng], { 
-        icon: customIcon,
-        zIndexOffset: isSelected ? 10000 : 100
-      })
-        .addTo(map)
-        .on('click', () => {
-          onSelectPlace(place);
-          onOpenDetail(place);
-        });
+      // Marker click listener
+      naver.maps.Event.addListener(marker, 'click', () => {
+        onSelectPlace(place);
+        onOpenDetail(place);
+      });
 
       markersRef.current.set(place.id, marker);
-      bounds.extend([place.lat, place.lng]);
+      bounds.extend(position);
     });
 
-    // 검색 및 필터링 시 화면 정중앙에 맞추기
+    // 검색 및 필터링 시 지도 중심 자동 이동
     if (places.length === 1) {
-      map.flyTo([places[0].lat, places[0].lng], 16, {
-        duration: 0.5,
-        easeLinearity: 0.25
-      });
-    } else if (places.length > 1 && bounds.isValid()) {
+      map.morph(new naver.maps.LatLng(places[0].lat, places[0].lng), 16);
+    } else if (places.length > 1 && bounds) {
       map.fitBounds(bounds, {
-        paddingTopLeft: [40, 40],
-        paddingBottomRight: [40, 160],
-        maxZoom: 16
+        top: 60,
+        right: 40,
+        bottom: 180, // 하단 바텀시트 여백
+        left: 40
       });
     }
   }, [places, selectedPlace, onSelectPlace, onOpenDetail]);
 
-  // Pan to selected place when explicitly selected
+  // 3. Pan to selected place smoothly
   useEffect(() => {
     const map = mapInstanceRef.current;
-    if (!map || !selectedPlace) return;
+    if (!map || !selectedPlace || typeof naver === 'undefined' || !naver.maps) return;
 
-    map.flyTo([selectedPlace.lat, selectedPlace.lng], 16, {
-      duration: 0.5,
-      easeLinearity: 0.25
+    map.panTo(new naver.maps.LatLng(selectedPlace.lat, selectedPlace.lng), {
+      duration: 400
     });
   }, [selectedPlace]);
 
-  // Update User GPS Location Marker
+  // 4. Update GPS Location Marker
   useEffect(() => {
     const map = mapInstanceRef.current;
-    if (!map || typeof L === 'undefined') return;
+    if (!map || typeof naver === 'undefined' || !naver.maps) return;
 
     if (userMarkerRef.current) {
-      userMarkerRef.current.remove();
+      userMarkerRef.current.setMap(null);
       userMarkerRef.current = null;
     }
 
     if (userLocation) {
-      const userIcon = L.divIcon({
-        className: 'user-location-marker',
-        html: `<div class="pulse-dot"></div>`,
-        iconSize: [14, 14],
-        iconAnchor: [7, 7]
+      const position = new naver.maps.LatLng(userLocation.lat, userLocation.lng);
+
+      userMarkerRef.current = new naver.maps.Marker({
+        position,
+        map,
+        icon: {
+          content: `<div class="pulse-dot" style="transform: translate(-50%, -50%);"></div>`,
+          anchor: new naver.maps.Point(0, 0)
+        },
+        zIndex: 5000
       });
 
-      userMarkerRef.current = L.marker([userLocation.lat, userLocation.lng], {
-        icon: userIcon,
-        zIndexOffset: 5000
-      }).addTo(map);
-
-      map.flyTo([userLocation.lat, userLocation.lng], 14);
+      map.panTo(position, { duration: 400 });
     }
   }, [userLocation]);
 
