@@ -44,10 +44,9 @@ export const MapView: React.FC<MapViewProps> = ({
       return;
     }
 
-    // Default center: South Korea center (or first place)
     const initialCenter = places.length > 0
       ? [places[0].lat, places[0].lng]
-      : [35.86, 128.60]; // 대구 중심 기본
+      : [35.86, 128.60];
 
     const map = L.map(mapContainerRef.current, {
       center: initialCenter,
@@ -73,7 +72,7 @@ export const MapView: React.FC<MapViewProps> = ({
     };
   }, []);
 
-  // Update Markers
+  // Update Markers & Automatically Center Search Results
   useEffect(() => {
     const map = mapInstanceRef.current;
     if (!map || typeof L === 'undefined') return;
@@ -129,20 +128,31 @@ export const MapView: React.FC<MapViewProps> = ({
         .addTo(map)
         .on('click', () => {
           onSelectPlace(place);
-          onOpenDetail(place); // 마커 클릭 시 바로 상세내용 모달 팝업 열기
+          onOpenDetail(place);
         });
 
       markersRef.current.set(place.id, marker);
       bounds.extend([place.lat, place.lng]);
     });
 
-    // Fit bounds if markers exist and not selected
-    if (!selectedPlace && places.length > 0 && bounds.isValid()) {
-      map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
+    // 🎯 검색 및 필터링 시 화면 정중앙에 맞추기
+    if (places.length === 1) {
+      // 1) 검색 결과가 1개인 경우: 해당 장소로 즉시 줌인 & 정중앙 이동
+      map.flyTo([places[0].lat, places[0].lng], 16, {
+        duration: 0.6,
+        easeLinearity: 0.25
+      });
+    } else if (places.length > 1 && bounds.isValid()) {
+      // 2) 검색 결과가 2개 이상인 경우: 검색된 모든 장소가 화면 정중앙에 들어오도록 핏팅
+      map.fitBounds(bounds, {
+        paddingTopLeft: [40, 40],
+        paddingBottomRight: [40, 160], // 하단 바텀시트 여백을 고려하여 화면 중앙 위쪽에 맞춤
+        maxZoom: 16
+      });
     }
   }, [places, selectedPlace, onSelectPlace, onOpenDetail]);
 
-  // Pan to selected place
+  // Pan to selected place when explicitly selected
   useEffect(() => {
     const map = mapInstanceRef.current;
     if (!map || !selectedPlace) return;
@@ -176,7 +186,7 @@ export const MapView: React.FC<MapViewProps> = ({
         zIndexOffset: 1000
       }).addTo(map);
 
-      // Pan to user location if enabled
+      // Pan to user location
       map.flyTo([userLocation.lat, userLocation.lng], 14);
     }
   }, [userLocation]);
