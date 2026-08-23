@@ -4,6 +4,7 @@ import { Search, Navigation, X, RefreshCw, ChevronDown } from 'lucide-react';
 interface NavbarProps {
   searchQuery: string;
   onSearchChange: (query: string) => void;
+  onSearchFocus?: () => void;
   isLocating: boolean;
   hasLocation: boolean;
   locationName: string;
@@ -15,6 +16,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   searchQuery,
   onSearchChange,
+  onSearchFocus,
   isLocating,
   hasLocation,
   locationName,
@@ -23,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   filteredCount
 }) => {
   return (
-    <header className="bg-white/95 backdrop-blur-md border-b border-orange-100 z-30 px-3.5 py-2 shadow-xs flex flex-col gap-2">
+    <header className="bg-white/98 backdrop-blur-md border-b border-orange-100 z-30 px-3.5 py-2 shadow-xs flex flex-col gap-2 shrink-0">
       {/* Top Brand Bar */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -65,15 +67,16 @@ export const Navbar: React.FC<NavbarProps> = ({
         </button>
       </div>
 
-      {/* Search Bar */}
+      {/* Search Bar (검색창 터치 시 바텀시트 자동 최소화) */}
       <div className="relative flex items-center">
         <Search className="w-3.5 h-3.5 text-gray-400 absolute left-3 pointer-events-none" />
         <input
           type="text"
           value={searchQuery}
+          onFocus={onSearchFocus}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder="상호명, 지역(동/구), 메뉴 검색..."
-          className="w-full bg-gray-100/90 text-xs pl-8 pr-7 py-1.5 rounded-xl border border-transparent focus:border-orange-400 focus:bg-white focus:outline-none transition-all"
+          className="w-full bg-gray-100/90 text-xs pl-8 pr-7 py-2 rounded-xl border border-transparent focus:border-orange-400 focus:bg-white focus:outline-none transition-all"
         />
         {searchQuery && (
           <button

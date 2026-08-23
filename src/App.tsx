@@ -3,12 +3,12 @@ import { Place, SortType } from './types/place';
 import { Navbar } from './components/Navbar';
 import { FilterBar } from './components/FilterBar';
 import { MapView } from './components/MapView';
-import { BottomSheet } from './components/BottomSheet';
+import { BottomSheet, SheetState } from './components/BottomSheet';
 import { PlaceDetailModal } from './components/PlaceDetailModal';
 import { LocationSelectModal } from './components/LocationSelectModal';
 import { calculateDistance } from './utils/geo';
 import { parseAddressRegion } from './utils/region';
-import { LocationPreset, POPULAR_LOCATIONS } from './utils/locations';
+import { LocationPreset } from './utils/locations';
 
 export const App: React.FC = () => {
   const [allPlaces, setAllPlaces] = useState<Place[]>([]);
@@ -18,16 +18,19 @@ export const App: React.FC = () => {
   // Filter & Search states
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('전체');
-  const [selectedProvince, setSelectedProvince] = useState<string>('전체'); // 도시/시도
-  const [selectedDistrict, setSelectedDistrict] = useState<string>('전체'); // 구/군
+  const [selectedProvince, setSelectedProvince] = useState<string>('전체');
+  const [selectedDistrict, setSelectedDistrict] = useState<string>('전체');
   const [sortType, setSortType] = useState<SortType>('latest');
+
+  // BottomSheet State (떨림 방지 및 검색 시 자동 최소화)
+  const [sheetState, setSheetState] = useState<SheetState>('half');
 
   // Selected place & modals
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [modalPlace, setModalPlace] = useState<Place | null>(null);
   const [isLocationModalOpen, setIsLocationModalOpen] = useState<boolean>(false);
 
-  // User GPS / Reference Location (Default to Daegu Suseong-gu as primary baseline)
+  // User GPS / Reference Location
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locationName, setLocationName] = useState<string>('');
   const [isLocating, setIsLocating] = useState<boolean>(false);
@@ -81,11 +84,18 @@ export const App: React.FC = () => {
     );
   };
 
-  // Select Preset Location (e.g. Daegu Suseong-gu)
+  // Select Preset Location
   const handleSelectPreset = (preset: LocationPreset) => {
     setUserLocation({ lat: preset.lat, lng: preset.lng });
     setLocationName(preset.name);
     setSortType('distance');
+  };
+
+  // Toggle BottomSheet
+  const handleToggleSheet = () => {
+    if (sheetState === 'collapsed') setSheetState('half');
+    else if (sheetState === 'half') setSheetState('expanded');
+    else setSheetState('collapsed');
   };
 
   // Reset all filters
@@ -228,14 +238,20 @@ export const App: React.FC = () => {
   }
 
   return (
-    // Desktop Outer Container: Warm Ivory Background (#faf7f2)
-    <div className="h-screen w-screen bg-[#faf7f2] flex justify-center items-center overflow-hidden p-0 sm:p-4">
-      {/* Mobile App View Container (Max width: 440px / Phone Preview Frame) */}
-      <div className="w-full h-full max-w-[440px] bg-white flex flex-col relative overflow-hidden shadow-2xl sm:rounded-[36px] sm:border sm:border-[#e8e2d5] sm:shadow-[0_20px_50px_rgba(180,160,130,0.18)]">
+    // Outer Container: Dynamic viewport height support (h-[100dvh])
+    <div className="h-full min-h-[100dvh] w-screen bg-[#faf7f2] flex justify-center items-center overflow-hidden p-0 sm:p-4">
+      {/* Mobile Frame Container */}
+      <div className="w-full h-[100dvh] max-w-[440px] bg-white flex flex-col relative overflow-hidden shadow-2xl sm:rounded-[36px] sm:border sm:border-[#e8e2d5] sm:shadow-[0_20px_50px_rgba(180,160,130,0.18)]">
         {/* Top Navbar */}
         <Navbar
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
+          onSearchFocus={() => {
+            // 검색창 포커스 시 키보드에 가리지 않도록 바텀시트 자동 최소화
+            if (sheetState === 'expanded') {
+              setSheetState('half');
+            }
+          }}
           isLocating={isLocating}
           hasLocation={!!userLocation}
           locationName={locationName}
@@ -271,12 +287,14 @@ export const App: React.FC = () => {
           userLocation={userLocation}
         />
 
-        {/* Mobile Bottom Sheet List */}
+        {/* Mobile Bottom Sheet List (Confined inside mobile width) */}
         <BottomSheet
           places={filteredPlaces}
           selectedPlace={selectedPlace}
           onSelectPlace={(place) => setSelectedPlace(place)}
           onOpenDetail={(place) => setModalPlace(place)}
+          sheetState={sheetState}
+          onToggleSheet={handleToggleSheet}
         />
 
         {/* Place Detail Modal */}
