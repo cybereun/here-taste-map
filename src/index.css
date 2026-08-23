@@ -12,12 +12,11 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    overscroll-behavior-y: none; /* 모바일 바운스/떨림 방지 */
+    overscroll-behavior-y: none;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   }
 }
 
-/* Custom scrollbar for mobile */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -28,18 +27,75 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* Leaflet Custom Marker Styles */
-.custom-pin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.15s ease-out;
-  will-change: transform;
+/* 🎯 Leaflet Marker Styles - 완벽한 단일 일체형 핀 뱃지 */
+.marker-container-clean {
+  background: transparent !important;
+  border: none !important;
 }
 
-.custom-pin:hover, .custom-pin.selected {
-  transform: scale(1.2) translateY(-3px);
-  z-index: 9999 !important;
+.pin-badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.15s ease-out;
+  white-space: nowrap;
+}
+
+.pin-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1.5px solid #ea580c;
+  border-radius: 9999px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pin-emoji {
+  font-size: 11px;
+  line-height: 1;
+}
+
+.pin-name {
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.pin-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ea580c;
+  margin-top: -1px;
+}
+
+/* 선택(클릭)되었을 때 오렌지 하이라이트 일체형 스타일 */
+.pin-badge.is-selected {
+  transform: translate(-50%, -100%) scale(1.15);
+  z-index: 10000;
+}
+
+.pin-badge.is-selected .pin-content {
+  background: #ea580c;
+  color: #ffffff;
+  border-color: #c2410c;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4);
+}
+
+.pin-badge.is-selected .pin-arrow {
+  border-top-color: #c2410c;
 }
 
 .pulse-dot {

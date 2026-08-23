@@ -89,42 +89,26 @@ export const MapView: React.FC<MapViewProps> = ({
       const isSelected = selectedPlace?.id === place.id;
       const emoji = CATEGORY_EMOJIS[place.category] || '📍';
 
+      // 어긋남 없는 단일 깔끔 핀 디자인
       const customIcon = L.divIcon({
-        className: 'custom-leaflet-marker',
+        className: 'marker-container-clean',
         html: `
-          <div class="custom-pin ${isSelected ? 'selected' : ''}" style="cursor: pointer;">
-            <div style="
-              background: ${isSelected ? '#ea580c' : '#ffffff'};
-              color: ${isSelected ? '#ffffff' : '#1f2937'};
-              border: 2px solid ${isSelected ? '#c2410c' : '#f97316'};
-              border-radius: 9999px;
-              padding: 4px 8px;
-              box-shadow: 0 4px 10px rgba(0,0,0,0.18);
-              display: flex;
-              align-items: center;
-              gap: 4px;
-              font-weight: 700;
-              font-size: 11px;
-              white-space: nowrap;
-            ">
-              <span>${emoji}</span>
-              <span>${place.place_name}</span>
+          <div class="pin-badge ${isSelected ? 'is-selected' : ''}">
+            <div class="pin-content">
+              <span class="pin-emoji">${emoji}</span>
+              <span class="pin-name">${place.place_name}</span>
             </div>
-            <div style="
-              width: 0;
-              height: 0;
-              border-left: 5px solid transparent;
-              border-right: 5px solid transparent;
-              border-top: 6px solid ${isSelected ? '#c2410c' : '#f97316'};
-              margin: 0 auto;
-            "></div>
+            <div class="pin-arrow"></div>
           </div>
         `,
-        iconSize: [120, 40],
-        iconAnchor: [60, 36]
+        iconSize: [0, 0], // CSS에서 중앙 정렬을 위해 0으로 두고 translate(-50%, -100%) 사용
+        iconAnchor: [0, 0]
       });
 
-      const marker = L.marker([place.lat, place.lng], { icon: customIcon })
+      const marker = L.marker([place.lat, place.lng], { 
+        icon: customIcon,
+        zIndexOffset: isSelected ? 10000 : 100
+      })
         .addTo(map)
         .on('click', () => {
           onSelectPlace(place);
@@ -135,18 +119,16 @@ export const MapView: React.FC<MapViewProps> = ({
       bounds.extend([place.lat, place.lng]);
     });
 
-    // 🎯 검색 및 필터링 시 화면 정중앙에 맞추기
+    // 검색 및 필터링 시 화면 정중앙에 맞추기
     if (places.length === 1) {
-      // 1) 검색 결과가 1개인 경우: 해당 장소로 즉시 줌인 & 정중앙 이동
       map.flyTo([places[0].lat, places[0].lng], 16, {
-        duration: 0.6,
+        duration: 0.5,
         easeLinearity: 0.25
       });
     } else if (places.length > 1 && bounds.isValid()) {
-      // 2) 검색 결과가 2개 이상인 경우: 검색된 모든 장소가 화면 정중앙에 들어오도록 핏팅
       map.fitBounds(bounds, {
         paddingTopLeft: [40, 40],
-        paddingBottomRight: [40, 160], // 하단 바텀시트 여백을 고려하여 화면 중앙 위쪽에 맞춤
+        paddingBottomRight: [40, 160],
         maxZoom: 16
       });
     }
@@ -158,7 +140,7 @@ export const MapView: React.FC<MapViewProps> = ({
     if (!map || !selectedPlace) return;
 
     map.flyTo([selectedPlace.lat, selectedPlace.lng], 16, {
-      duration: 0.6,
+      duration: 0.5,
       easeLinearity: 0.25
     });
   }, [selectedPlace]);
@@ -183,10 +165,9 @@ export const MapView: React.FC<MapViewProps> = ({
 
       userMarkerRef.current = L.marker([userLocation.lat, userLocation.lng], {
         icon: userIcon,
-        zIndexOffset: 1000
+        zIndexOffset: 5000
       }).addTo(map);
 
-      // Pan to user location
       map.flyTo([userLocation.lat, userLocation.lng], 14);
     }
   }, [userLocation]);
