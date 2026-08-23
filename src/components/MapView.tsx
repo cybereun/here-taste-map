@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Place } from '../types/place';
+import { Layers } from 'lucide-react';
 
 interface MapViewProps {
   places: Place[];
@@ -31,14 +32,13 @@ export const MapView: React.FC<MapViewProps> = ({
   userLocation
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapTypeRef = useRef<'naver' | 'leaflet' | null>(null);
+  const mapTypeRef = useRef<'naver' | 'leaflet'>('naver');
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
-  const [, setMapReady] = useState(false);
 
-  // Vercel / Local 환경 변수
   const naverClientId = import.meta.env.VITE_NAVER_MAP_CLIENT_ID;
+  const [currentEngine, setCurrentEngine] = useState<'naver' | 'leaflet'>(naverClientId ? 'naver' : 'leaflet');
 
   // 1. Initialize Map
   useEffect(() => {
@@ -48,19 +48,70 @@ export const MapView: React.FC<MapViewProps> = ({
     const initialLat = places.length > 0 ? places[0].lat : 35.8615;
     const initialLng = places.length > 0 ? places[0].lng : 128.6251;
 
-    // A. Leaflet 초기화 헬퍼 (100% 무조건 정상 작동)
-    const initLeaflet = () => {
-      if (!isMounted || !mapContainerRef.current) return;
-      try {
-        if (mapInstanceRef.current) {
-          if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
-            mapInstanceRef.current.destroy();
-          } else if (mapTypeRef.current === 'leaflet' && mapInstanceRef.current.remove) {
-            mapInstanceRef.current.remove();
-          }
-          mapInstanceRef.current = null;
-        }
+    // Cleanup previous map instance
+    if (mapInstanceRef.current) {
+      if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
+        mapInstanceRef.current.destroy();
+      } else if (mapTypeRef.current === 'leaflet' && mapInstanceRef.current.remove) {
+        mapInstanceRef.current.remove();
+      }
+      mapInstanceRef.current = null;
+    }
 
+    if (currentEngine === 'naver' && naverClientId) {
+      const initNaver = () => {
+        if (!isMounted || !mapContainerRef.current) return;
+        try {
+          const mapOptions = {
+            center: new naver.maps.LatLng(initialLat, initialLng),
+            zoom: 14,
+            minZoom: 6,
+            maxZoom: 19,
+            zoomControl: true,
+            zoomControlOptions: {
+              position: naver.maps.Position.TOP_RIGHT,
+              style: naver.maps.ZoomControlStyle.SMALL
+            },
+            mapTypeControl: false,
+            scaleControl: false,
+            logoControl: true,
+            logoControlOptions: {
+              position: naver.maps.Position.BOTTOM_LEFT
+            }
+          };
+
+          const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
+          mapInstanceRef.current = map;
+          mapTypeRef.current = 'naver';
+        } catch (err) {
+          console.warn('[MapView] Naver map init error, switching to Leaflet:', err);
+          setCurrentEngine('leaflet');
+        }
+      };
+
+      if (typeof naver !== 'undefined' && naver.maps) {
+        initNaver();
+      } else {
+        const script = document.createElement('script');
+        script.id = 'naver-map-sdk';
+        script.type = 'text/javascript';
+        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
+        script.async = true;
+        script.onload = () => {
+          if (isMounted && typeof naver !== 'undefined' && naver.maps) {
+            initNaver();
+          } else {
+            setCurrentEngine('leaflet');
+          }
+        };
+        script.onerror = () => {
+          setCurrentEngine('leaflet');
+        };
+        document.head.appendChild(script);
+      }
+    } else {
+      // Leaflet Standalone Map
+      try {
         const map = L.map(mapContainerRef.current, {
           center: [initialLat, initialLng],
           zoom: 14,
@@ -77,76 +128,9 @@ export const MapView: React.FC<MapViewProps> = ({
 
         mapInstanceRef.current = map;
         mapTypeRef.current = 'leaflet';
-        setMapReady(true);
       } catch (err) {
         console.error('[MapView] Leaflet init error:', err);
       }
-    };
-
-    // B. 네이버 지도 초기화 헬퍼
-    const initNaver = () => {
-      if (!isMounted || !mapContainerRef.current) return;
-      try {
-        if (mapInstanceRef.current) {
-          if (mapTypeRef.current === 'leaflet' && mapInstanceRef.current.remove) {
-            mapInstanceRef.current.remove();
-          } else if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
-            mapInstanceRef.current.destroy();
-          }
-          mapInstanceRef.current = null;
-        }
-
-        const mapOptions = {
-          center: new naver.maps.LatLng(initialLat, initialLng),
-          zoom: 14,
-          minZoom: 6,
-          maxZoom: 19,
-          zoomControl: true,
-          zoomControlOptions: {
-            position: naver.maps.Position.TOP_RIGHT,
-            style: naver.maps.ZoomControlStyle.SMALL
-          },
-          mapTypeControl: false,
-          scaleControl: false,
-          logoControl: true,
-          logoControlOptions: {
-            position: naver.maps.Position.BOTTOM_LEFT
-          }
-        };
-
-        const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
-        mapInstanceRef.current = map;
-        mapTypeRef.current = 'naver';
-        setMapReady(true);
-      } catch (err) {
-        console.warn('[MapView] Naver init failed, fallback to Leaflet:', err);
-        initLeaflet();
-      }
-    };
-
-    if (naverClientId) {
-      if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
-        initNaver();
-      } else {
-        const script = document.createElement('script');
-        script.id = 'naver-map-sdk';
-        script.type = 'text/javascript';
-        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
-        script.async = true;
-        script.onload = () => {
-          if (isMounted && typeof naver !== 'undefined' && naver.maps) {
-            initNaver();
-          } else {
-            initLeaflet();
-          }
-        };
-        script.onerror = () => {
-          initLeaflet();
-        };
-        document.head.appendChild(script);
-      }
-    } else {
-      initLeaflet();
     }
 
     return () => {
@@ -158,18 +142,16 @@ export const MapView: React.FC<MapViewProps> = ({
           mapInstanceRef.current.remove();
         }
         mapInstanceRef.current = null;
-        mapTypeRef.current = null;
       }
     };
-  }, [naverClientId]);
+  }, [currentEngine, naverClientId]);
 
-  // 2. Render Markers on Active Map Engine
+  // 2. Render Markers
   useEffect(() => {
     const map = mapInstanceRef.current;
     const type = mapTypeRef.current;
     if (!map) return;
 
-    // Clear old markers
     if (type === 'naver') {
       markersRef.current.forEach((marker) => marker.setMap(null));
     } else if (type === 'leaflet') {
@@ -267,7 +249,7 @@ export const MapView: React.FC<MapViewProps> = ({
         });
       }
     }
-  }, [places, selectedPlace, onSelectPlace, onOpenDetail]);
+  }, [places, selectedPlace, onSelectPlace, onOpenDetail, currentEngine]);
 
   // 3. Pan to selected place
   useEffect(() => {
@@ -321,10 +303,22 @@ export const MapView: React.FC<MapViewProps> = ({
         map.flyTo([userLocation.lat, userLocation.lng], 14);
       }
     }
-  }, [userLocation]);
+  }, [userLocation, currentEngine]);
 
   return (
     <div className="relative w-full h-full flex-1">
+      {/* Map Engine Switcher Button (우측 상단 지도 변경 토글) */}
+      {naverClientId && (
+        <button
+          onClick={() => setCurrentEngine(prev => (prev === 'naver' ? 'leaflet' : 'naver'))}
+          className="absolute top-3 left-3 z-20 bg-white/95 text-gray-800 text-[11px] font-bold px-2.5 py-1.5 rounded-xl shadow-md border border-gray-200 flex items-center gap-1.5 hover:bg-gray-50 active:scale-95 transition-all"
+          title="지도 엔진 전환 (네이버 / 일반)"
+        >
+          <Layers className="w-3.5 h-3.5 text-orange-500" />
+          <span>{currentEngine === 'naver' ? '네이버 지도' : '일반 지도'}</span>
+        </button>
+      )}
+
       <div ref={mapContainerRef} className="w-full h-full z-10" />
     </div>
   );
