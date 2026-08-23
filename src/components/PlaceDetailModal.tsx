@@ -58,8 +58,8 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
         <div className="absolute inset-0" onClick={onClose} />
 
         {/* Modal Container */}
-        <div className="relative w-full bg-white rounded-t-3xl shadow-2xl overflow-hidden max-h-[88%] flex flex-col z-10 animate-slideUp">
-          {/* Header Bar */}
+        <div className="relative w-full bg-white rounded-t-3xl shadow-2xl overflow-hidden max-h-[85vh] flex flex-col z-10 animate-slideUp">
+          {/* 1. Header Bar */}
           <div className="flex items-center justify-between px-4 py-2.5 border-b border-gray-100 bg-gray-50/90 shrink-0">
             <div className="flex items-center gap-2">
               <span className="text-xs px-2.5 py-0.5 rounded-full font-bold bg-orange-100 text-orange-600">
@@ -86,7 +86,7 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
             </div>
           </div>
 
-          {/* 1. Slim Horizontal Thumbnails Row (가로 슬림 썸네일 스트립) */}
+          {/* 2. Slim Horizontal Mini Thumbnails Row (가로 슬림 미니 썸네일 스트립 - 높이 90px 엄격 고정) */}
           {images.length > 0 && (
             <div className="px-3 py-2 bg-gray-100/90 border-b border-gray-200/60 shrink-0">
               <div className="flex items-center justify-between mb-1.5 px-0.5">
@@ -95,18 +95,22 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
                 </span>
                 <span className="text-[10px] text-orange-600 font-bold flex items-center gap-0.5 bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200/80">
                   <ZoomIn className="w-3 h-3 text-orange-500" />
-                  사진 클릭 시 크게보기
+                  사진 클릭 시 확대
                 </span>
               </div>
               
-              <div className="flex gap-2 overflow-x-auto no-scrollbar py-0.5">
+              {/* 가로 한 줄 스크롤 스트립 (너비/높이 64px 인라인 강제 고정) */}
+              <div className="flex flex-row flex-nowrap gap-2 overflow-x-auto no-scrollbar py-0.5 w-full">
                 {images.map((img, idx) => (
                   <div
                     key={idx}
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
                       setLightboxIdx(idx);
                     }}
-                    className="relative w-18 h-18 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border-2 border-white shadow-sm hover:border-orange-500 active:scale-95 transition-all cursor-pointer group"
+                    style={{ width: '64px', height: '64px', minWidth: '64px', minHeight: '64px' }}
+                    className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 border-2 border-white shadow-xs hover:border-orange-500 active:scale-95 transition-all cursor-pointer group bg-gray-200"
                   >
                     <img
                       src={img}
@@ -114,7 +118,7 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     />
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
-                    <span className="absolute bottom-1 right-1 bg-black/75 text-white text-[9px] font-bold px-1 rounded">
+                    <span className="absolute bottom-1 right-1 bg-black/75 text-white text-[9px] font-bold px-1 rounded leading-tight">
                       {idx + 1}
                     </span>
                   </div>
@@ -123,7 +127,7 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
             </div>
           )}
 
-          {/* 2. Scrollable Body Contents */}
+          {/* 3. Scrollable Body Contents (상호명, 주소, 블로그 요약 노트) */}
           <div className="overflow-y-auto no-scrollbar flex-1 p-3.5 flex flex-col gap-3">
             {/* Title & Distance */}
             <div>
@@ -189,7 +193,7 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
             )}
           </div>
 
-          {/* Bottom Fixed Action Buttons */}
+          {/* 4. Bottom Fixed Action Buttons */}
           <div className="p-2.5 bg-white border-t border-gray-100 flex items-center gap-2 shrink-0">
             {/* Naver Map Directions Button */}
             <button
@@ -214,7 +218,7 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
         </div>
       </div>
 
-      {/* 3. Full-Screen Photo Lightbox (사진 크게보기 전체 화면 모달) */}
+      {/* 5. Full-Screen Photo Lightbox (사진 크게보기 전체 화면 모달) */}
       {lightboxIdx !== null && createPortal(
         <div
           onClick={() => setLightboxIdx(null)}
