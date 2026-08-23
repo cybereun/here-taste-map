@@ -37,10 +37,10 @@ export const MapView: React.FC<MapViewProps> = ({
   const userMarkerRef = useRef<any>(null);
   const [, setMapReady] = useState(false);
 
-  // Vercel / Local 환경 변수 Client ID (있으면 네이버 지도, 없으면 안전 기본 지도)
+  // Vercel / Local 환경 변수
   const naverClientId = import.meta.env.VITE_NAVER_MAP_CLIENT_ID;
 
-  // 1. Dynamic Map Loader & Initializer
+  // 1. Initialize Map
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
@@ -48,10 +48,19 @@ export const MapView: React.FC<MapViewProps> = ({
     const initialLat = places.length > 0 ? places[0].lat : 35.8615;
     const initialLng = places.length > 0 ? places[0].lng : 128.6251;
 
-    // A. Leaflet 초기화 헬퍼 (기본 100% 보장 지도)
+    // A. Leaflet 초기화 헬퍼 (100% 무조건 정상 작동)
     const initLeaflet = () => {
-      if (!isMounted || !mapContainerRef.current || mapInstanceRef.current) return;
+      if (!isMounted || !mapContainerRef.current) return;
       try {
+        if (mapInstanceRef.current) {
+          if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
+            mapInstanceRef.current.destroy();
+          } else if (mapTypeRef.current === 'leaflet' && mapInstanceRef.current.remove) {
+            mapInstanceRef.current.remove();
+          }
+          mapInstanceRef.current = null;
+        }
+
         const map = L.map(mapContainerRef.current, {
           center: [initialLat, initialLng],
           zoom: 14,
@@ -115,36 +124,28 @@ export const MapView: React.FC<MapViewProps> = ({
       }
     };
 
-    // 환경 변수에 네이버 Client ID가 있으면 네이버 SDK 로드 시도
     if (naverClientId) {
-      if (typeof naver !== 'undefined' && naver.maps) {
+      if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
         initNaver();
       } else {
-        const existingScript = document.getElementById('naver-map-sdk');
-        if (!existingScript) {
-          const script = document.createElement('script');
-          script.id = 'naver-map-sdk';
-          script.type = 'text/javascript';
-          script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
-          script.async = true;
-          script.onload = () => {
-            if (isMounted && typeof naver !== 'undefined' && naver.maps) {
-              initNaver();
-            } else {
-              initLeaflet();
-            }
-          };
-          script.onerror = () => {
-            console.warn('[MapView] Naver script load error, fallback to Leaflet');
+        const script = document.createElement('script');
+        script.id = 'naver-map-sdk';
+        script.type = 'text/javascript';
+        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${naverClientId}`;
+        script.async = true;
+        script.onload = () => {
+          if (isMounted && typeof naver !== 'undefined' && naver.maps) {
+            initNaver();
+          } else {
             initLeaflet();
-          };
-          document.head.appendChild(script);
-        } else {
+          }
+        };
+        script.onerror = () => {
           initLeaflet();
-        }
+        };
+        document.head.appendChild(script);
       }
     } else {
-      // Client ID가 없으면 즉시 안정적인 기본 지도로 실행
       initLeaflet();
     }
 
