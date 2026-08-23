@@ -1,0 +1,39 @@
+name: Daily Blog TasteMap Crawl
+
+on:
+  schedule:
+    # 매일 한국 시간 오전 4시 (UTC 19:00)
+    - cron: '0 19 * * *'
+  workflow_dispatch: # 수동 실행 지원
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install beautifulsoup4 pillow
+
+      - name: Run Crawler
+        run: |
+          python scripts/crawler.py
+
+      - name: Sync data to public
+        run: |
+          mkdir -p public/data
+          cp data/places.json public/data/places.json
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ public/data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: 일일 블로그 맛집 데이터 자동 갱신 [skip ci]" && git push)

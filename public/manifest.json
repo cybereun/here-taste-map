@@ -1,0 +1,29 @@
+{
+  "short_name": "맛지도",
+  "name": "여기 어때 맛지도",
+  "description": "래비의 네이버 블로그 맛집·카페 지도 & 길찾기 앱",
+  "icons": [
+    {
+      "src": "/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "display": "standalone",
+  "orientation": "portrait"
+}
