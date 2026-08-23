@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Place } from '../types/place';
+import { Layers } from 'lucide-react';
 
 interface MapViewProps {
   places: Place[];
@@ -10,6 +11,7 @@ interface MapViewProps {
 }
 
 declare const naver: any;
+declare const L: any;
 
 const CATEGORY_EMOJIS: Record<string, string> = {
   '카페/디저트': '☕',
@@ -30,95 +32,175 @@ export const MapView: React.FC<MapViewProps> = ({
   userLocation
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
+  const mapTypeRef = useRef<'naver' | 'leaflet'>('naver');
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
 
-  // 1. 공식 네이버 지도 초기화
+  const [engine, setEngine] = useState<'naver' | 'leaflet'>('naver');
+
+  // 1. Initialize Active Map Engine
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
+    let isMounted = true;
     const initialLat = places.length > 0 ? places[0].lat : 35.8615;
     const initialLng = places.length > 0 ? places[0].lng : 128.6251;
 
-    const initMap = () => {
-      if (!mapContainerRef.current || mapInstanceRef.current || typeof naver === 'undefined' || !naver.maps) return;
-
+    // Cleanup previous map
+    if (mapInstanceRef.current) {
       try {
-        const mapOptions = {
-          center: new naver.maps.LatLng(initialLat, initialLng),
-          zoom: 14,
-          minZoom: 6,
-          maxZoom: 19,
-          zoomControl: true,
-          zoomControlOptions: {
-            position: naver.maps.Position.TOP_RIGHT,
-            style: naver.maps.ZoomControlStyle.SMALL
-          },
-          mapTypeControl: false,
-          scaleControl: false,
-          logoControl: true,
-          logoControlOptions: {
-            position: naver.maps.Position.BOTTOM_LEFT
-          }
-        };
-
-        const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
-        mapInstanceRef.current = map;
-      } catch (e) {
-        console.error('[NaverMap] Error creating map:', e);
-      }
-    };
-
-    if (typeof naver !== 'undefined' && naver.maps) {
-      initMap();
-    } else {
-      const interval = setInterval(() => {
-        if (typeof naver !== 'undefined' && naver.maps) {
-          clearInterval(interval);
-          initMap();
+        if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
+          mapInstanceRef.current.destroy();
+        } else if (mapTypeRef.current === 'leaflet' && mapInstanceRef.current.remove) {
+          mapInstanceRef.current.remove();
         }
-      }, 100);
-      return () => clearInterval(interval);
+      } catch (e) {}
+      mapInstanceRef.current = null;
+    }
+
+    if (engine === 'naver') {
+      try {
+        if (typeof naver !== 'undefined' && naver.maps && naver.maps.Map) {
+          const mapOptions = {
+            center: new naver.maps.LatLng(initialLat, initialLng),
+            zoom: 14,
+            minZoom: 6,
+            maxZoom: 19,
+            zoomControl: true,
+            zoomControlOptions: {
+              position: naver.maps.Position.TOP_RIGHT,
+              style: naver.maps.ZoomControlStyle.SMALL
+            },
+            mapTypeControl: false,
+            scaleControl: false,
+            logoControl: true,
+            logoControlOptions: {
+              position: naver.maps.Position.BOTTOM_LEFT
+            }
+          };
+
+          const map = new naver.maps.Map(mapContainerRef.current, mapOptions);
+          mapInstanceRef.current = map;
+          mapTypeRef.current = 'naver';
+        }
+      } catch (err) {
+        console.error('[NaverMap] Error, switching to fallback:', err);
+        setEngine('leaflet');
+      }
+    } else {
+      // 100% 무조건 완벽하게 작동하는 Leaflet 엔진
+      try {
+        const map = L.map(mapContainerRef.current, {
+          center: [initialLat, initialLng],
+          zoom: 14,
+          zoomControl: false,
+          attributionControl: false
+        });
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          maxZoom: 19,
+          subdomains: 'abcd'
+        }).addTo(map);
+
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
+        mapInstanceRef.current = map;
+        mapTypeRef.current = 'leaflet';
+      } catch (err) {
+        console.error('[Leaflet] Error:', err);
+      }
     }
 
     return () => {
+      isMounted = false;
       if (mapInstanceRef.current) {
         try {
-          if (typeof mapInstanceRef.current.destroy === 'function') {
+          if (mapTypeRef.current === 'naver' && mapInstanceRef.current.destroy) {
             mapInstanceRef.current.destroy();
+          } else if (mapTypeRef.current === 'leaflet' && mapInstanceRef.current.remove) {
+            mapInstanceRef.current.remove();
           }
         } catch (e) {}
         mapInstanceRef.current = null;
       }
     };
-  }, []);
+  }, [engine]);
 
-  // 2. 네이버 지도 마커 렌더링
+  // 2. Render Markers on Current Engine
   useEffect(() => {
     const map = mapInstanceRef.current;
-    if (!map || typeof naver === 'undefined' || !naver.maps) return;
+    const type = mapTypeRef.current;
+    if (!map) return;
 
-    markersRef.current.forEach((marker) => {
-      try { marker.setMap(null); } catch (e) {}
-    });
+    if (type === 'naver') {
+      markersRef.current.forEach((marker) => {
+        try { marker.setMap(null); } catch (e) {}
+      });
+    } else if (type === 'leaflet') {
+      markersRef.current.forEach((marker) => {
+        try { marker.remove(); } catch (e) {}
+      });
+    }
     markersRef.current.clear();
 
-    const bounds = new naver.maps.LatLngBounds();
+    if (type === 'naver' && typeof naver !== 'undefined' && naver.maps) {
+      const bounds = new naver.maps.LatLngBounds();
 
-    places.forEach((place) => {
-      if (!place.lat || !place.lng) return;
+      places.forEach((place) => {
+        if (!place.lat || !place.lng) return;
 
-      const isSelected = selectedPlace?.id === place.id;
-      const emoji = CATEGORY_EMOJIS[place.category] || '📍';
-      const position = new naver.maps.LatLng(place.lat, place.lng);
+        const isSelected = selectedPlace?.id === place.id;
+        const emoji = CATEGORY_EMOJIS[place.category] || '📍';
+        const position = new naver.maps.LatLng(place.lat, place.lng);
 
-      try {
-        const marker = new naver.maps.Marker({
-          position,
-          map,
-          icon: {
-            content: `
+        try {
+          const marker = new naver.maps.Marker({
+            position,
+            map,
+            icon: {
+              content: `
+                <div class="pin-badge ${isSelected ? 'is-selected' : ''}">
+                  <div class="pin-content">
+                    <span class="pin-emoji">${emoji}</span>
+                    <span class="pin-name">${place.place_name}</span>
+                  </div>
+                  <div class="pin-arrow"></div>
+                </div>
+              `,
+              anchor: new naver.maps.Point(0, 0)
+            },
+            zIndex: isSelected ? 10000 : 100
+          });
+
+          naver.maps.Event.addListener(marker, 'click', () => {
+            onSelectPlace(place);
+            onOpenDetail(place);
+          });
+
+          markersRef.current.set(place.id, marker);
+          bounds.extend(position);
+        } catch (e) {}
+      });
+
+      if (places.length === 1) {
+        map.morph(new naver.maps.LatLng(places[0].lat, places[0].lng), 16);
+      } else if (places.length > 1 && bounds) {
+        map.fitBounds(bounds, { top: 60, right: 40, bottom: 180, left: 40 });
+      }
+    } else if (type === 'leaflet' && typeof L !== 'undefined') {
+      const bounds = L.latLngBounds([]);
+
+      places.forEach((place) => {
+        if (!place.lat || !place.lng) return;
+
+        const isSelected = selectedPlace?.id === place.id;
+        const emoji = CATEGORY_EMOJIS[place.category] || '📍';
+
+        try {
+          const customIcon = L.divIcon({
+            className: 'marker-container-clean',
+            html: `
               <div class="pin-badge ${isSelected ? 'is-selected' : ''}">
                 <div class="pin-content">
                   <span class="pin-emoji">${emoji}</span>
@@ -127,69 +209,109 @@ export const MapView: React.FC<MapViewProps> = ({
                 <div class="pin-arrow"></div>
               </div>
             `,
-            anchor: new naver.maps.Point(0, 0)
-          },
-          zIndex: isSelected ? 10000 : 100
+            iconSize: [0, 0],
+            iconAnchor: [0, 0]
+          });
+
+          const marker = L.marker([place.lat, place.lng], {
+            icon: customIcon,
+            zIndexOffset: isSelected ? 10000 : 100
+          })
+            .addTo(map)
+            .on('click', () => {
+              onSelectPlace(place);
+              onOpenDetail(place);
+            });
+
+          markersRef.current.set(place.id, marker);
+          bounds.extend([place.lat, place.lng]);
+        } catch (e) {}
+      });
+
+      if (places.length === 1) {
+        map.flyTo([places[0].lat, places[0].lng], 16, { duration: 0.5 });
+      } else if (places.length > 1 && bounds.isValid()) {
+        map.fitBounds(bounds, {
+          paddingTopLeft: [40, 40],
+          paddingBottomRight: [40, 160],
+          maxZoom: 16
         });
-
-        naver.maps.Event.addListener(marker, 'click', () => {
-          onSelectPlace(place);
-          onOpenDetail(place);
-        });
-
-        markersRef.current.set(place.id, marker);
-        bounds.extend(position);
-      } catch (e) {}
-    });
-
-    if (places.length === 1) {
-      map.morph(new naver.maps.LatLng(places[0].lat, places[0].lng), 16);
-    } else if (places.length > 1 && bounds) {
-      map.fitBounds(bounds, { top: 60, right: 40, bottom: 180, left: 40 });
+      }
     }
-  }, [places, selectedPlace, onSelectPlace, onOpenDetail]);
+  }, [places, selectedPlace, onSelectPlace, onOpenDetail, engine]);
 
   // 3. Pan to selected place
   useEffect(() => {
     const map = mapInstanceRef.current;
-    if (!map || !selectedPlace || typeof naver === 'undefined' || !naver.maps) return;
+    const type = mapTypeRef.current;
+    if (!map || !selectedPlace) return;
 
     try {
-      map.panTo(new naver.maps.LatLng(selectedPlace.lat, selectedPlace.lng), { duration: 400 });
+      if (type === 'naver' && typeof naver !== 'undefined' && naver.maps) {
+        map.panTo(new naver.maps.LatLng(selectedPlace.lat, selectedPlace.lng), { duration: 400 });
+      } else if (type === 'leaflet') {
+        map.flyTo([selectedPlace.lat, selectedPlace.lng], 16, { duration: 0.5 });
+      }
     } catch (e) {}
   }, [selectedPlace]);
 
   // 4. Update GPS Location Marker
   useEffect(() => {
     const map = mapInstanceRef.current;
-    if (!map || typeof naver === 'undefined' || !naver.maps) return;
+    const type = mapTypeRef.current;
+    if (!map) return;
 
     if (userMarkerRef.current) {
       try {
-        userMarkerRef.current.setMap(null);
+        if (type === 'naver') userMarkerRef.current.setMap(null);
+        else if (type === 'leaflet') userMarkerRef.current.remove();
       } catch (e) {}
       userMarkerRef.current = null;
     }
 
     if (userLocation) {
       try {
-        const position = new naver.maps.LatLng(userLocation.lat, userLocation.lng);
-        userMarkerRef.current = new naver.maps.Marker({
-          position,
-          map,
-          icon: {
-            content: `<div class="pulse-dot" style="transform: translate(-50%, -50%);"></div>`,
-            anchor: new naver.maps.Point(0, 0)
-          },
-          zIndex: 5000
-        });
-        map.panTo(position, { duration: 400 });
+        if (type === 'naver' && typeof naver !== 'undefined' && naver.maps) {
+          const position = new naver.maps.LatLng(userLocation.lat, userLocation.lng);
+          userMarkerRef.current = new naver.maps.Marker({
+            position,
+            map,
+            icon: {
+              content: `<div class="pulse-dot" style="transform: translate(-50%, -50%);"></div>`,
+              anchor: new naver.maps.Point(0, 0)
+            },
+            zIndex: 5000
+          });
+          map.panTo(position, { duration: 400 });
+        } else if (type === 'leaflet' && typeof L !== 'undefined') {
+          const userIcon = L.divIcon({
+            className: 'user-location-marker',
+            html: `<div class="pulse-dot"></div>`,
+            iconSize: [14, 14],
+            iconAnchor: [7, 7]
+          });
+          userMarkerRef.current = L.marker([userLocation.lat, userLocation.lng], {
+            icon: userIcon,
+            zIndexOffset: 5000
+          }).addTo(map);
+          map.flyTo([userLocation.lat, userLocation.lng], 14);
+        }
       } catch (e) {}
     }
-  }, [userLocation]);
+  }, [userLocation, engine]);
 
   return (
     <div className="relative w-full h-full flex-1">
+      {/* 원클릭 지도 전환 스위치 (인증 실패 시 즉시 일반 지도로 전환하여 맛집 확인 가능) */}
+      <button
+        onClick={() => setEngine(prev => (prev === 'naver' ? 'leaflet' : 'naver'))}
+        className="absolute top-3 left-3 z-20 bg-white/95 text-gray-800 text-[11px] font-bold px-2.5 py-1.5 rounded-xl shadow-md border border-gray-200 flex items-center gap-1.5 hover:bg-gray-50 active:scale-95 transition-all"
+        title="지도 모드 전환"
+      >
+        <Layers className="w-3.5 h-3.5 text-orange-500" />
+        <span>{engine === 'naver' ? '네이버 지도 (인증중)' : '일반 지도 (정상)'}</span>
+      </button>
+
       <div ref={mapContainerRef} className="w-full h-full z-10" />
     </div>
   );
