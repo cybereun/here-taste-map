@@ -28,7 +28,78 @@ FOOD_TYPE_RULES = [
     ("주점/바", ["술집", "펍", "호프", "위스키", "칵테일", "맥주", "와인바", "포차", "주점"])
 ]
 
+# 장소명에 비해 본문에 노출되는 일반 키워드가 우선되어 잘못 분류되는 장소들
+# (예: 블로그 글의 공통 카테고리명에 "카페"가 포함되는 경우)을 위한 수동 보정.
+def normalize_place_name(place_name):
+    return re.sub(r"[^0-9a-z가-힣]+", "", (place_name or "").lower())
+
+
+MANUAL_FOOD_TYPE_OVERRIDES = {
+    # 한식
+    "안압정": "한식/고기",
+    "서울신라호텔 라연": "한식/고기",
+    "순남시래기 대구 침산점": "한식/고기",
+    "한재 참 미나리 식육식당": "한식/고기",
+    "안목": "한식/고기",
+    "개정라온제나호텔점": "한식/고기",
+    "요술밥상 대구신세계점": "한식/고기",
+    "바르미명품한우센터": "한식/고기",
+    "금등어 들안길 본점": "한식/고기",
+    "소수미반상": "한식/고기",
+    "몽탄 제주점": "한식/고기",
+    "스모크룸": "한식/고기",
+    "호랑이장칼국수": "한식/고기",
+    "호랑이장칼국수 수성점": "한식/고기",
+    # 양식/브런치
+    "다이닝 혜옥": "양식/브런치",
+    "멜팅팟": "양식/브런치",
+    "스미스앤월렌스키": "양식/브런치",
+    "익스퀴진": "양식/브런치",
+    "바우만스테이크하우스": "양식/브런치",
+    "베이크오이": "양식/브런치",
+    "모닝베어 오시리아점": "양식/브런치",
+    "버거샵 해운대": "양식/브런치",
+    "시칠리아파스타바": "양식/브런치",
+    "키치니토 키친 오시리아점": "양식/브런치",
+    "대구 메리어트 어반키친": "양식/브런치",
+    "아트리움": "양식/브런치",
+    "코지하우스 대구수성점": "양식/브런치",
+    "하바네로": "양식/브런치",
+    "하바네로 만촌점": "양식/브런치",
+    "제주 드림타워 그랜드 키친": "양식/브런치",
+    "차콜우드": "양식/브런치",
+    "포시즌스호텔서울 더마켓키친": "양식/브런치",
+    "h654 현대프리미엄아울렛 김포점": "양식/브런치",
+    "사워도우 다이닝": "양식/브런치",
+    "더뷔페 앳 인터불고": "양식/브런치",
+    "준브로수성못": "양식/브런치",
+    # 일식
+    "토모루스시 범어점": "일식/초밥",
+    "쿠우쿠우 수성못점": "일식/초밥",
+    "삼대애": "일식/초밥",
+    # 주점/바
+    "그늘집": "주점/바",
+    "포시즌스호텔서울 찰스 H.": "주점/바",
+    "소나무": "주점/바",
+    # 중식
+    "js가든 더현대 대구": "중식/아시안",
+}
+
+MANUAL_FOOD_TYPE_OVERRIDES = {
+    normalize_place_name(name): category
+    for name, category in MANUAL_FOOD_TYPE_OVERRIDES.items()
+}
+
+
+def apply_manual_food_type_override(place_name, fallback):
+    return MANUAL_FOOD_TYPE_OVERRIDES.get(normalize_place_name(place_name), fallback)
+
+
 def classify_food_type(title, text, place_name):
+    manual_category = apply_manual_food_type_override(place_name, None)
+    if manual_category:
+        return manual_category
+
     combined = f"{title} {text} {place_name}".lower()
     for cat_name, keywords in FOOD_TYPE_RULES:
         for kw in keywords:
@@ -230,6 +301,12 @@ def run_crawler():
             result["date"] = header.get("addDate", "")
             new_count += 1
             time.sleep(0.05) # 부하 방지
+
+        # 기존 캐시를 재사용하는 경우에도 수동 분류 보정이 유지되도록 적용
+        place_name = result.get("place", {}).get("name", "")
+        result["food_type"] = apply_manual_food_type_override(
+            place_name, result.get("food_type", "맛집/식당")
+        )
             
         all_results.append(result)
         if idx % 50 == 0 or idx == len(post_headers):
