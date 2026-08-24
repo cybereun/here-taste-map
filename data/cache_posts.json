@@ -37,7 +37,7 @@
     ],
     "summary": "거송갈비찜 돼지갈비 보통맛 후기: 신라면 맵기에 떡볶이 셀프바까지! 매콤한 양념에 부드러운 살코기가 자작하게 졸여진 갈비찜이 생각날 때마다 찾게 되는 곳이 있습니다. 이번에 다녀온 곳은 푸짐한 밑반찬과 메인 요리로 인기가 높은거송갈비찜 돼지갈비전문점입니다. 이곳거송갈비찜 돼지갈비는 특유의 감칠맛 넘치는 양념도 훌륭하지만, 무엇보다 방문할 때마다 손님을 기분 좋게 만드는 셀프바 시스템이 단연 매력적인 곳입니다.",
     "parsed_success": true,
-    "date": "20분 전"
+    "date": "25분 전"
   },
   {
     "logNo": "224386821364",
@@ -4628,7 +4628,7 @@
     "url": "https://blog.naver.com/cybereunny/223812967943",
     "place": {
       "name": "넘버슈가 오모테산도점",
-      "address": "東京都 渋谷区 神宮前5-11-11 1F",
+      "address": "도쿄도 시부야구 진구마에 5-11-11 1F",
       "lat": 35.666462,
       "lng": 139.7061825,
       "tel": "03-6427-3334",
@@ -4638,7 +4638,7 @@
     "all_places": [
       {
         "name": "넘버슈가 오모테산도점",
-        "address": "東京都 渋谷区 神宮前5-11-11 1F",
+        "address": "도쿄도 시부야구 진구마에 5-11-11 1F",
         "lat": 35.666462,
         "lng": 139.7061825,
         "tel": "03-6427-3334",
@@ -4646,7 +4646,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "東京都 渋谷区",
+    "city_district": "도쿄 시부야구",
     "food_type": "카페/디저트",
     "thumbnail": "https://postfiles.pstatic.net/MjAyNTAzMjJfMTg4/MDAxNzQyNjI5NDkxODQx.-Pe5yeFFRqn-LbroAUKHDlzC_SF2FUWxzRnrNxCIl3kg.nKX8gKzIT8JXS3E1AOt-C9U5rKfQHxM29oBd02fyicgg.JPEG/%EB%82%B4%EB%8F%88%EB%82%B4%EC%82%B0.jpg?type=w800",
     "images": [
@@ -5518,7 +5518,7 @@
     "url": "https://blog.naver.com/cybereunny/223734380380",
     "place": {
       "name": "스타벅스 후쿠오카 하카타 미야코 호텔점",
-      "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多1F",
+      "address": "후쿠오카현 후쿠오카시 하카타구 하카타에키히가시 2-1-1 미야코 호텔 하카타 1F",
       "lat": 33.5898218,
       "lng": 130.4226816,
       "tel": "092-260-7302",
@@ -5528,7 +5528,7 @@
     "all_places": [
       {
         "name": "스타벅스 후쿠오카 하카타 미야코 호텔점",
-        "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多1F",
+        "address": "후쿠오카현 후쿠오카시 하카타구 하카타에키히가시 2-1-1 미야코 호텔 하카타 1F",
         "lat": 33.5898218,
         "lng": 130.4226816,
         "tel": "092-260-7302",
@@ -5536,7 +5536,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 하카타구",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAxMjJfMjA3/MDAxNzM3NTI1Njc0MzEz.C9MQpvWcdG8p6521hf0J1hi8i9mKbaFwB9R2TusIABUg.XJ5H5pD9C9mz5_ec8glxDRYjUAi274u05SufXTClqAog.JPEG/SE-b57b942b-d4c1-49e1-9c7a-856fd324e10a.jpg?type=w800",
     "images": [
@@ -7416,7 +7416,7 @@
     "url": "https://blog.naver.com/cybereunny/223568282171",
     "place": {
       "name": "하카타 모츠나베 오야마 미야코 호텔 하카타",
-      "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多2F",
+      "address": "후쿠오카현 후쿠오카시 하카타구 하카타에키히가시 2-1-1 미야코 호텔 하카타 2F",
       "lat": 33.5898218,
       "lng": 130.4226816,
       "tel": "092-411-5071",
@@ -7426,7 +7426,7 @@
     "all_places": [
       {
         "name": "하카타 모츠나베 오야마 미야코 호텔 하카타",
-        "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多2F",
+        "address": "후쿠오카현 후쿠오카시 하카타구 하카타에키히가시 2-1-1 미야코 호텔 하카타 2F",
         "lat": 33.5898218,
         "lng": 130.4226816,
         "tel": "092-411-5071",
@@ -7434,7 +7434,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 하카타구",
     "food_type": "일식/초밥",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA4MTVfMjkx/MDAxNzIzNjk4OTM1MDg0.s0vsh_m29HmEZgh3n0FuG9FF9ROJXx_mUyjhJrYc8fwg.M9LzQ3nrxSqIi2itxVBKZEd9TSW6ufioetGBqMJc4zUg.JPEG/20240722_193843.jpg?type=w800",
     "images": [
@@ -7456,7 +7456,7 @@
     "url": "https://blog.naver.com/cybereunny/223564211900",
     "place": {
       "name": "교자야 니노니 솔라리아플라자점",
-      "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB2F",
+      "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 B2F",
       "lat": 33.5891046,
       "lng": 130.3988598,
       "tel": "092-733-7522",
@@ -7466,7 +7466,7 @@
     "all_places": [
       {
         "name": "교자야 니노니 솔라리아플라자점",
-        "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB2F",
+        "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 B2F",
         "lat": 33.5891046,
         "lng": 130.3988598,
         "tel": "092-733-7522",
@@ -7474,7 +7474,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 주오구",
     "food_type": "중식/아시안",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjhfNTIg/MDAxNzI0ODQyNzIyODc4.uZuMO8FInxaYGNIn5kRXT-H01itmCJ6--VzEW3Ua2bcg.NVjqBd24O_T9h8rYWGMXzln-fi0x-C5yJzSSDhifoJgg.JPEG/SE-e157bca5-6759-4802-994d-11352a8be385.jpg?type=w800",
     "images": [
@@ -7496,7 +7496,7 @@
     "url": "https://blog.naver.com/cybereunny/223559889723",
     "place": {
       "name": "더 시티 베이커리 텐진 솔라리아 플라자",
-      "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB2F",
+      "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 B2F",
       "lat": 33.5891046,
       "lng": 130.3988598,
       "tel": "092-738-2220",
@@ -7506,7 +7506,7 @@
     "all_places": [
       {
         "name": "더 시티 베이커리 텐진 솔라리아 플라자",
-        "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB2F",
+        "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 B2F",
         "lat": 33.5891046,
         "lng": 130.3988598,
         "tel": "092-738-2220",
@@ -7514,7 +7514,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 주오구",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjVfMjU0/MDAxNzI0NTUwNTgyNjE2.ryp5pYgy9tTMgEh_UJ-en6sLvX1mf8JqjXwgqnt_SC8g.oCEc8tMvPCIaxVgY8TXjVIX2ZacKz3Ke-bJyoCiuF-gg.JPEG/SE-edc01ad5-8af0-4365-a7ab-bfee97f528b7.jpg?type=w800",
     "images": [
@@ -7536,7 +7536,7 @@
     "url": "https://blog.naver.com/cybereunny/223551706231",
     "place": {
       "name": "도토루 커피 솔라리아 플라자점",
-      "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB1F",
+      "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 B1F",
       "lat": 33.5891046,
       "lng": 130.3988598,
       "tel": "092-733-7008",
@@ -7546,7 +7546,7 @@
     "all_places": [
       {
         "name": "도토루 커피 솔라리아 플라자점",
-        "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB1F",
+        "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 B1F",
         "lat": 33.5891046,
         "lng": 130.3988598,
         "tel": "092-733-7008",
@@ -7554,7 +7554,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 주오구",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA4MThfMjkw/MDAxNzIzOTQ2ODI5NzY0.eq7OjfdGR-nkEEyQyli_PD9ar81ydNdCkOMkdehMaDQg.aHfY19IRPe2xlvkONQwz8Q-QeEzq44ec-Rp6CA2xtAEg.JPEG/topimg_dcs.jpg?type=w800",
     "images": [
@@ -7576,7 +7576,7 @@
     "url": "https://blog.naver.com/cybereunny/223550273988",
     "place": {
       "name": "키쿠타로 하카타점",
-      "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多1F",
+      "address": "후쿠오카현 후쿠오카시 하카타구 하카타에키히가시 2-1-1 미야코 호텔 하카타 1F",
       "lat": 33.5898218,
       "lng": 130.4226816,
       "tel": "092-441-6006",
@@ -7586,7 +7586,7 @@
     "all_places": [
       {
         "name": "키쿠타로 하카타점",
-        "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多1F",
+        "address": "후쿠오카현 후쿠오카시 하카타구 하카타에키히가시 2-1-1 미야코 호텔 하카타 1F",
         "lat": 33.5898218,
         "lng": 130.4226816,
         "tel": "092-441-6006",
@@ -7594,7 +7594,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 하카타구",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA4MTVfNjIg/MDAxNzIzNjk4ODQ5Mjkx.53u8-UM82qveVJqii6DSA87_IS8rpzFaJs991mdK8jUg._EpspWF2am_HzEVq-W26JEWTnWDnu9O80en2exdFL1Mg.JPEG/20240722_193822.jpg?type=w800",
     "images": [
@@ -7616,7 +7616,7 @@
     "url": "https://blog.naver.com/cybereunny/223548828266",
     "place": {
       "name": "호시노커피 솔라리아플라자점",
-      "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザ6F",
+      "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 6F",
       "lat": 33.5891046,
       "lng": 130.3988598,
       "tel": "092-406-4761",
@@ -7626,7 +7626,7 @@
     "all_places": [
       {
         "name": "호시노커피 솔라리아플라자점",
-        "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザ6F",
+        "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 6F",
         "lat": 33.5891046,
         "lng": 130.3988598,
         "tel": "092-406-4761",
@@ -7634,7 +7634,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 주오구",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA4MTVfMjgg/MDAxNzIzNjk4NDU1MjA1.KBMie_Lx0RLhhAhcrc7tt3Rig_5cgu8Ld6u1cohFmjAg.so7XJ_0j5wVY3dBaOBvolqUPmYlHvDCrfl82AvstkQkg.JPEG/SE-864b89e2-bf95-4c39-b167-21b27bc4fcc0.jpg?type=w800",
     "images": [
@@ -7976,7 +7976,7 @@
     "url": "https://blog.naver.com/cybereunny/223528053236",
     "place": {
       "name": "니쿠이치 야쿠인점",
-      "address": "福岡県 福岡市 中央区 薬院3-16-34 ヤマトビル1F",
+      "address": "후쿠오카현 후쿠오카시 주오구 야쿠인 3-16-34 야마토 빌딩 1F",
       "lat": 33.5811638,
       "lng": 130.39890988,
       "tel": "092-522-4129",
@@ -7986,7 +7986,7 @@
     "all_places": [
       {
         "name": "니쿠이치 야쿠인점",
-        "address": "福岡県 福岡市 中央区 薬院3-16-34 ヤマトビル1F",
+        "address": "후쿠오카현 후쿠오카시 주오구 야쿠인 3-16-34 야마토 빌딩 1F",
         "lat": 33.5811638,
         "lng": 130.39890988,
         "tel": "092-522-4129",
@@ -7994,7 +7994,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 주오구",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA3MjhfMTQ1/MDAxNzIyMTMzNjAzNjYy.ir0q8xLUgrvLwyOOCBSelo9JFMXdTh5plCxVCFlePX4g.YGbFHBu7wwnnaJGO_RXsGDB87K9BHEtVzYzTyhPr2u8g.JPEG/20240720_211635.jpg?type=w800",
     "images": [
@@ -8056,7 +8056,7 @@
     "url": "https://blog.naver.com/cybereunny/223523747826",
     "place": {
       "name": "하치베 솔라리아플라자점",
-      "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザ6F",
+      "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 6F",
       "lat": 33.5891046,
       "lng": 130.3988598,
       "tel": "092-733-7629",
@@ -8066,7 +8066,7 @@
     "all_places": [
       {
         "name": "하치베 솔라리아플라자점",
-        "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザ6F",
+        "address": "후쿠오카현 후쿠오카시 주오구 텐진 2-2-43 솔라리아 플라자 6F",
         "lat": 33.5891046,
         "lng": 130.3988598,
         "tel": "092-733-7629",
@@ -8074,7 +8074,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "福岡県 福岡市",
+    "city_district": "후쿠오카 주오구",
     "food_type": "일식/초밥",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA3MjRfMTcw/MDAxNzIxNzkxMzczNjk4.JUBcUIKcjg367fYedj3JHM8XVJhyDT_9eMLC_dtGSpwg.fETTKyIDWZ3SlPFeMS3NbZU0_R_AvxDKAtw__3gXrE4g.JPEG/SE-342599fd-3092-4f3d-9345-191c1afb7cf1.jpg?type=w800",
     "images": [
@@ -8676,7 +8676,7 @@
     "url": "https://blog.naver.com/cybereunny/223465160961",
     "place": {
       "name": "Cafe & Rest 21",
-      "address": "大阪府 大阪市 中央区 日本橋1-1-18 アソービル1F",
+      "address": "오사카부 오사카시 주오구 닛폰바시 1-1-18 아소 빌딩 1F",
       "lat": 34.668668537197,
       "lng": 135.50631877598,
       "tel": "06-6213-4542",
@@ -8686,7 +8686,7 @@
     "all_places": [
       {
         "name": "Cafe & Rest 21",
-        "address": "大阪府 大阪市 中央区 日本橋1-1-18 アソービル1F",
+        "address": "오사카부 오사카시 주오구 닛폰바시 1-1-18 아소 빌딩 1F",
         "lat": 34.668668537197,
         "lng": 135.50631877598,
         "tel": "06-6213-4542",
@@ -8694,7 +8694,7 @@
         "bookingUrl": ""
       }
     ],
-    "city_district": "大阪府 大阪市",
+    "city_district": "오사카 주오구",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA1MzFfNzYg/MDAxNzE3MTY1MDczNjky.oyMn21ZKacOZ-foB7gGDrdRCA7O_lD945XadVt3Myjgg.hn8Radc5Hny3Sr1IyQ-1AFlqIReNZJPE9JQZeH2lFZ8g.JPEG/SE-cbf0fadf-20d5-4702-8551-338353351705.jpg?type=w800",
     "images": [

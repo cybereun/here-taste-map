@@ -22,7 +22,10 @@ export function parseAddressRegion(address: string, cityDistrictFallback: string
   let rawProvince = parts[0];
   let province = '기타';
 
-  if (rawProvince.includes('서울')) province = '서울';
+  if (rawProvince.includes('도쿄')) province = '도쿄';
+  else if (rawProvince.includes('후쿠오카')) province = '후쿠오카';
+  else if (rawProvince.includes('오사카')) province = '오사카';
+  else if (rawProvince.includes('서울')) province = '서울';
   else if (rawProvince.includes('대구')) province = '대구';
   else if (rawProvince.includes('부산')) province = '부산';
   else if (rawProvince.includes('인천')) province = '인천';
@@ -46,7 +49,9 @@ export function parseAddressRegion(address: string, cityDistrictFallback: string
     district = parts[1];
     // 경기 성남시 분당구 처럼 구가 더 붙는 경우 처리
     if (parts.length >= 3 && (parts[2].endsWith('구') || parts[2].endsWith('区'))) {
-      district = `${parts[1]} ${parts[2]}`;
+      district = ['도쿄', '후쿠오카', '오사카'].includes(province)
+        ? parts[2]
+        : `${parts[1]} ${parts[2]}`;
     }
   }
 
