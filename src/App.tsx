@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Place, SortType } from './types/place';
+import { Place, SortType, TravelScope } from './types/place';
 import { Navbar } from './components/Navbar';
 import { FilterBar } from './components/FilterBar';
 import { MapView } from './components/MapView';
@@ -9,6 +9,16 @@ import { LocationSelectModal } from './components/LocationSelectModal';
 import { calculateDistance } from './utils/geo';
 import { parseAddressRegion } from './utils/region';
 import { LocationPreset } from './utils/locations';
+
+const getPlaceCountry = (place: Place): string => {
+  if (place.country) return place.country;
+
+  const text = `${place.city} ${place.address} ${place.sub_category || ''}`;
+  if (text.includes('일본') || text.includes('日本') || /[ぁ-んァ-ヶ一-龯ー]/.test(place.address || '')) {
+    return '일본';
+  }
+  return '대한민국';
+};
 
 export const App: React.FC = () => {
   const [allPlaces, setAllPlaces] = useState<Place[]>([]);
@@ -20,6 +30,8 @@ export const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('전체');
   const [selectedProvince, setSelectedProvince] = useState<string>('전체');
   const [selectedDistrict, setSelectedDistrict] = useState<string>('전체');
+  const [selectedScope, setSelectedScope] = useState<TravelScope>('국내');
+  const [selectedCountry, setSelectedCountry] = useState<string>('전체');
   const [sortType, setSortType] = useState<SortType>('latest');
 
   // BottomSheet State (떨림 방지 및 검색 시 자동 최소화)
@@ -100,34 +112,78 @@ export const App: React.FC = () => {
 
   // Reset all filters
   const handleResetFilters = () => {
+    setSelectedScope('국내');
+    setSelectedCountry('전체');
     setSelectedCategory('전체');
     setSelectedProvince('전체');
     setSelectedDistrict('전체');
     setSearchQuery('');
   };
 
-  const isFiltered = selectedCategory !== '전체' || selectedProvince !== '전체' || selectedDistrict !== '전체' || searchQuery !== '';
+  const handleSelectScope = (scope: TravelScope) => {
+    setSelectedScope(scope);
+    setSelectedCountry('전체');
+    setSelectedCategory('전체');
+    setSelectedProvince('전체');
+    setSelectedDistrict('전체');
+    setSelectedPlace(null);
+    setModalPlace(null);
+  };
+
+  const handleSelectCountry = (country: string) => {
+    setSelectedCountry(country);
+    setSelectedCategory('전체');
+    setSelectedProvince('전체');
+    setSelectedDistrict('전체');
+    setSelectedPlace(null);
+    setModalPlace(null);
+  };
+
+  const isFiltered = selectedScope !== '국내' || selectedCountry !== '전체' || selectedCategory !== '전체' || selectedProvince !== '전체' || selectedDistrict !== '전체' || searchQuery !== '';
+
+  // 국내/해외 탭에 맞는 장소만 필터 옵션과 지도에 사용
+  const scopePlaces = useMemo(() => {
+    return allPlaces.filter((place) => {
+      const country = getPlaceCountry(place);
+      return selectedScope === '해외' ? country !== '대한민국' : country === '대한민국';
+    });
+  }, [allPlaces, selectedScope]);
+
+  const countries = useMemo(() => {
+    const countrySet = new Set<string>();
+    allPlaces.forEach((place) => {
+      const country = getPlaceCountry(place);
+      if (country !== '대한민국') countrySet.add(country);
+    });
+    return ['전체', ...Array.from(countrySet).sort((a, b) => a.localeCompare(b, 'ko'))];
+  }, [allPlaces]);
+
+  const placesForFilters = useMemo(() => {
+    if (selectedScope !== '해외' || selectedCountry === '전체') return scopePlaces;
+    return scopePlaces.filter((place) => getPlaceCountry(place) === selectedCountry);
+  }, [scopePlaces, selectedScope, selectedCountry]);
 
   // 1. Categories list
   const categories = useMemo(() => {
     const cats = new Set<string>();
-    allPlaces.forEach((p) => {
+    placesForFilters.forEach((p) => {
       if (p.category) cats.add(p.category);
     });
     return ['전체', ...Array.from(cats)];
-  }, [allPlaces]);
+  }, [placesForFilters]);
 
   // 2. Parsed Regions & Provinces list
   const placesWithRegions = useMemo(() => {
-    return allPlaces.map((p) => {
+    return placesForFilters.map((p) => {
       const region = parseAddressRegion(p.address, p.city);
       return {
         ...p,
+        country: getPlaceCountry(p),
         parsedProvince: region.province,
         parsedDistrict: region.district
       };
     });
-  }, [allPlaces]);
+  }, [placesForFilters]);
 
   const provinces = useMemo(() => {
     const provCountMap = new Map<string, number>();
@@ -256,12 +312,17 @@ export const App: React.FC = () => {
           hasLocation={!!userLocation}
           locationName={locationName}
           onOpenLocationModal={() => setIsLocationModalOpen(true)}
-          totalCount={allPlaces.length}
+          totalCount={placesForFilters.length}
           filteredCount={filteredPlaces.length}
         />
 
         {/* 3-Level Dropdown Filter Bar (종류, 도시, 구) */}
         <FilterBar
+          selectedScope={selectedScope}
+          onSelectScope={handleSelectScope}
+          countries={countries}
+          selectedCountry={selectedCountry}
+          onSelectCountry={handleSelectCountry}
           categories={categories}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}

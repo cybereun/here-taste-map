@@ -8,6 +8,7 @@ export interface Place {
   tel?: string;
   place_id?: string;
   city: string;
+  country?: string;
   category: string;
   sub_category?: string;
   date: string;
@@ -19,3 +20,4 @@ export interface Place {
 }
 
 export type SortType = 'latest' | 'distance' | 'name';
+export type TravelScope = '국내' | '해외';

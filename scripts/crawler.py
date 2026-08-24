@@ -31,7 +31,7 @@ FOOD_TYPE_RULES = [
 # 장소명에 비해 본문에 노출되는 일반 키워드가 우선되어 잘못 분류되는 장소들
 # (예: 블로그 글의 공통 카테고리명에 "카페"가 포함되는 경우)을 위한 수동 보정.
 def normalize_place_name(place_name):
-    return re.sub(r"[^0-9a-z가-힣]+", "", (place_name or "").lower())
+    return re.sub(r"[^0-9a-z가-힣ぁ-んァ-ヶ一-龯ー]+", "", (place_name or "").lower())
 
 
 MANUAL_FOOD_TYPE_OVERRIDES = {
@@ -99,6 +99,18 @@ MANUAL_FOOD_TYPE_OVERRIDES = {
     "js가든 더현대 대구": "중식/아시안",
     # 한식
     "면장수 수성못 본점": "한식/고기",
+    # 일본
+    "넘버슈가 오모테산도점": "카페/디저트",
+    "스타벅스 후쿠오카 하카타 미야코 호텔점": "카페/디저트",
+    "하카타 모츠나베 오야마 미야코 호텔 하카타": "일식/초밥",
+    "교자야 니노니 솔라리아플라자점": "중식/아시안",
+    "더 시티 베이커리 텐진 솔라리아 플라자": "카페/디저트",
+    "도토루 커피 솔라리아 플라자점": "카페/디저트",
+    "키쿠타로 하카타점": "카페/디저트",
+    "호시노커피 솔라리아플라자점": "카페/디저트",
+    "니쿠이치 야쿠인점": "한식/고기",
+    "하치베 솔라리아플라자점": "일식/초밥",
+    "Cafe & Rest 21": "카페/디저트",
 }
 
 MANUAL_FOOD_TYPE_OVERRIDES = {
@@ -120,6 +132,150 @@ MANUAL_PLACE_OVERRIDES = {
             "bookingUrl": "",
         },
         "city_district": "대구 수성구",
+        "country": "대한민국",
+    },
+    "223812967943": {
+        "place": {
+            "name": "넘버슈가 오모테산도점",
+            "address": "東京都 渋谷区 神宮前5-11-11 1F",
+            "lat": 35.666462,
+            "lng": 139.7061825,
+            "tel": "03-6427-3334",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "東京都 渋谷区",
+        "country": "일본",
+    },
+    "223734380380": {
+        "place": {
+            "name": "스타벅스 후쿠오카 하카타 미야코 호텔점",
+            "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多1F",
+            "lat": 33.5898218,
+            "lng": 130.4226816,
+            "tel": "092-260-7302",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223568282171": {
+        "place": {
+            "name": "하카타 모츠나베 오야마 미야코 호텔 하카타",
+            "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多2F",
+            "lat": 33.5898218,
+            "lng": 130.4226816,
+            "tel": "092-411-5071",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223564211900": {
+        "place": {
+            "name": "교자야 니노니 솔라리아플라자점",
+            "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB2F",
+            "lat": 33.5891046,
+            "lng": 130.3988598,
+            "tel": "092-733-7522",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223559889723": {
+        "place": {
+            "name": "더 시티 베이커리 텐진 솔라리아 플라자",
+            "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB2F",
+            "lat": 33.5891046,
+            "lng": 130.3988598,
+            "tel": "092-738-2220",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223551706231": {
+        "place": {
+            "name": "도토루 커피 솔라리아 플라자점",
+            "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザB1F",
+            "lat": 33.5891046,
+            "lng": 130.3988598,
+            "tel": "092-733-7008",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223550273988": {
+        "place": {
+            "name": "키쿠타로 하카타점",
+            "address": "福岡県 福岡市 博多区 博多駅東2-1-1 都ホテル博多1F",
+            "lat": 33.5898218,
+            "lng": 130.4226816,
+            "tel": "092-441-6006",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223548828266": {
+        "place": {
+            "name": "호시노커피 솔라리아플라자점",
+            "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザ6F",
+            "lat": 33.5891046,
+            "lng": 130.3988598,
+            "tel": "092-406-4761",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223528053236": {
+        "place": {
+            "name": "니쿠이치 야쿠인점",
+            "address": "福岡県 福岡市 中央区 薬院3-16-34 ヤマトビル1F",
+            "lat": 33.5811638,
+            "lng": 130.39890988,
+            "tel": "092-522-4129",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223523747826": {
+        "place": {
+            "name": "하치베 솔라리아플라자점",
+            "address": "福岡県 福岡市 中央区 天神2-2-43 ソラリアプラザ6F",
+            "lat": 33.5891046,
+            "lng": 130.3988598,
+            "tel": "092-733-7629",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "福岡県 福岡市",
+        "country": "일본",
+    },
+    "223465160961": {
+        "place": {
+            "name": "Cafe & Rest 21",
+            "address": "大阪府 大阪市 中央区 日本橋1-1-18 アソービル1F",
+            "lat": 34.668668537197,
+            "lng": 135.50631877598,
+            "tel": "06-6213-4542",
+            "placeId": "",
+            "bookingUrl": "",
+        },
+        "city_district": "大阪府 大阪市",
+        "country": "일본",
     },
 }
 
@@ -152,6 +308,13 @@ def extract_city_district(address):
     elif len(parts) == 1:
         return parts[0]
     return "기타"
+
+
+def extract_country(address, city_district="", sub_category=""):
+    text = f"{address} {city_district} {sub_category}"
+    if "일본" in text or "日本" in text or re.search(r"[ぁ-んァ-ヶ一-龯ー]", address or ""):
+        return "일본"
+    return "대한민국"
 
 def get_all_post_headers():
     posts = []
@@ -287,6 +450,7 @@ def parse_post_detail(log_no, cached_data=None):
             "place": primary_place,
             "all_places": places,
             "city_district": city_district,
+            "country": extract_country(primary_place["address"], city_district, sub_category),
             "food_type": food_type,
             "thumbnail": images[0] if images else "",
             "images": images[:5],
@@ -343,7 +507,14 @@ def run_crawler():
             }
             result["all_places"] = [result["place"].copy()]
             result["city_district"] = manual_place_override["city_district"]
+            result["country"] = manual_place_override.get("country", result.get("country", "대한민국"))
             result["parsed_success"] = True
+
+        result["country"] = result.get("country") or extract_country(
+            result.get("place", {}).get("address", ""),
+            result.get("city_district", ""),
+            result.get("sub_category", ""),
+        )
 
         # 기존 캐시를 재사용하는 경우에도 수동 분류 보정이 유지되도록 적용
         place_name = result.get("place", {}).get("name", "")
@@ -377,6 +548,7 @@ def run_crawler():
                 "tel": place.get("tel", ""),
                 "place_id": place.get("placeId", ""),
                 "city": item["city_district"],
+                "country": item.get("country", "대한민국"),
                 "category": item["food_type"],
                 "sub_category": item.get("sub_category", ""),
                 "date": item.get("date", ""),

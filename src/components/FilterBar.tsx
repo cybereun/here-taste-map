@@ -1,8 +1,15 @@
 import React from 'react';
-import { SortType } from '../types/place';
-import { Utensils, MapPin, Building2, ArrowUpDown, RotateCcw } from 'lucide-react';
+import { SortType, TravelScope } from '../types/place';
+import { Utensils, MapPin, Building2, ArrowUpDown, RotateCcw, Globe2 } from 'lucide-react';
 
 interface FilterBarProps {
+  selectedScope: TravelScope;
+  onSelectScope: (scope: TravelScope) => void;
+
+  countries: string[];
+  selectedCountry: string;
+  onSelectCountry: (country: string) => void;
+
   categories: string[];
   selectedCategory: string;
   onSelectCategory: (cat: string) => void;
@@ -23,6 +30,11 @@ interface FilterBarProps {
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
+  selectedScope,
+  onSelectScope,
+  countries,
+  selectedCountry,
+  onSelectCountry,
   categories,
   selectedCategory,
   onSelectCategory,
@@ -40,7 +52,46 @@ export const FilterBar: React.FC<FilterBarProps> = ({
 }) => {
   return (
     <div className="bg-white border-b border-gray-100 px-3 py-2 shadow-xs flex flex-col gap-2 z-20">
-      {/* 1st Row: 3 Dropdown Selects (종류, 도시, 구) */}
+      {/* 1. 국내/해외 탭 */}
+      <div className="grid grid-cols-2 gap-1 rounded-xl bg-gray-100/90 p-1">
+        {(['국내', '해외'] as TravelScope[]).map((scope) => (
+          <button
+            key={scope}
+            type="button"
+            onClick={() => onSelectScope(scope)}
+            aria-pressed={selectedScope === scope}
+            className={`rounded-lg py-1.5 text-xs font-extrabold transition-all ${
+              selectedScope === scope
+                ? 'bg-white text-orange-600 shadow-sm'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            {scope === '국내' ? '🇰🇷 국내' : '✈️ 해외'}
+          </button>
+        ))}
+      </div>
+
+      {/* 2. 해외 국가 선택 */}
+      {selectedScope === '해외' && (
+        <div className="relative flex items-center">
+          <Globe2 className="w-3.5 h-3.5 text-orange-500 absolute left-2 pointer-events-none" />
+          <select
+            value={selectedCountry}
+            onChange={(e) => onSelectCountry(e.target.value)}
+            aria-label="국가 선택"
+            className="w-full text-xs font-semibold bg-gray-100/90 text-gray-800 rounded-xl pl-6 pr-4 py-2 border border-transparent focus:border-orange-400 focus:bg-white focus:outline-none appearance-none cursor-pointer truncate"
+          >
+            {countries.map((country) => (
+              <option key={country} value={country}>
+                {country === '전체' ? '국가 (전체)' : country}
+              </option>
+            ))}
+          </select>
+          <span className="text-[10px] text-gray-400 absolute right-2 pointer-events-none">▼</span>
+        </div>
+      )}
+
+      {/* 3. 3단 드롭다운 (종류, 도시, 구) */}
       <div className="grid grid-cols-3 gap-1.5">
         {/* 1. 음식 종류 드롭다운 */}
         <div className="relative flex items-center">
@@ -118,7 +169,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               <span>필터 초기화</span>
             </button>
           ) : (
-            <span className="text-[11px] text-gray-400">💡 드롭다운으로 원하는 지역과 음식을 선택하세요</span>
+            <span className="text-[11px] text-gray-400">
+              {selectedScope === '해외' ? '💡 국가를 선택해 여행 기록을 모아보세요.' : '💡 드롭다운으로 원하는 지역과 음식을 선택하세요'}
+            </span>
           )}
         </div>
 

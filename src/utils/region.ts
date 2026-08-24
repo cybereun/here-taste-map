@@ -45,7 +45,7 @@ export function parseAddressRegion(address: string, cityDistrictFallback: string
   if (parts.length >= 2) {
     district = parts[1];
     // 경기 성남시 분당구 처럼 구가 더 붙는 경우 처리
-    if (parts.length >= 3 && parts[2].endsWith('구')) {
+    if (parts.length >= 3 && (parts[2].endsWith('구') || parts[2].endsWith('区'))) {
       district = `${parts[1]} ${parts[2]}`;
     }
   }
