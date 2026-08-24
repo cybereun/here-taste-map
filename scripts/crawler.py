@@ -50,6 +50,8 @@ MANUAL_FOOD_TYPE_OVERRIDES = {
     "소수미반상": "한식/고기",
     "몽탄 제주점": "한식/고기",
     "스모크룸": "한식/고기",
+    "달빛에구운고등어 대구들안길점": "한식/고기",
+    "달빛에 구운 고등어 대구들안길점": "한식/고기",
     "호랑이장칼국수": "한식/고기",
     "호랑이장칼국수 수성점": "한식/고기",
     # 양식/브런치
@@ -102,6 +104,23 @@ MANUAL_FOOD_TYPE_OVERRIDES = {
 MANUAL_FOOD_TYPE_OVERRIDES = {
     normalize_place_name(name): category
     for name, category in MANUAL_FOOD_TYPE_OVERRIDES.items()
+}
+
+
+# 장소 태그가 누락된 글도 지도에서 빠지지 않도록 하는 수동 장소 정보.
+MANUAL_PLACE_OVERRIDES = {
+    "224386821364": {
+        "place": {
+            "name": "달빛에구운고등어 대구들안길점",
+            "address": "대구광역시 수성구 청수로 92 1층",
+            "lat": 35.8400579,
+            "lng": 128.6180324,
+            "tel": "053-764-9292",
+            "placeId": "2072040626",
+            "bookingUrl": "",
+        },
+        "city_district": "대구 수성구",
+    },
 }
 
 
@@ -315,6 +334,16 @@ def run_crawler():
             result["date"] = header.get("addDate", "")
             new_count += 1
             time.sleep(0.05) # 부하 방지
+
+        manual_place_override = MANUAL_PLACE_OVERRIDES.get(log_no)
+        if manual_place_override:
+            result["place"] = {
+                **result.get("place", {}),
+                **manual_place_override["place"],
+            }
+            result["all_places"] = [result["place"].copy()]
+            result["city_district"] = manual_place_override["city_district"]
+            result["parsed_success"] = True
 
         # 기존 캐시를 재사용하는 경우에도 수동 분류 보정이 유지되도록 적용
         place_name = result.get("place", {}).get("name", "")

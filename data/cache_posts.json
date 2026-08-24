@@ -5,17 +5,27 @@
     "sub_category": "카페·맛집 어때-대구",
     "url": "https://blog.naver.com/cybereunny/224386821364",
     "place": {
-      "name": "450도 화덕 생선구이와 12가지 무한 셀프바! 대구 들안길 달빛에구운고등어 점심 솔직 솔루션",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
+      "name": "달빛에구운고등어 대구들안길점",
+      "address": "대구광역시 수성구 청수로 92 1층",
+      "lat": 35.8400579,
+      "lng": 128.6180324,
+      "tel": "053-764-9292",
+      "placeId": "2072040626",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "대구",
-    "food_type": "카페/디저트",
+    "all_places": [
+      {
+        "name": "달빛에구운고등어 대구들안길점",
+        "address": "대구광역시 수성구 청수로 92 1층",
+        "lat": 35.8400579,
+        "lng": 128.6180324,
+        "tel": "053-764-9292",
+        "placeId": "2072040626",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "대구 수성구",
+    "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MjJfMTMy/MDAxNzg3Mzk2OTYzMzAz.rkbiAd6NP-Ih6zIedxcM7ngP3wcUI-8yCp2QUgFWWeUg.6mQx8oITsyNbCab3IdM-KGoI0KTkGdnSFBr4b3JWuugg.JPEG/SE-099f3d73-53ff-4f3c-a21a-106b2a107fcf.jpg?type=w800",
     "images": [
       "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MjJfMTMy/MDAxNzg3Mzk2OTYzMzAz.rkbiAd6NP-Ih6zIedxcM7ngP3wcUI-8yCp2QUgFWWeUg.6mQx8oITsyNbCab3IdM-KGoI0KTkGdnSFBr4b3JWuugg.JPEG/SE-099f3d73-53ff-4f3c-a21a-106b2a107fcf.jpg?type=w800",
