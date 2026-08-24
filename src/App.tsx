@@ -346,6 +346,7 @@ export const App: React.FC = () => {
           onSelectPlace={(place) => setSelectedPlace(place)}
           onOpenDetail={(place) => setModalPlace(place)}
           userLocation={userLocation}
+          isOverseas={selectedScope === '해외'}
         />
 
         {/* Mobile Bottom Sheet List (Confined inside mobile width) */}
