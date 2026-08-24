@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Place } from '../types/place';
-import { formatDistance, openNaverMapRoute } from '../utils/geo';
+import { formatDistance, openGoogleMapsRoute, openNaverMapRoute } from '../utils/geo';
 import { X, MapPin, Phone, ExternalLink, Navigation2, Calendar, Share2, Copy, Check, ChevronLeft, ChevronRight, ZoomIn, Image as ImageIcon } from 'lucide-react';
 
 interface PlaceDetailModalProps {
   place: Place | null;
   onClose: () => void;
+  isOverseas: boolean;
 }
 
-export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClose }) => {
+export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClose, isOverseas }) => {
   const [copied, setCopied] = useState(false);
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
   const [imageErrorMap, setImageErrorMap] = useState<Record<number, boolean>>({});
@@ -204,11 +205,21 @@ export const PlaceDetailModal: React.FC<PlaceDetailModalProps> = ({ place, onClo
         {/* Bottom Fixed Action Buttons */}
         <div className="p-2.5 bg-white border-t border-gray-100 flex items-center gap-2 shrink-0">
           <button
-            onClick={() => openNaverMapRoute(place.place_name, place.lat, place.lng, place.place_id)}
-            className="flex-1 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md shadow-green-100 active:scale-[0.98] transition-all text-xs sm:text-sm cursor-pointer"
+            onClick={() => {
+              if (isOverseas) {
+                openGoogleMapsRoute(place.place_name, place.lat, place.lng);
+              } else {
+                openNaverMapRoute(place.place_name, place.lat, place.lng, place.place_id);
+              }
+            }}
+            className={`flex-1 text-white font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md active:scale-[0.98] transition-all text-xs sm:text-sm cursor-pointer ${
+              isOverseas
+                ? 'bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 shadow-blue-100'
+                : 'bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 shadow-green-100'
+            }`}
           >
             <Navigation2 className="w-3.5 h-3.5 fill-white" />
-            <span>네이버 지도 길찾기</span>
+            <span>{isOverseas ? 'Google Maps 길찾기' : '네이버 지도 길찾기'}</span>
           </button>
 
           <a

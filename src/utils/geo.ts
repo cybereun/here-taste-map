@@ -62,3 +62,17 @@ export function openNaverMapRoute(name: string, lat: number, lng: number, placeI
     window.open(pcUrl, '_blank');
   }
 }
+
+// 해외 장소는 Google Maps 길찾기로 연결한다. 출발지는 Google Maps의 현재 위치를 사용한다.
+export function openGoogleMapsRoute(name: string, lat: number, lng: number) {
+  const cleanName = name.trim();
+  const destination = Number.isFinite(lat) && Number.isFinite(lng)
+    ? `${lat},${lng}`
+    : cleanName;
+  const params = new URLSearchParams({
+    api: '1',
+    destination
+  });
+
+  window.open(`https://www.google.com/maps/dir/?${params.toString()}`, '_blank', 'noopener,noreferrer');
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Place } from '../types/place';
-import { formatDistance, openNaverMapRoute } from '../utils/geo';
+import { formatDistance, openGoogleMapsRoute, openNaverMapRoute } from '../utils/geo';
 import { MapPin, Navigation2, ExternalLink } from 'lucide-react';
 
 interface PlaceCardProps {
@@ -8,13 +8,15 @@ interface PlaceCardProps {
   isSelected: boolean;
   onSelect: (place: Place) => void;
   onOpenDetail: (place: Place) => void;
+  isOverseas: boolean;
 }
 
 export const PlaceCard: React.FC<PlaceCardProps> = ({
   place,
   isSelected,
   onSelect,
-  onOpenDetail
+  onOpenDetail,
+  isOverseas
 }) => {
   return (
     <div
@@ -84,12 +86,20 @@ export const PlaceCard: React.FC<PlaceCardProps> = ({
           <button
             onClick={(e) => {
               e.stopPropagation();
-              openNaverMapRoute(place.place_name, place.lat, place.lng, place.place_id);
+              if (isOverseas) {
+                openGoogleMapsRoute(place.place_name, place.lat, place.lng);
+              } else {
+                openNaverMapRoute(place.place_name, place.lat, place.lng, place.place_id);
+              }
             }}
-            className="py-1 px-2 text-[11px] font-semibold text-green-700 bg-green-50 hover:bg-green-100 rounded-lg flex items-center gap-1 transition-colors"
-            title="네이버 지도 길찾기"
+            className={`py-1 px-2 text-[11px] font-semibold rounded-lg flex items-center gap-1 transition-colors ${
+              isOverseas
+                ? 'text-blue-700 bg-blue-50 hover:bg-blue-100'
+                : 'text-green-700 bg-green-50 hover:bg-green-100'
+            }`}
+            title={isOverseas ? 'Google Maps 길찾기' : '네이버 지도 길찾기'}
           >
-            <Navigation2 className="w-3 h-3 fill-green-600 text-green-600" />
+            <Navigation2 className={`w-3 h-3 ${isOverseas ? 'fill-blue-600 text-blue-600' : 'fill-green-600 text-green-600'}`} />
             <span>길찾기</span>
           </button>
         </div>

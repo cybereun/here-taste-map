@@ -12,6 +12,7 @@ interface BottomSheetProps {
   onOpenDetail: (place: Place) => void;
   sheetState: SheetState;
   onToggleSheet: () => void;
+  isOverseas: boolean;
 }
 
 export const BottomSheet: React.FC<BottomSheetProps> = ({
@@ -20,7 +21,8 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
   onSelectPlace,
   onOpenDetail,
   sheetState,
-  onToggleSheet
+  onToggleSheet,
+  isOverseas
 }) => {
   const getHeightStyle = () => {
     switch (sheetState) {
@@ -82,6 +84,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
               isSelected={selectedPlace?.id === place.id}
               onSelect={onSelectPlace}
               onOpenDetail={onOpenDetail}
+              isOverseas={isOverseas}
             />
           ))
         )}

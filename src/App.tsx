@@ -357,12 +357,14 @@ export const App: React.FC = () => {
           onOpenDetail={(place) => setModalPlace(place)}
           sheetState={sheetState}
           onToggleSheet={handleToggleSheet}
+          isOverseas={selectedScope === '해외'}
         />
 
         {/* Place Detail Modal */}
         <PlaceDetailModal
           place={modalPlace}
           onClose={() => setModalPlace(null)}
+          isOverseas={selectedScope === '해외'}
         />
 
         {/* Location Select Modal */}
