@@ -4,7 +4,11 @@ on:
   schedule:
     # 매일 한국 시간 오전 4시 (UTC 19:00)
     - cron: '0 19 * * *'
-  workflow_dispatch: # 수동 실행 지원
+  workflow_dispatch: # 수동 실행 버튼 지원
+
+# GitHub Actions에 리포지토리 푸시(Write) 권한 부여 (exit code 128 해결)
+permissions:
+  contents: write
 
 jobs:
   crawl:
@@ -12,6 +16,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,7 +40,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add data/ public/data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: 일일 블로그 맛집 데이터 자동 갱신 [skip ci]" && git push)
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/places.json data/cache_posts.json public/data/places.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: 일일 블로그 맛집 데이터 자동 갱신 [skip ci]" && git push origin main)
