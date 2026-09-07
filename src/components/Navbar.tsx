@@ -36,7 +36,17 @@ export const Navbar: React.FC<NavbarProps> = ({
           />
           <div>
             <div className="flex items-center gap-1.5">
-              <h1 className="font-bold text-gray-900 text-sm leading-none">여기 어때 맛지도</h1>
+              <h1 className="font-bold text-gray-900 text-sm leading-none">
+                <button
+                  type="button"
+                  onClick={() => window.location.reload()}
+                  title="앱 새로고침"
+                  aria-label="여기 어때 맛지도 — 앱 새로고침"
+                  className="rounded cursor-pointer hover:text-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2"
+                >
+                  여기 어때 맛지도
+                </button>
+              </h1>
               <span className="bg-orange-100 text-orange-600 text-[10px] font-bold px-1.5 py-0.5 rounded-full">
                 {filteredCount} / {totalCount}곳
               </span>
