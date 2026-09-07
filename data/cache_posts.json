@@ -5,16 +5,26 @@
     "sub_category": "카페·맛집 어때-서울",
     "url": "https://m.blog.naver.com/cybereunny/224402201253",
     "place": {
-      "name": "아임도넛 성수 글레이즈드·생프렌치 크룰러 딸기초코 솔직",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "아임도넛 성수점",
+      "address": "서울특별시 성동구 연무장길 37-30 1층",
+      "lat": 37.5436518,
+      "lng": 127.0539316,
       "tel": "",
-      "placeId": "",
+      "placeId": "2074160970",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "서울",
+    "all_places": [
+      {
+        "name": "아임도넛 성수점",
+        "address": "서울특별시 성동구 연무장길 37-30 1층",
+        "lat": 37.5436518,
+        "lng": 127.0539316,
+        "tel": "",
+        "placeId": "2074160970",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "서울 성동구",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MDVfNjYg/MDAxNzg4NjE5MTUyNjQ1.IkJlDmbHwc190krBYzHFaJ36p-k_Aux1ATSbtYwDYFwg.c4wFvobjzvY2KmcISxBqTlA5WdUvxZg4o6KYPocEtFgg.PNG/image.png?type=w800",
@@ -647,7 +657,7 @@
     "logNo": "224356780061",
     "title": "교동 맛집 '무아담', 전복 가지튀김 덮밥 & 에비텐 묵은지 소바 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224356780061",
+    "url": "https://m.blog.naver.com/cybereunny/224356780061",
     "place": {
       "name": "교동 맛집 '무아담', 전복 가지튀김 덮밥 & 에비텐 묵은지 소바 솔직",
       "address": "",
@@ -659,6 +669,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "일식/초밥",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MjRfMTc4/MDAxNzg0ODgyMTA0MDMz.bSjvqwXEh5o9EpFJyon-ftGEda32ZMz5kSCiZmc6tkkg.DoxFsBMAApsml9CxXWiolIbARsfHwRvbVQpG9XGSzpAg.JPEG/20260711_195604.jpg?type=w800",
     "images": [
@@ -670,14 +681,13 @@
     ],
     "summary": "교동 맛집 '무아담', 전복 가지튀김 덮밥 & 에비텐 묵은지 소바 솔직 후기 대구 시내 나들이를 마치고 나면 늘 '오늘 뭐 먹지?'가 가장 큰 고민입니다. 덥고 지친 상태에서 맛있는 한 끼로 기분 전환을 하고 싶을 때, 요즘 대구 교동에서 소바와 덮밥으로 웨이팅이 끊이지 않는 핫플 '무아담'이 떠올랐습니다. 평소 웨이팅이 길어 망설였지만, 오늘은 타이밍 좋게 무아담 본점의 시그니처 메뉴를 즐길 수 있었습니다. 자리를 잡고 가장 유명하다는 두 가",
     "parsed_success": true,
-    "date": "2026. 7. 24.",
-    "country": "대한민국"
+    "date": "2026. 7. 24."
   },
   {
     "logNo": "224355770035",
     "title": "대구 3대 평양냉면 노포 '대동강', 서울 유명 맛집들과 어떻게 다를까? (메뉴, 가격 총정리)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224355770035",
+    "url": "https://m.blog.naver.com/cybereunny/224355770035",
     "place": {
       "name": "대구 3대 평양냉면 노포 '대동강', 서울 유명 맛집들과 어떻게 다를까? (메뉴, 가격 총정리)",
       "address": "",
@@ -689,6 +699,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MjNfNDMg/MDAxNzg0ODAyMzkxMTYw.C5mpXRjNNqvt7SBCiVgYlG153QrxUJN9UjCXghIA7H4g.QtdYibEm63c0atMtUYoWyelrL88ouZztyfvVVKWPtTog.JPEG/SE-ded5b844-f33c-495a-a37f-44fb683c3c27.jpg?type=w800",
     "images": [
@@ -700,14 +711,13 @@
     ],
     "summary": "대구 3대 평양냉면 노포 '대동강', 서울 유명 맛집들과 어떻게 다를까? (메뉴, 가격 총정리) •대구 3대 평양냉면:1965년 개업 이래 약 60년간 남구 봉덕동을 지켜온 이북 음식 전문점입니다. •담백함의 극치:자극적이지 않은 슴슴한 물냉면(12,000원)과 맵지 않고 정갈한 비빔냉면이 일품입니다.",
     "parsed_success": true,
-    "date": "2026. 7. 23.",
-    "country": "대한민국"
+    "date": "2026. 7. 23."
   },
   {
     "logNo": "224352406061",
     "title": "대구 수성구 우니카트에서 일주일치 식사빵 쟁여두는 법 (사워도우 냉동 보관 꿀팁)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224352406061",
+    "url": "https://m.blog.naver.com/cybereunny/224352406061",
     "place": {
       "name": "대구 수성구 우니카트에서 일주일치 식사빵 쟁여두는 법 (사워도우 냉동 보관 꿀팁)",
       "address": "",
@@ -719,6 +729,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MjBfMzMg/MDAxNzg0NTQ1NjM3Mjcz.Abb6ikoiV793-LTfuoYV70npGh00Wzy1rRJxP78zfz4g.W8wybGxkPzbeqFX6cV0VO554YAsOBmQcIAJ2E96o7uog.PNG/image.png?type=w800",
     "images": [
@@ -730,14 +741,13 @@
     ],
     "summary": "대구 수성구 우니카트에서 일주일치 식사빵 쟁여두는 법 (사워도우 냉동 보관 꿀팁) 📋 바쁜 현대인을 위한 30초 요약 위치 및 특징:대구 수성구 범어천로에 위치한 '우니카트(Unikart)'는 유럽풍 천연발효종(사워도우) 빵의 성지입니다.",
     "parsed_success": true,
-    "date": "2026. 7. 20.",
-    "country": "대한민국"
+    "date": "2026. 7. 20."
   },
   {
     "logNo": "224343999030",
     "title": "2026년 7월 서울 핫플 카페 지도: 성수, 연남, 신당 카페 투어 완벽 가이드",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/224343999030",
+    "url": "https://m.blog.naver.com/cybereunny/224343999030",
     "place": {
       "name": "2026년 7월 서울 핫플 카페 지도",
       "address": "",
@@ -749,6 +759,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MTJfMjI5/MDAxNzgzODIwNjY0MTg5.wj32vWI5EK66kfEjARxOsGHBr2mjXHuID1qHit4FYzQg._RPEauBd-4uO0T-e6xX3Yh8IIloXH8vkBxNQEIugzD4g.PNG/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_12%EC%9D%BC_%EC%98%A4%EC%A0%84_10_43_24.png?type=w800",
     "images": [
@@ -760,14 +771,13 @@
     ],
     "summary": "2026년 7월 서울 핫플 카페 지도: 성수, 연남, 신당 카페 투어 완벽 가이드 무더위와 장마가 오가는 2026년 7월, 다들 주말엔 어디서 시간을 보내시나요? 제가 최근 공간 트렌드를 분석하며 느낀 점은, 이제 사람들은 단순히 커피만 마시러 카페에 가지 않는다는 것입니다. 확실한 '공간의 경험'이 있거나, 뚜렷한 '전문성(스페셜티/디저트)'이 있는 곳만이 살아남고 있지요. 오늘은 제가 직접 다녀온 후기와 최신 트렌드 데이터를 바탕으로,202",
     "parsed_success": true,
-    "date": "2026. 7. 13.",
-    "country": "대한민국"
+    "date": "2026. 7. 13."
   },
   {
     "logNo": "224336556996",
     "title": "대구 범어동 피자 맛집 호보스피자 내돈내산 리뷰: 임실치즈 화덕피자 완벽 가이드",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224336556996",
+    "url": "https://m.blog.naver.com/cybereunny/224336556996",
     "place": {
       "name": "대구 범어동 피자 맛집 호보스피자",
       "address": "",
@@ -779,6 +789,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MDRfMTM0/MDAxNzgzMTc1NDU1ODI1.l-k9gTYJ98ou6T4qJgA4GWfW6jA-CY-qfyJzkrj1TnEg.Uw41e_Ja5hsBr1xkFqqR11nPI6bSbcqhnZUFTON1h9Ag.PNG/image.png?type=w800",
     "images": [
@@ -790,14 +801,13 @@
     ],
     "summary": "대구 범어동 피자 맛집 호보스피자 내돈내산 리뷰: 임실치즈 화덕피자 완벽 가이드 •본질은 압도적인 치즈:값싼 모짜렐라가 아닌 '임실치즈'를 폭포수처럼 쏟아부어 극강의 고소함을 자랑합니다. •화덕 베이스의 반전:무거운 토핑을 받쳐주는 도우는 화덕에서 구워내어 느끼함 없이 담백하고 쫄깃합니다.",
     "parsed_success": true,
-    "date": "2026. 7. 4.",
-    "country": "대한민국"
+    "date": "2026. 7. 4."
   },
   {
     "logNo": "224332270056",
     "title": "대구 범어동 점심 맛집, 이타국시 자가제면 들기름냉국수 내돈내산 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224332270056",
+    "url": "https://m.blog.naver.com/cybereunny/224332270056",
     "place": {
       "name": "대구 범어동 점심 맛집, 이타국시 자가제면 들기름냉국수",
       "address": "",
@@ -809,6 +819,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MzBfMjAx/MDAxNzgyODI1NjQxNzI1._AIRUOaLPDGSJS4HRY7t0PVpCA04IL6hUMH52fK1ZNkg.aLqV1Pp61lJPBarHVayaOR1UX4lBa6biffaHpzXGb7wg.JPEG/SE-57f44bb8-c6a1-4c24-af9c-65703107d37c.jpg?type=w800",
     "images": [
@@ -820,14 +831,13 @@
     ],
     "summary": "대구 범어동 점심 맛집, 이타국시 자가제면 들기름냉국수 내돈내산 후기 📋 30초 요약: 바쁜 현대인을 위한 핵심 포인트 •방문 목적:대구 수성구 범어동 직장인 점심 식사 및 혼밥에 최적화된 국수 맛집",
     "parsed_success": true,
-    "date": "2026. 7. 1.",
-    "country": "대한민국"
+    "date": "2026. 7. 1."
   },
   {
     "logNo": "224328852768",
     "title": "경주 감포 맛집 갈매기횟집! 해초쌈 스페셜 코스 및 민박 패키지 예약 꿀팁",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224328852768",
+    "url": "https://m.blog.naver.com/cybereunny/224328852768",
     "place": {
       "name": "경주 감포 맛집 갈매기횟집! 해초쌈 스페셜 코스 및 민박 패키지 예약 꿀팁",
       "address": "",
@@ -839,6 +849,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MjdfMjA0/MDAxNzgyNTM1MjM1Nzk4.ZGhW5j7miUej6WFNskWvRQVeeBqFXQyJqaSrx9FTmaYg.eodm8Vk-sh_zgpoMvmKrpEH5El5r7QMTgR530tiAOcEg.JPEG/SE-c98e6886-5585-4d0c-aab9-c00df18dd71b.jpg?type=w800",
     "images": [
@@ -850,14 +861,13 @@
     ],
     "summary": "경주 감포 맛집 갈매기횟집! 해초쌈 스페셜 코스 및 민박 패키지 예약 꿀팁 매장 정체성:경주 감포 대본항 방파제 바로 앞에 위치하여 탁 트인 2층 오션뷰를 자랑하는 자연산 전문 횟집입니다. 시그니처 메뉴:평범한 상추쌈이 아닌, 6가지 제철 해초와 꽁치, 묵은지를 곁들여 먹는 독보적인 '해초쌈'이 방송(생방송 오늘저녁)에도 소개된 핵심 포인트입니다.",
     "parsed_success": true,
-    "date": "2026. 6. 29.",
-    "country": "대한민국"
+    "date": "2026. 6. 29."
   },
   {
     "logNo": "224328786060",
     "title": "동대구역 맛집 크리스탈제이드 신세계 대구점! 3인 세트 메뉴 후기 및 예약 꿀팁",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224328786060",
+    "url": "https://m.blog.naver.com/cybereunny/224328786060",
     "place": {
       "name": "동대구역 맛집 크리스탈제이드 신세계 대구점! 3인 세트 메뉴",
       "address": "",
@@ -869,6 +879,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MjdfMTY1/MDAxNzgyNTI4ODY2MTIz.Yj-j9krefbDIn1VTQEEV7JDA6fun3F_PIMh-pUiTM-Ig.B9VmddmNh2z32ky0gECf1GfIbHuUKK_3Hd4ShWfhkCcg.JPEG/SE-142352d9-f40c-4955-bb3c-1b0bef1dc636.jpg?type=w800",
     "images": [
@@ -880,14 +891,13 @@
     ],
     "summary": "동대구역 맛집 크리스탈제이드 신세계 대구점! 3인 세트 메뉴 후기 및 예약 꿀팁 매장 정체성:1991년 싱가포르에서 시작된 글로벌 브랜드로, 대구점은 '상하이 딜라이트' 컨셉의 캐주얼 중식 다이닝입니다. 추천 메뉴:현지 셰프가 직접 빚는 육즙 가득한 '소롱포'와 가성비가 훌륭한 '상하이 시그니처 3인 세트'를 강력 추천합니다.",
     "parsed_success": true,
-    "date": "2026. 6. 28.",
-    "country": "대한민국"
+    "date": "2026. 6. 28."
   },
   {
     "logNo": "224328776510",
     "title": "경주 황리단길 맛집 범외양간 본점! 돌판 스테이크 메뉴 및 주차 꿀팁",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224328776510",
+    "url": "https://m.blog.naver.com/cybereunny/224328776510",
     "place": {
       "name": "경주 황리단길 맛집 범외양간 본점! 돌판 스테이크 메뉴 및 주차 꿀팁",
       "address": "",
@@ -899,6 +909,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MjdfNjcg/MDAxNzgyNTI4MjA4MzQy.oTHDiA1ATxER_fUy3xGOU9nTTTJvgaqmUnhiYFk4PD4g.dhRc7BZyKDCK8E_fpKrQ6orDEIFt-OEp98NZctA3k8cg.JPEG/SE-f90dc5a1-90cf-4558-a8a3-e289aff726bb.jpg?type=w800",
     "images": [
@@ -909,14 +920,13 @@
     ],
     "summary": "경주 황리단길 맛집 범외양간 본점! 돌판 스테이크 메뉴 및 주차 꿀팁 시그니처 메뉴:황리단길 유일의 '숯불 돌판 스테이크(강된장 포함)'와 프리미엄 '숯불 민물장어덮밥'을 선보이는 퓨전 한식당입니다. 시간의 자유로움:매일 오전 11시부터 저녁 8시 30분까지브레이크 타임 없이 운영되어 애매한 시간대 여행객에게 최적입니다.",
     "parsed_success": true,
-    "date": "2026. 6. 27.",
-    "country": "대한민국"
+    "date": "2026. 6. 27."
   },
   {
     "logNo": "224306164079",
     "title": "청도 각북면 현지인 맛집 풍년식당: 맑은 소고기국밥과 잔치국수 솔직 후기",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224306164079",
+    "url": "https://m.blog.naver.com/cybereunny/224306164079",
     "place": {
       "name": "청도 각북면 현지인 맛집 풍년식당",
       "address": "",
@@ -928,6 +938,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MDRfMSAg/MDAxNzgwNTc1ODA4Mzg4.lZ65-iQTcvDxYUaNZT9qnpRvPpTT8ZGxU8pvunNWzZgg.9oFSSI1g_XlxsejV3Dvb9l4m7j7wrVTlVRR8_6_NkPEg.JPEG/20260530_124256.jpg?type=w800",
     "images": [
@@ -939,14 +950,13 @@
     ],
     "summary": "청도 각북면 현지인 맛집 풍년식당: 맑은 소고기국밥과 잔치국수 솔직 후기 위치 & 분위기:청도 각북면 헐티로(남산교 인근), 작업복 입은 현지인들이 찾는 찐 로컬 노포 식당 핵심 메뉴:맑고 개운한 국물에 부드러운 고기가 듬뿍 든 '소고기국밥(8,000원)'과 정겨운 '잔치국수(5,000원)'",
     "parsed_success": true,
-    "date": "2026. 6. 4.",
-    "country": "대한민국"
+    "date": "2026. 6. 4."
   },
   {
     "logNo": "224302041199",
     "title": "화려한 대형카페 대신 청도 한옥카페 아자방을 선택해야 하는 3가지 이유",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224302041199",
+    "url": "https://m.blog.naver.com/cybereunny/224302041199",
     "place": {
       "name": "화려한 대형카페 대신 청도 한옥카페 아자방을 선택해야 하는 3가지 이유",
       "address": "",
@@ -958,6 +968,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MzFfMjMy/MDAxNzgwMjM0NDU1Mzk3.neB_qAYhIXUg79qTwm4XUzfF6_51e-V3S9n2IJVJ-nMg.lm-MGvzXrDfH52EwKvbnC1DVUk0BRvWTGlsg2m87Jd8g.JPEG/20260530_124654.jpg?type=w800",
     "images": [
@@ -969,14 +980,13 @@
     ],
     "summary": "화려한 대형카페 대신 청도 한옥카페 아자방을 선택해야 하는 3가지 이유 위치 & 분위기:청도 각북면 남산교 옆, 넓은 연못과 정자가 있는 고즈넉한 한옥 카페 추천 메뉴:덜 달고 담백하게 직접 쑨 '수제 팥빙수'와 깔끔한 '아메리카노'의 조합",
     "parsed_success": true,
-    "date": "2026. 6. 1.",
-    "country": "대한민국"
+    "date": "2026. 6. 1."
   },
   {
     "logNo": "224290739750",
     "title": "대구 가창 맛집 '가창우동집', 우동 대신 냉메밀소바 먹고 온 내돈내산 찐 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224290739750",
+    "url": "https://m.blog.naver.com/cybereunny/224290739750",
     "place": {
       "name": "대구 가창 맛집 '가창우동집', 우동 대신 냉메밀소바 먹고 온",
       "address": "",
@@ -988,6 +998,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MTlfODAg/MDAxNzc5MjAyNDkzNzA5.cAos-Hz_6cUGNRzgvx6XEwXTOf1I5X2kiZKY6LUXZkwg.9ramWv4OQ0iMOwVmQ9dHj5iLT2Z5Wgd5C1pKHrQEviEg.JPEG/20260517_112558.jpg?type=w800",
     "images": [
@@ -999,14 +1010,13 @@
     ],
     "summary": "대구 가창 맛집 '가창우동집', 우동 대신 냉메밀소바 먹고 온 내돈내산 찐 후기 📋 30초 요약: 대구 가창 드라이브 필수 코스! 독보적 구성:12,000원에 냉메밀소바(또는 우동) + 거대한 닭다리 튀김 + 음료(생맥주 포함) 제공",
     "parsed_success": true,
-    "date": "2026. 5. 20.",
-    "country": "대한민국"
+    "date": "2026. 5. 20."
   },
   {
     "logNo": "224288170910",
     "title": "대구의 블루보틀? 가창 룰리커피가 본점보다 매력적인 3가지 이유",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224288170910",
+    "url": "https://m.blog.naver.com/cybereunny/224288170910",
     "place": {
       "name": "대구의 블루보틀? 가창 룰리커피가 본점보다 매력적인 3가지 이유",
       "address": "",
@@ -1018,6 +1028,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MTdfNiAg/MDAxNzc5MDAxNTIyOTA1.W2YZK75a6-_JuRjERvK9Sw_Rp6yQZunpjopVvc8ua3gg.ruZiqQTpezBEP3X3rTo8hVLkLn0AD6mqF-h2MpExd8Ig.JPEG/20260517_110712.jpg?type=w800",
     "images": [
@@ -1029,14 +1040,13 @@
     ],
     "summary": "대구의 블루보틀? 가창 룰리커피가 본점보다 매력적인 3가지 이유 주말이면 복잡한 도심을 벗어나 탁 트인 뷰와 제대로 된 커피 한 잔이 절실해질 때가 있지요. 오늘은 대구 근교 드라이브 코스로 빼놓을 수 없는 곳, 바로'가창 룰리커피(Rully Coffee)'에 다녀온 이야기를 해볼까 합니다. 고모역 본점이 아늑한 기차역 감성이라면, 이곳 가창점은 거대한 저수지를 품은 갤러리 같은 공간입니다. 편안하게 쉬다 결국 드립커피 14개를 제 돈으로 결제",
     "parsed_success": true,
-    "date": "2026. 5. 17.",
-    "country": "대한민국"
+    "date": "2026. 5. 17."
   },
   {
     "logNo": "224287360820",
     "title": "대구 수성구 범어동 맛집, 바우만 스테이크하우스 안심 런치 코스 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224287360820",
+    "url": "https://m.blog.naver.com/cybereunny/224287360820",
     "place": {
       "name": "대구 수성구 범어동 맛집, 바우만 스테이크하우스 안심 런치 코스",
       "address": "",
@@ -1048,6 +1058,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MTZfMTYz/MDAxNzc4OTA5MjAxNjAz.UY0q4soTuGwu4fHd0NNFmOM_9Zwttle6wg75nj09iG0g.fOZ4rtf9IQo5J0cOgSYDvsiW_7tiP2wAYuupenW5ecwg.JPEG/20260516_114949.jpg?type=w800",
     "images": [
@@ -1059,14 +1070,13 @@
     ],
     "summary": "대구 수성구 범어동 맛집, 바우만 스테이크하우스 안심 런치 코스 후기 안녕하세요. 래비입니다. 대구 수성구 범어동, 특히 법원과 검찰청 인근은 오랫동안 지역 오피니언 리더들과 직장인들의 입맛을 사로잡기 위한 치열한 미식 격전지입니다. 트렌드가 하루가 다르게 변하는 이곳에서 묵묵히 정통 스테이크의 맛을 지키며 다년간블루리본 서베이에 등재된 곳이 있지요. 바로 오늘 소개해 드릴'바우만 스테이크하우스'입니다.",
     "parsed_success": true,
-    "date": "2026. 5. 16.",
-    "country": "대한민국"
+    "date": "2026. 5. 16."
   },
   {
     "logNo": "224274896265",
     "title": "서산 해미읍성 점심 메뉴 고민 끝! 관광지에서 고기 대신 '생선구이 백반'을 선택해야 하는 3가지 이유",
     "sub_category": "카페·맛집 어때-충남",
-    "url": "https://blog.naver.com/cybereunny/224274896265",
+    "url": "https://m.blog.naver.com/cybereunny/224274896265",
     "place": {
       "name": "서산 해미읍성 점심 메뉴 고민 끝! 관광지에서 고기 대신 '생선구이 백반'을 선택해야 하는 3가지 이유",
       "address": "",
@@ -1078,6 +1088,7 @@
     },
     "all_places": [],
     "city_district": "충남",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDRfMTg4/MDAxNzc3OTA0MjQzNDcy.46vfrmsUdfRzonOQJxNJ27b0EbGHwxYO6EQDnRcL9ekg.EhVasQqJtrraULBk4TQAuAq_ZLNVzPRWMEdtUpRR26gg.JPEG/SE-dcbb335a-7c40-4056-bbe4-952bd17ebc38.jpg?type=w800",
     "images": [
@@ -1089,14 +1100,13 @@
     ],
     "summary": "서산 해미읍성 점심 메뉴 고민 끝! 관광지에서 고기 대신 '생선구이 백반'을 선택해야 하는 3가지 이유 📋 30초 요약: 서산 해미읍성 삼삼생선구이백반 맛과 특징:겉바속촉으로 완벽하게 구워진 생선구이 본연의 '기본에 충실한 맛'을 느낄 수 있습니다.",
     "parsed_success": true,
-    "date": "2026. 5. 5.",
-    "country": "대한민국"
+    "date": "2026. 5. 5."
   },
   {
     "logNo": "224273212623",
     "title": "[광안리 미쉐린 가이드] 아웃트로 바이 비토 메뉴 추천 및 캐치테이블 예약 팁",
     "sub_category": "카페·맛집 어때-부산",
-    "url": "https://blog.naver.com/cybereunny/224273212623",
+    "url": "https://m.blog.naver.com/cybereunny/224273212623",
     "place": {
       "name": "[광안리 미쉐린 가이드] 아웃트로 바이 비토 메뉴 추천 및 캐치테이블 예약 팁",
       "address": "",
@@ -1108,6 +1118,7 @@
     },
     "all_places": [],
     "city_district": "부산",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDNfOTUg/MDAxNzc3Nzc3OTAzOTQy.h2_Cs9hmYOtQNak1-upAzITTdf_CgT8ju5Vefyhzdyog.C99_34mCpGLzUYhQD1moUxyNOT14U_0KAh6h2SWvgk8g.JPEG/20260404_192447.jpg?type=w800",
     "images": [
@@ -1119,14 +1130,13 @@
     ],
     "summary": "[광안리 미쉐린 가이드] 아웃트로 바이 비토 메뉴 추천 및 캐치테이블 예약 팁 안녕하세요. 부산의 숨겨진 골목길부터 화려한 파인다이닝까지, 미식의 본질을 찾아 여행하는 래비입니다. 최근 부산 광안리, 특히 민락본동 일대는 개성 넘치는 셰프들의 각축장이 되며 엄청난 미식 상권으로 급부상하고 있지요. 그 치열한 경쟁 속에서 무려 2024년부터 2026년까지 3년 연속 미쉐린 가이드 부산 '셀렉티드(Selected)'에 이름을 올리며 독보적인 존재감",
     "parsed_success": true,
-    "date": "2026. 5. 4.",
-    "country": "대한민국"
+    "date": "2026. 5. 4."
   },
   {
     "logNo": "224273181420",
     "title": "[부산 해운대 파인다이닝] 에드워드 권 '랩24 바이 쿠무다' 런치 코스 예약 및 실사용기|미쉐린 가이드 부산 선정! 송정 랩24 바이 쿠무다",
     "sub_category": "카페·맛집 어때-부산",
-    "url": "https://blog.naver.com/cybereunny/224273181420",
+    "url": "https://m.blog.naver.com/cybereunny/224273181420",
     "place": {
       "name": "[부산 해운대 파인다이닝] 에드워드 권 '랩24 바이 쿠무다' 런치 코스 예약 및 실사용기|미쉐린 가이드 부산 선정! 송정 랩24 바이 쿠무다",
       "address": "",
@@ -1138,6 +1148,7 @@
     },
     "all_places": [],
     "city_district": "부산",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDNfMjY3/MDAxNzc3Nzc1NjMyMTk5.MnleDMQt_xCRZ2W3vyg5lZA2HvQl-fNnIZlHs0ch6D0g.YTpn-3VJOpcu9PDEXwC8s-7XafUIW496OrJcoMxP7Mwg.JPEG/20260405_130751.jpg?type=w800",
     "images": [
@@ -1149,14 +1160,13 @@
     ],
     "summary": "[부산 해운대 파인다이닝] 에드워드 권 '랩24 바이 쿠무다' 런치 코스 예약 및 실사용기|미쉐린 가이드 부산 선정! 송정 랩24 바이 쿠무다 안녕하세요. 전국의 숨겨진 미식 공간과 하이엔드 파인다이닝을 직접 경험하고 냉철하게 분석하는 미식 래비입니다. 부산 해운대, 그중에서도 고즈넉하고 탁 트인 송정해수욕장은 최근 트렌디한 F&B 공간이 밀집하며 새로운 미식의 성지로 떠오르고 있습니다. 그 중심에는 미쉐린 가이드 부산(부산 ‘셀렉티드(Sele",
     "parsed_success": true,
-    "date": "2026. 5. 3.",
-    "country": "대한민국"
+    "date": "2026. 5. 3."
   },
   {
     "logNo": "224267137490",
     "title": "대구 만촌동 젤라또 맛집 할타보카: 메뉴 추천 및 주차 팁 총정리",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224267137490",
+    "url": "https://m.blog.naver.com/cybereunny/224267137490",
     "place": {
       "name": "대구 만촌동 젤라또 맛집 할타보카",
       "address": "",
@@ -1168,6 +1178,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MjdfMjI4/MDAxNzc3Mjg5MTgzNzAy.Uwx6m7o61CneS8a8bsvToS-z8NT5AyEjLVvmMonALZIg.gkU2VZUzgvvCrnkAvHbQu9bVIb4kSZs7Yd--HOGHmOgg.JPEG/20260426_163255.jpg?type=w800",
     "images": [
@@ -1177,14 +1188,13 @@
     ],
     "summary": "대구 만촌동 젤라또 맛집 할타보카: 메뉴 추천 및 주차 팁 총정리 📋 30초 요약: 할타보카 만촌점 핵심 리뷰 추천 메뉴:마카다미아(고소함) + 딸기(달콤함) + 제철 소르베(상큼함) 콤보",
     "parsed_success": true,
-    "date": "2026. 4. 28.",
-    "country": "대한민국"
+    "date": "2026. 4. 28."
   },
   {
     "logNo": "224266070645",
     "title": "대구 수성구 맛집 핏제리아 라우로라, 제대로 된 정통 나폴리 화덕피자 즐기는 법",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224266070645",
+    "url": "https://m.blog.naver.com/cybereunny/224266070645",
     "place": {
       "name": "대구 수성구 맛집 핏제리아 라우로라, 제대로 된 정통 나폴리 화덕피자 즐기는 법",
       "address": "",
@@ -1196,6 +1206,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MjZfNjMg/MDAxNzc3MjE0NjUzMDg0.gDys5vfY2I8pfbUUWo_SBlG_aneFPM11cmdfgO6AE4Mg.BO0PuaR4yu5HShgJYsmFYImKagjceUVmYBeUihbyl4gg.JPEG/900_20260425_115405.jpg?type=w800",
     "images": [
@@ -1207,14 +1218,13 @@
     ],
     "summary": "대구 수성구 맛집 핏제리아 라우로라, 제대로 된 정통 나폴리 화덕피자 즐기는 법 📋 30초 요약: 대구 만촌동 '핏제리아 라우로라' 핵심 경쟁력:48시간 저온 숙성 도우와 물소젖(부팔라) 치즈를 활용한 정통 나폴리식 화덕피자",
     "parsed_success": true,
-    "date": "2026. 4. 27.",
-    "country": "대한민국"
+    "date": "2026. 4. 27."
   },
   {
     "logNo": "224258411788",
     "title": "[대구 범어동 맛집] 직장인 점심 1순위, 북창동순두부 범어네거리점 기본 메뉴 내돈내산 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224258411788",
+    "url": "https://m.blog.naver.com/cybereunny/224258411788",
     "place": {
       "name": "[대구 범어동 맛집] 직장인 점심 1순위, 북창동순두부 범어네거리점 기본 메뉴",
       "address": "",
@@ -1226,6 +1236,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MjBfNjEg/MDAxNzc2NjQ3ODAzMjY1.zgLvCB4iMjBeozwojTBNFJd11251LvpJC3grifLsMlcg.KynClbtdnh__ieNQc0s1EfNNFF-Dl_deE3N-ggKBn68g.JPEG/20260411_181028.jpg?type=w800",
     "images": [
@@ -1237,14 +1248,13 @@
     ],
     "summary": "[대구 범어동 맛집] 직장인 점심 1순위, 북창동순두부 범어네거리점 기본 메뉴 내돈내산 후기 📋 바쁜 현대인을 위한 30초 요약 •핵심:대구 금융·행정의 중심지, 범어네거리에 위치한 '북창동순두부'는 든든한 한식 브런치를 찾는 직장인과 주민들의 성지입니다.",
     "parsed_success": true,
-    "date": "2026. 4. 23.",
-    "country": "대한민국"
+    "date": "2026. 4. 23."
   },
   {
     "logNo": "224258394236",
     "title": "[대구 범어동 신상 카페] 출퇴근길 1분 컷! 카페룰리오가닉 범어W점 방문 후기 및 메뉴 추천",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224258394236",
+    "url": "https://m.blog.naver.com/cybereunny/224258394236",
     "place": {
       "name": "[대구 범어동 신상 카페] 출퇴근길 1분 컷! 카페룰리오가닉 범어W점 방문",
       "address": "",
@@ -1256,6 +1266,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MjBfMjcw/MDAxNzc2NjQ2NjU3OTg5.JBL8LYsHVsvpDe5qzLqmHtmLloaP18ZkEtv5mXZPB5gg.jplhdheZwYGSJZbAOag-WSNSgPQP0jTQ6QpEkpOM_MAg.JPEG/20260412_101206.jpg?type=w800",
     "images": [
@@ -1267,14 +1278,13 @@
     ],
     "summary": "[대구 범어동 신상 카페] 출퇴근길 1분 컷! 카페룰리오가닉 범어W점 방문 후기 및 메뉴 추천 📋 바쁜 현대인을 위한 30초 요약 •핵심:대구 커피의 자부심 '룰리커피'가 2026년 3월 말 범어W 상가에 오픈한 테이크아웃 전문 소형 매장입니다.",
     "parsed_success": true,
-    "date": "2026. 4. 20.",
-    "country": "대한민국"
+    "date": "2026. 4. 20."
   },
   {
     "logNo": "224245673207",
     "title": "기장 빌라쥬 드 아난티 중식당 루(Ru) | 뷰는 5성급, 맛은 글쎄요? 솔직 후기",
     "sub_category": "카페·맛집 어때-부산",
-    "url": "https://blog.naver.com/cybereunny/224245673207",
+    "url": "https://m.blog.naver.com/cybereunny/224245673207",
     "place": {
       "name": "기장 빌라쥬 드 아난티 중식당 루(Ru) | 뷰는 5성급, 맛은 글쎄요? 솔직",
       "address": "",
@@ -1286,6 +1296,7 @@
     },
     "all_places": [],
     "city_district": "부산",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MDhfMjI2/MDAxNzc1NjQ5NzgyNDc2.1hd8Wl0v4PXIqZhrBY13up8FdSz9dxS5VGo4VzR5m7wg.8W1FXD9B2Racz9ddL2eLttkQJ9Q8i8GiifiXyzjmumYg.JPEG/20260404_130616.jpg?type=w800",
     "images": [
@@ -1297,14 +1308,13 @@
     ],
     "summary": "기장 빌라쥬 드 아난티 중식당 루(Ru) | 뷰는 5성급, 맛은 글쎄요? 솔직 후기 📋 30초 요약: 바쁜 분들을 위한 핵심 브리핑 총평:전반적으로 평범한 수준의 맛. 아난티라는 공간이 주는 프리미엄을 제외하면 미식의 관점에서는 재방문 의사 없음.",
     "parsed_success": true,
-    "date": "2026. 4. 9.",
-    "country": "대한민국"
+    "date": "2026. 4. 9."
   },
   {
     "logNo": "224233599726",
     "title": "대구 인터불고 카페+술집 추천, '낮잔에 밤별소' 방문 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224233599726",
+    "url": "https://m.blog.naver.com/cybereunny/224233599726",
     "place": {
       "name": "대구 인터불고 카페+술집 추천, '낮잔에 밤별소' 방문",
       "address": "",
@@ -1316,6 +1326,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMjlfMjQz/MDAxNzc0Nzg3MzA1NTE5.OQ8uhGs6S4ZZCac2gzrcJP0xLaU1Rou177O3oN5aOpYg.9aE203ERrtvcWsSy6HLYUZ0nYri4GhZ8MsED9N8tyv4g.JPEG/20260327_190001.jpg?type=w800",
     "images": [
@@ -1327,14 +1338,13 @@
     ],
     "summary": "대구 인터불고 카페+술집 추천, '낮잔에 밤별소' 방문 후기 📋 30초 요약: 바쁜 분들을 위한 핵심 브리핑 •위치 및 무드:호텔 인터불고 대구 파크빌리지 1층. 낮엔 카페, 밤엔 감성 포차로 완벽 변신",
     "parsed_success": true,
-    "date": "2026. 3. 31.",
-    "country": "대한민국"
+    "date": "2026. 3. 31."
   },
   {
     "logNo": "224233574819",
     "title": "대구 만촌동 빵지순례 필수 코스, 대구 인터불고 대인베짱 단팥빵 내돈내산 방문 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224233574819",
+    "url": "https://m.blog.naver.com/cybereunny/224233574819",
     "place": {
       "name": "대구 만촌동 빵지순례 필수 코스, 대구 인터불고 대인베짱 단팥빵",
       "address": "",
@@ -1346,6 +1356,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMjlfMTU5/MDAxNzc0Nzg1MzU3NjI3.U9l2fBs1_uJ6ba-RPmWChcVC_Khg43LMMipEYDU2Baog.5FI4elr_dmvkGH1K88bHzx7cXKAdj6pGiW3kYodP0uEg.JPEG/20260327_183750.jpg?type=w800",
     "images": [
@@ -1357,14 +1368,13 @@
     ],
     "summary": "대구 만촌동 빵지순례 필수 코스, 대구 인터불고 대인베짱 단팥빵 내돈내산 방문 후기 📋 30초 요약: 바쁜 분들을 위한 핵심 브리핑 •위치 및 시간:대구 수성구 만촌동 호텔 인터불고 파크빌리지 1층 (매일 09:00~20:00)",
     "parsed_success": true,
-    "date": "2026. 3. 30.",
-    "country": "대한민국"
+    "date": "2026. 3. 30."
   },
   {
     "logNo": "224224804218",
     "title": "29년 전통의 귀환! 2026년 새로워진 대구 자금성, 시그니처 메뉴 '백짬뽕 vs 야끼우동' 완벽 비교",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224224804218",
+    "url": "https://m.blog.naver.com/cybereunny/224224804218",
     "place": {
       "name": "29년 전통의 귀환! 2026년 새로워진 대구 자금성, 시그니처 메뉴 '백짬뽕 vs 야끼우동' 완벽 비교",
       "address": "",
@@ -1376,6 +1386,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMjFfMjE3/MDAxNzc0MDg3MTQ2MjAx.52xMebZzm1Nkp7CkQYsNjUurrWcERpZ6N7964yE0TJYg.iKUCXNontjPQJzMCesNEURK3Kt1HqNRBupYdqBaUCAkg.JPEG/20260321_123519.jpg?type=w800",
     "images": [
@@ -1387,14 +1398,13 @@
     ],
     "summary": "29년 전통의 귀환! 2026년 새로워진 대구 자금성, 시그니처 메뉴 '백짬뽕 vs 야끼우동' 완벽 비교 📋 30초 요약: 4년 만에 돌아온 대구 '자금성' 역사의 귀환:1992년부터 29년간 대구의 모임 명소로 사랑받다 재개발로 4년간 휴업, 2026년 1월 드디어 재오픈했습니다.",
     "parsed_success": true,
-    "date": "2026. 3. 23.",
-    "country": "대한민국"
+    "date": "2026. 3. 23."
   },
   {
     "logNo": "224213135084",
     "title": "대구 불로동 고분군 맛집 '대구추어탕' 주차 및 노포 식당 방문 꿀팁",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224213135084",
+    "url": "https://m.blog.naver.com/cybereunny/224213135084",
     "place": {
       "name": "대구 불로동 고분군 맛집 '대구추어탕' 주차 및 노포 식당 방문 꿀팁",
       "address": "",
@@ -1406,6 +1416,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "베이커리/빵",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMTFfMTMz/MDAxNzczMjM3NjExNzQ3.8PudL0vc_DJrnc8wTgzVx5B1vZSIinyDGNXXZcHm9gUg.Mz-pCbccRnixsJ3S4uGjz0Lfr6WniZZpSeQaGfJd0NMg.JPEG/SE-5901a93c-03ce-4280-9197-b4f4915c6c4f.jpg?type=w800",
     "images": [
@@ -1417,14 +1428,13 @@
     ],
     "summary": "대구 불로동 고분군 맛집 '대구추어탕' 주차 및 노포 식당 방문 꿀팁 📋 30초 요약: 대구 불로동 '대구추어탕' 메뉴 & 가격:단일 메뉴 경상도식 맑은 추어탕 (약 12,000원대) / 밥과 국물 무한리필",
     "parsed_success": true,
-    "date": "2026. 3. 11.",
-    "country": "대한민국"
+    "date": "2026. 3. 11."
   },
   {
     "logNo": "224196322712",
     "title": "대구 수성구 히바치 B코스 내돈내산 후기: 기념일 철판요리 오마카세 소개",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224196322712",
+    "url": "https://m.blog.naver.com/cybereunny/224196322712",
     "place": {
       "name": "대구 수성구 히바치 B코스",
       "address": "",
@@ -1436,6 +1446,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAyMjZfMiAg/MDAxNzcyMDYyNTI5MjM4.s-5iW7Sv9Kz1K3Ca3Nz5t2h8N8TvwH_Tjf6Hwr_NytYg.ZdlEVZ4RnuHLb5V8qiHi5BW6Vb_r6MMYbAyZH96xiUYg.PNG/image.png?type=w800",
     "images": [
@@ -1447,14 +1458,13 @@
     ],
     "summary": "대구 수성구 히바치 B코스 내돈내산 후기: 기념일 철판요리 오마카세 소개 📋 30초 요약: 대구 히바치 방문 전 필수 정보 •프라이빗의 정점:전 좌석 개별 룸 구조로 기념일, 소규모 모임에 최적화된 공간입니다.",
     "parsed_success": true,
-    "date": "2026. 2. 26.",
-    "country": "대한민국"
+    "date": "2026. 2. 26."
   },
   {
     "logNo": "224185589441",
     "title": "대구 대백프라자 맛집 힛또, 소바정식 & 로스카츠 내돈내산 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224185589441",
+    "url": "https://m.blog.naver.com/cybereunny/224185589441",
     "place": {
       "name": "대구 대백프라자 맛집 힛또, 소바정식 & 로스카츠",
       "address": "",
@@ -1466,6 +1476,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "일식/초밥",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAyMTZfMTAy/MDAxNzcxMjI5NTQxMjEx.Da4TX87lFlOVzGPBqpkBtmuy8Ymm1ei39UxKm859CAog.ZnbZWoED1goQ_gUF1eS0iT_8rVOZICZdBig-46JVISog.JPEG/SE-c93eacd3-8958-4c74-a154-3d4c4961650c.jpg?type=w800",
     "images": [
@@ -1477,14 +1488,13 @@
     ],
     "summary": "대구 대백프라자 맛집 힛또, 소바정식 & 로스카츠 내돈내산 솔직 후기 ✔위치:대구백화점 프라자점(대백프라자) 11층 전문 식당가 ✔핵심:매장에서 직접 만드는 수제 소스와 반찬, 두툼한 로스카츠 퀄리티",
     "parsed_success": true,
-    "date": "2026. 2. 22.",
-    "country": "대한민국"
+    "date": "2026. 2. 22."
   },
   {
     "logNo": "224185466097",
     "title": "'신천 뷰' 대백프라자 커피명가 프라자점의 3가지 매력 (뷰, 맛, 주차)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224185466097",
+    "url": "https://m.blog.naver.com/cybereunny/224185466097",
     "place": {
       "name": "'신천 뷰' 대백프라자 커피명가 프라자점의 3가지 매력 (뷰, 맛, 주차)",
       "address": "",
@@ -1496,6 +1506,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAyMTZfMTg2/MDAxNzcxMjE5MDkwNjk0.uQbbyMkjghKNnE5LlBsmYngKoViLTbhpGVwkMomUvx8g.tfZugPRJNgwxHg-TUlQXVfhl-jOEBrVfMP58sLvd7Kgg.JPEG/SE-dcce777f-780b-4877-81a8-757648e68447.jpg?type=w800",
     "images": [
@@ -1506,14 +1517,13 @@
     ],
     "summary": "'신천 뷰' 대백프라자 커피명가 프라자점의 3가지 매력 (뷰, 맛, 주차) ✔위치:대백프라자 3층 여성의류 코너 안쪽 (식품관 아님) ✔매력:신천과 대봉교가 내려다보이는 탁 트인 리버뷰 창가석",
     "parsed_success": true,
-    "date": "2026. 2. 18.",
-    "country": "대한민국"
+    "date": "2026. 2. 18."
   },
   {
     "logNo": "224181755009",
     "title": "대구 수성구 만촌동 맛집 홍옥식당, 불향 가득한 신상 직화 제육볶음 주차 및 메뉴 가이드",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224181755009",
+    "url": "https://m.blog.naver.com/cybereunny/224181755009",
     "place": {
       "name": "대구 수성구 만촌동 맛집 홍옥식당, 불향 가득한 신상 직화 제육볶음 주차 및 메뉴 가이드",
       "address": "",
@@ -1525,6 +1535,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAyMTJfODMg/MDAxNzcwODkxODkwNDIz.8ii9obj3Yh9nzADycoebSq2xYaSbsvTsOWG-yS6rqXEg.Uf--Uo3YIYpUMtL9IS7WJENUV261bLgBdSCfk5cZThog.JPEG/SE-7f629bf4-a0d4-437f-83cb-0223d319961b.jpg?type=w800",
     "images": [
@@ -1536,8 +1547,7 @@
     ],
     "summary": "대구 수성구 만촌동 맛집 홍옥식당, 불향 가득한 신상 직화 제육볶음 주차 및 메뉴 가이드 📋 바쁜 현대인을 위한 30초 요약 위치 및 정보:대구 수성구 국채보상로 918 (구 MBC네거리~만촌동 방향 조조칼국수 인근 신상 맛집)",
     "parsed_success": true,
-    "date": "2026. 2. 13.",
-    "country": "대한민국"
+    "date": "2026. 2. 13."
   },
   {
     "logNo": "224181726022",
@@ -1583,7 +1593,7 @@
     "logNo": "224155559525",
     "title": "범어동 '삼형제가' 솔직 후기: 2시간 무료 주차에 맵찔이도 반한 제육 비빔밥 꿀조합",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224155559525",
+    "url": "https://m.blog.naver.com/cybereunny/224155559525",
     "place": {
       "name": "범어동 '삼형제가' 솔직",
       "address": "",
@@ -1595,6 +1605,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjAxMjJfMTY5/MDAxNzY5MDQ0OTc5NDc5.pvCtotElgLq6k3HjM6iu1Uvx3CZCjSJrWM8Mifz-5IUg.UUM__cBugcYT9lCV5VBGZWuIvTXhHQ9lLlQV7KKqj6cg.PNG/image.png?type=w800",
     "images": [
@@ -1606,8 +1617,7 @@
     ],
     "summary": "범어동 '삼형제가' 솔직 후기: 2시간 무료 주차에 맵찔이도 반한 제육 비빔밥 꿀조합 🚀 30초 요약: 바쁜 분들을 위한 결론 ✔주차 천국:범어동에서 귀한 '2시간 무료 주차' (마크팰리스 지하)",
     "parsed_success": true,
-    "date": "2026. 1. 22.",
-    "country": "대한민국"
+    "date": "2026. 1. 22."
   },
   {
     "logNo": "224144013279",
@@ -1733,7 +1743,7 @@
     "logNo": "224122609749",
     "title": "겨울철 시원한 동태탕~  두산동 형님동태탕 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224122609749",
+    "url": "https://m.blog.naver.com/cybereunny/224122609749",
     "place": {
       "name": "겨울철 시원한 동태탕~  두산동 형님동태탕 솔직",
       "address": "",
@@ -1745,6 +1755,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEyMjVfOTAg/MDAxNzY2NjY5NjQ4MDIy.jRMYRd8WXAVdOYE4MY1iHAzQvjf_Q8e8o_oaa4hZG2Qg._Gt7XLPgzjXzjVjrKwChDsOvIEoFgdmgouzVLW3HTFUg.JPEG/20251224_140006.jpg?type=w800",
     "images": [
@@ -1756,14 +1767,13 @@
     ],
     "summary": "겨울철 시원한 동태탕~  두산동 형님동태탕 솔직 후기 솔직히 저도 몰랐는데... 동태탕 먹다가 중간에 차 빼러 나갈 줄이야.",
     "parsed_success": true,
-    "date": "2025. 12. 25.",
-    "country": "대한민국"
+    "date": "2025. 12. 25."
   },
   {
     "logNo": "224109415624",
     "title": "대구 회성각: 통오징어 짬뽕과 탕수육 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224109415624",
+    "url": "https://m.blog.naver.com/cybereunny/224109415624",
     "place": {
       "name": "대구 회성각",
       "address": "",
@@ -1775,6 +1785,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEyMTRfMTgz/MDAxNzY1NzAxODY1NzE5.zV1uyVNb07svC963tdlhR-0H9PmQnQmYFJsqcjpqddMg.6yC4efBCYOTSHIFT1MsUUCGz4OHlFo2UufOvO2HRIAsg.JPEG/SE-a9b460b2-a770-403d-a68b-b0cfee675ae9.jpg?type=w800",
     "images": [
@@ -1786,14 +1797,13 @@
     ],
     "summary": "대구 회성각: 통오징어 짬뽕과 탕수육 솔직 후기 \"아니, 중국집이 다 거기서 거기지\" 솔직히 처음엔 이렇게 생각했거든요?",
     "parsed_success": true,
-    "date": "2025. 12. 14.",
-    "country": "대한민국"
+    "date": "2025. 12. 14."
   },
   {
     "logNo": "224097847263",
     "title": "🎯 대구도서관 맛집? 느티나무칼국수 봉덕동 본점 솔직 후기 (숨겨진 인기 메뉴는?)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224097847263",
+    "url": "https://m.blog.naver.com/cybereunny/224097847263",
     "place": {
       "name": "🎯 대구도서관 맛집? 느티나무칼국수 봉덕동 본점 솔직",
       "address": "",
@@ -1805,6 +1815,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "일식/초밥",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEyMDRfMTgy/MDAxNzY0ODE2NTcyNzIz.0P671J5IPUcbYsN9FFCR2AeI4vS2Te1pOBu-xTBSrzcg.XH455iluKKSr33bLNL_Y2UfODDrCfNcs8GhKnkM-x8wg.JPEG/SE-0c629d38-597b-446e-aec0-181a873559dd.jpg?type=w800",
     "images": [
@@ -1816,14 +1827,13 @@
     ],
     "summary": "🎯 대구도서관 맛집? 느티나무칼국수 봉덕동 본점 솔직 후기 (숨겨진 인기 메뉴는?) 🚀 줄 서서 먹는 집, 과연 맛은? \"점심시간에 웨이팅 20분?\"",
     "parsed_success": true,
-    "date": "2025. 12. 5.",
-    "country": "대한민국"
+    "date": "2025. 12. 5."
   },
   {
     "logNo": "224078777417",
     "title": "전현무계획 2 | 43년 노포 '신원복어' 복어불고기 솔직 후기 (재방문...?)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224078777417",
+    "url": "https://m.blog.naver.com/cybereunny/224078777417",
     "place": {
       "name": "전현무계획 2 | 43년 노포 '신원복어' 복어불고기 솔직",
       "address": "",
@@ -1835,6 +1845,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTdfMjQ2/MDAxNzYzMzYwMDQ5MTg2.YalUJLdJsSZk_2KzKizxM3VCpQUlet7_dGjUAjJ2NyMg.LVWTMVTNofv4jtQO21n-t0gMbni7_yLuIL4L_XISIkog.JPEG/20250830_195753.jpg?type=w800",
     "images": [
@@ -1846,14 +1857,13 @@
     ],
     "summary": "전현무계획 2 | 43년 노포 '신원복어' 복어불고기 솔직 후기 (재방문...?) 요즘 '전현무계획2' 먹큐멘터리 진짜 핫하잖아요?",
     "parsed_success": true,
-    "date": "2025. 11. 24.",
-    "country": "대한민국"
+    "date": "2025. 11. 24."
   },
   {
     "logNo": "224079087306",
     "title": "대구 종로 카페 'ECC커피' 레트로 감성 드립커피 찐후기 (주차, 위치)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224079087306",
+    "url": "https://m.blog.naver.com/cybereunny/224079087306",
     "place": {
       "name": "대구 종로 카페 'ECC커피' 레트로 감성 드립커피 찐후기 (주차, 위치)",
       "address": "",
@@ -1865,6 +1875,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTdfMTMg/MDAxNzYzMzc1OTEyNDgx.xwBYysWDsA4RpBheB22jH0AKoejSqFFPXyDNCvsRd_Mg.qlJ-DFIyy-dMMwR0ZfNEO5TROwQuyKkWhHtv-wy789Qg.JPEG/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C_(15).jpg?type=w800",
     "images": [
@@ -1876,14 +1887,13 @@
     ],
     "summary": "대구 종로 카페 'ECC커피' 레트로 감성 드립커피 찐후기 (주차, 위치) \"대구 종로에 이런 곳이?\" 오래된 건물을 개조한",
     "parsed_success": true,
-    "date": "2025. 11. 23.",
-    "country": "대한민국"
+    "date": "2025. 11. 23."
   },
   {
     "logNo": "224078895616",
     "title": "들안길 '봉평메밀국시' 메밀 막국시, 전병 찐후기 (주차, 자가제면)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224078895616",
+    "url": "https://m.blog.naver.com/cybereunny/224078895616",
     "place": {
       "name": "들안길 '봉평메밀국시' 메밀 막국시, 전병 찐후기 (주차, 자가제면)",
       "address": "",
@@ -1895,6 +1905,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTdfMzgg/MDAxNzYzMzY1NDE4Mjky.3DCNXbr__SSz6xn7VDQ3-EeIHPZSCL4mDHelZOa00Fgg.0CK0V0AjwaJ6HHPaV7tSuPdr-nEKimVPrwd5JsFB2pMg.JPEG/SE-7d8189ec-82ec-4726-b016-723d8aea635d.jpg?type=w800",
     "images": [
@@ -1906,14 +1917,13 @@
     ],
     "summary": "들안길 '봉평메밀국시' 메밀 막국시, 전병 찐후기 (주차, 자가제면) 왠지 모르게 시원하고 구수한~메밀국시가 당기는 날,",
     "parsed_success": true,
-    "date": "2025. 11. 22.",
-    "country": "대한민국"
+    "date": "2025. 11. 22."
   },
   {
     "logNo": "224078835082",
     "title": "대구 들안길 맛집 '금등어' 화덕 고등어구이 재방문 후기 (주차, 룸)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224078835082",
+    "url": "https://m.blog.naver.com/cybereunny/224078835082",
     "place": {
       "name": "대구 들안길 맛집 '금등어' 화덕 고등어구이",
       "address": "",
@@ -1925,6 +1935,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTdfNSAg/MDAxNzYzMzYyNDI1MzM4.8Uw7EQACnXxV3IpzmZgP_CAYnQ1mBVfC2pIEAPtQwVMg.oWnlamys2Y9-3C4LbrGgFHnNDoSATTzePWE_YZHFVvAg.JPEG/20250729_111431.jpg?type=w800",
     "images": [
@@ -1936,14 +1947,13 @@
     ],
     "summary": "대구 들안길 맛집 '금등어' 화덕 고등어구이 재방문 후기 (주차, 룸) 집에서 생선 구우면 냄새나고 기름 튀고... 보통 일 아니잖아요.",
     "parsed_success": true,
-    "date": "2025. 11. 21.",
-    "country": "대한민국"
+    "date": "2025. 11. 21."
   },
   {
     "logNo": "224078812417",
     "title": "경주 1977년 노포 '명동쫄면' 찐후기 (주차, 웨이팅)",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224078812417",
+    "url": "https://m.blog.naver.com/cybereunny/224078812417",
     "place": {
       "name": "경주 1977년 노포 '명동쫄면' 찐후기 (주차, 웨이팅)",
       "address": "",
@@ -1955,6 +1965,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTdfMTU2/MDAxNzYzMzYxNTI1NDcz.HTsDyhlJQaAoHlbl8kzDuf_X5FxcM4Ns9hD-vgRpWlog.2XWB3MvUZ2d6bd-6ljzbZodxYX95m8aTU2aZVF-BLPsg.JPEG/20251003_140116.jpg?type=w800",
     "images": [
@@ -1966,14 +1977,13 @@
     ],
     "summary": "경주 1977년 노포 '명동쫄면' 찐후기 (주차, 웨이팅) 무려 1977년에 문을 연 쫄면집이 있다? 솔직히 저도 처음엔 믿기지 않았어요.",
     "parsed_success": true,
-    "date": "2025. 11. 20.",
-    "country": "대한민국"
+    "date": "2025. 11. 20."
   },
   {
     "logNo": "224078744661",
     "title": "대구 중구 20년 노포 '다락방만두' 비빔만두, 메밀잔치국수 찐후기!",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224078744661",
+    "url": "https://m.blog.naver.com/cybereunny/224078744661",
     "place": {
       "name": "대구 중구 20년 노포 '다락방만두' 비빔만두, 메밀잔치국수 찐후기!",
       "address": "",
@@ -1985,6 +1995,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTdfMTUx/MDAxNzYzMzU4NTg4OTk5.FGZF1V9y2XSVKf76WABLeaGHCJjE2jH4-hMsGuffG9wg.cvXDzW9i_9AA-cM8fV6mtgmDSrqBoEaaoqensBJwP1Eg.JPEG/SE-33464671-a40f-4e0c-b5db-39fb170d596a.jpg?type=w800",
     "images": [
@@ -1996,14 +2007,13 @@
     ],
     "summary": "대구 중구 20년 노포 '다락방만두' 비빔만두, 메밀잔치국수 찐후기! \"와, 이 조합 뭐지?\" 솔직히 한 입 먹고 감탄했어요.",
     "parsed_success": true,
-    "date": "2025. 11. 19.",
-    "country": "대한민국"
+    "date": "2025. 11. 19."
   },
   {
     "logNo": "224073691922",
     "title": "🎯 제주 함덕 맛집 <함덕고등어쌈밥> 솔직 후기 (오션뷰와 맛있는 곁들임찬)",
     "sub_category": "카페·맛집 어때-제주",
-    "url": "https://blog.naver.com/cybereunny/224073691922",
+    "url": "https://m.blog.naver.com/cybereunny/224073691922",
     "place": {
       "name": "🎯 제주 함덕 맛집 <함덕고등어쌈밥> 솔직",
       "address": "",
@@ -2015,6 +2025,7 @@
     },
     "all_places": [],
     "city_district": "제주",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMTJfMjYw/MDAxNzYyOTMzMDAwNjEw.jAqlnyHsLdQFHn5wfv0DQJ_pB1xP7cXW155Dk60agp0g.Zw8LlHPg3wALjhMRU0VUk2UbGSrOrF3MlvZKufQzqiwg.JPEG/SE-dd969ea2-371d-4e15-b632-04513bf305b3.jpg?type=w800",
     "images": [
@@ -2026,14 +2037,13 @@
     ],
     "summary": "🎯 제주 함덕 맛집 <함덕고등어쌈밥> 솔직 후기 (오션뷰와 맛있는 곁들임찬) 함덕에서 뷰만 좋고 맛은... 이런 곳일까 봐 솔직히 걱정했는데",
     "parsed_success": true,
-    "date": "2025. 11. 12.",
-    "country": "대한민국"
+    "date": "2025. 11. 12."
   },
   {
     "logNo": "224067297437",
     "title": "🎯 안동 여행 중 만난 오아시스, 스타벅스 경북도청대로점 후기",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224067297437",
+    "url": "https://m.blog.naver.com/cybereunny/224067297437",
     "place": {
       "name": "🎯 안동 여행 중 만난 오아시스, 스타벅스 경북도청대로점",
       "address": "",
@@ -2045,6 +2055,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMDZfMjg4/MDAxNzYyNDM1MDA4NDM5.o39PEq0s6EmZfWnks6Agh7YKOnhoHxDwyxo-GlSXdVog.XW1npd5VQviFC3c4EPeUeDXbsvj8-QFkNf5n-PilBbAg.JPEG/20251025_092001.jpg?type=w800",
     "images": [
@@ -2056,14 +2067,13 @@
     ],
     "summary": "🎯 안동 여행 중 만난 오아시스, 스타벅스 경북도청대로점 후기 안동 여행 중에 갑자기 카페인이 확 당기는 거 있죠?",
     "parsed_success": true,
-    "date": "2025. 11. 9.",
-    "country": "대한민국"
+    "date": "2025. 11. 9."
   },
   {
     "logNo": "224067266400",
     "title": "🎯 룰리바베큐 고모점 솔직 재방문 후기 (훈연 꽃갈비 '찐' 인정)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224067266400",
+    "url": "https://m.blog.naver.com/cybereunny/224067266400",
     "place": {
       "name": "🎯 룰리바베큐 고모점 솔직",
       "address": "",
@@ -2075,6 +2085,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMDZfMjk0/MDAxNzYyNDMyOTg1NTYz.saC7MeQcf690vSpH-9lBIdbD5qbxdnqTXlbvIOMj9yAg.J-YRajAnfV3W4WcvFOV6i8lw8laFuFmLNCFHRWWI-xcg.JPEG/20251025_115645.jpg?type=w800",
     "images": [
@@ -2086,14 +2097,13 @@
     ],
     "summary": "🎯 룰리바베큐 고모점 솔직 재방문 후기 (훈연 꽃갈비 '찐' 인정) 솔직히 고백할게요. 저번에 룰리바베큐 고모점 처음 왔을 때,",
     "parsed_success": true,
-    "date": "2025. 11. 7.",
-    "country": "대한민국"
+    "date": "2025. 11. 7."
   },
   {
     "logNo": "224060909477",
     "title": "🎯제주 오설록 찐후기! 인생 말차 아이스크림? (이니스프리, 서광차밭 꿀팁)",
     "sub_category": "카페·맛집 어때-제주",
-    "url": "https://blog.naver.com/cybereunny/224060909477",
+    "url": "https://m.blog.naver.com/cybereunny/224060909477",
     "place": {
       "name": "🎯제주 오설록 찐후기! 인생 말차 아이스크림? (이니스프리, 서광차밭 꿀팁)",
       "address": "",
@@ -2105,6 +2115,7 @@
     },
     "all_places": [],
     "city_district": "제주",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTExMDFfMjky/MDAxNzYxOTU4MzQzNzY4.SSlI664-rzBHDc879eaZ-XNmstyR4CHuMtaciiczOtog.rIwg_o7UQZ2D7ipEfMQ912ovS6EIC9JXG07OrW2_q94g.JPEG/20251022_161122.jpg?type=w800",
     "images": [
@@ -2116,14 +2127,13 @@
     ],
     "summary": "🎯제주 오설록 찐후기! 인생 말차 아이스크림? (이니스프리, 서광차밭 꿀팁) 제주도 여행 가면 다들 오설록 꼭 가시죠? 솔직히 '그냥 넓은 녹차밭 아니야?' 했는데,",
     "parsed_success": true,
-    "date": "2025. 11. 1.",
-    "country": "대한민국"
+    "date": "2025. 11. 1."
   },
   {
     "logNo": "224058240250",
     "title": "🎯 성수동대림창고갤러리 N번째 방문 후기 (찐매력 총정리)",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/224058240250",
+    "url": "https://m.blog.naver.com/cybereunny/224058240250",
     "place": {
       "name": "🎯 성수동대림창고갤러리 N번째 방문",
       "address": "",
@@ -2135,6 +2145,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMjlfNTEg/MDAxNzYxNzQ4MDkxNTQz.6rPW7aIZBdqywxNTcQXaa6IWxmc3VugwxHGi8aXWb1sg.9i0UW_Vc8Uor9WZ6FqDkmDxPtqjw6bANDJWXu6Mnp50g.JPEG/20251011_140047.jpg?type=w800",
     "images": [
@@ -2146,14 +2157,13 @@
     ],
     "summary": "🎯 성수동대림창고갤러리 N번째 방문 후기 (찐매력 총정리) 성수동에 그 많고 많은 핫플 중에 왜 자꾸 '대림창고'만 가게 될까요?",
     "parsed_success": true,
-    "date": "2025. 10. 29.",
-    "country": "대한민국"
+    "date": "2025. 10. 29."
   },
   {
     "logNo": "224055612586",
     "title": "🐴 파리바게뜨 제주 동화마을점 몽생이샌드, 솔직 후기와 맛 평가! (feat. 제주 푸른 들판의 맛)",
     "sub_category": "카페·맛집 어때-제주",
-    "url": "https://blog.naver.com/cybereunny/224055612586",
+    "url": "https://m.blog.naver.com/cybereunny/224055612586",
     "place": {
       "name": "🐴 파리바게뜨 제주 동화마을점 몽생이샌드, 솔직",
       "address": "",
@@ -2165,6 +2175,7 @@
     },
     "all_places": [],
     "city_district": "제주",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMjdfMjEw/MDAxNzYxNTU3NzE2OTcx.P2lrQhLRrok_n9KNYzAPE5zI1S9TJeEJjUQznRIiFkog.Jo-q5rM8GOzVP9xrD-7_6zV-ZwGhFsIrr21gfQ5UOYsg.PNG/image.png?type=w800",
     "images": [
@@ -2176,14 +2187,13 @@
     ],
     "summary": "🐴 파리바게뜨 제주 동화마을점 몽생이샌드, 솔직 후기와 맛 평가! (feat. 제주 푸른 들판의 맛) 솔직히, 여행지에서 파는 특산품 빵 딱히 기대를 안 하게 되더라고요. 맞죠?",
     "parsed_success": true,
-    "date": "2025. 10. 27.",
-    "country": "대한민국"
+    "date": "2025. 10. 27."
   },
   {
     "logNo": "224046340630",
     "title": "🍽️ 서울신라호텔 더 파크뷰 주말 런치 후기 - 대게, 양갈비 필승 메뉴 분석",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/224046340630",
+    "url": "https://m.blog.naver.com/cybereunny/224046340630",
     "place": {
       "name": "🍽️ 서울신라호텔 더 파크뷰 주말 런치",
       "address": "",
@@ -2195,6 +2205,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMTlfMjA3/MDAxNzYwODUyNzIxNzUw.tW7mfyezNQkukJxkH7J1FT3LQ311vZl-Y_gCFGWfbC8g.mWujNDnYbWpWv-Te_7v5G9N4ctqit3nr5CyRve1-QO8g.JPEG/SE-8828812c-8f26-4c22-8138-417e6016f22e.jpg?type=w800",
     "images": [
@@ -2206,14 +2217,13 @@
     ],
     "summary": "🍽️ 서울신라호텔 더 파크뷰 주말 런치 후기 - 대게, 양갈비 필승 메뉴 분석 서울신라호텔더 파크뷰토요일 런치는 미리 예약하지 않으면",
     "parsed_success": true,
-    "date": "2025. 10. 24.",
-    "country": "대한민국"
+    "date": "2025. 10. 24."
   },
   {
     "logNo": "224046247511",
     "title": "🔥 대구 3대 떡볶이 원조 달떡! 신내당시장 달고떡볶이 웨이팅 꿀팁 & 필승 조합 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224046247511",
+    "url": "https://m.blog.naver.com/cybereunny/224046247511",
     "place": {
       "name": "🔥 대구 3대 떡볶이 원조 달떡! 신내당시장 달고떡볶이 웨이팅 꿀팁 & 필승 조합",
       "address": "",
@@ -2225,6 +2235,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMTlfOTMg/MDAxNzYwODQ1ODUxMjEy.t3ZxfK4dmCya0E3X6U9yVJSxZWO-D1TvFTqQXabI5gQg.D3mflbVmrqNkS5yDgYuAxgGeibz5V6nBm0FkuWKrW3Ug.JPEG/20251008_180619.jpg?type=w800",
     "images": [
@@ -2236,14 +2247,13 @@
     ],
     "summary": "🔥 대구 3대 떡볶이 원조 달떡! 신내당시장 달고떡볶이 웨이팅 꿀팁 & 필승 조합 후기 대구 3대 떡볶이중 하나로 꼽히는달고떡볶이를 오랜만에 다시 방문했습니다.",
     "parsed_success": true,
-    "date": "2025. 10. 22.",
-    "country": "대한민국"
+    "date": "2025. 10. 22."
   },
   {
     "logNo": "224046236129",
     "title": "⚡️ 스타벅스 압구정점 방문 후기 & 압구정 전기차 충전 꿀팁! 428 공영주차장",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/224046236129",
+    "url": "https://m.blog.naver.com/cybereunny/224046236129",
     "place": {
       "name": "⚡️ 스타벅스 압구정점 방문",
       "address": "",
@@ -2255,6 +2265,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMTlfMjcy/MDAxNzYwODQzNzE1NjU4.I7O5MJ5jacMD64iAkjLm1AA89BTObDMb5sPkXa2lLxog.Yia3jVIhc76VjcimeMyPdsA2rHEyST9Ei6ofVVFUowYg.JPEG/20251011_093858.jpg?type=w800",
     "images": [
@@ -2266,8 +2277,7 @@
     ],
     "summary": "⚡️ 스타벅스 압구정점 방문 후기 & 압구정 전기차 충전 꿀팁! 428 공영주차장 전기차 충전을스트레스없이 힐링 시간으로 바꿀 수 있다는 사실!",
     "parsed_success": true,
-    "date": "2025. 10. 21.",
-    "country": "대한민국"
+    "date": "2025. 10. 21."
   },
   {
     "logNo": "224038018803",
@@ -2513,7 +2523,7 @@
     "logNo": "224030960199",
     "title": "🔥 입맛 없을 땐? 망향비빔국수, 집 나간 입맛 찾아온 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224030960199",
+    "url": "https://m.blog.naver.com/cybereunny/224030960199",
     "place": {
       "name": "🔥 입맛 없을 땐? 망향비빔국수, 집 나간 입맛 찾아온",
       "address": "",
@@ -2525,6 +2535,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMDNfMjI3/MDAxNzU5NDg4NDc5NzMx.1xpHUfLHmud7gwBDA4FQQ1h8DgKP7DgXmjNKA0E_mDog.L4i6uAEzrQlJrANDnC0IcY4jJrSmBqihCjpHafjD5e8g.JPEG/20250726_133849.jpg?type=w800",
     "images": [
@@ -2536,14 +2547,13 @@
     ],
     "summary": "🔥 입맛 없을 땐? 망향비빔국수, 집 나간 입맛 찾아온 후기 \"아, 밥맛없다...\" 날은 덥고 몸은 축축 처질 때,",
     "parsed_success": true,
-    "date": "2025. 10. 10.",
-    "country": "대한민국"
+    "date": "2025. 10. 10."
   },
   {
     "logNo": "224030970017",
     "title": "🔥 시지 욱수동 신상 카페! 스타벅스 대구월드컵대로DT점 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224030970017",
+    "url": "https://m.blog.naver.com/cybereunny/224030970017",
     "place": {
       "name": "🔥 시지 욱수동 신상 카페! 스타벅스 대구월드컵대로DT점 솔직",
       "address": "",
@@ -2555,6 +2565,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMDNfMjU2/MDAxNzU5NDg5Mjc3Njc2.SF_evo8Om4TINhDa3iT934GDPfzn2RKOm_iz0NKKrOAg.AgwWy08OEfaLwwd9-4N4YKCwlh-xF1-BM63ZdHYNnLYg.JPEG/SE-54a4f1f1-49b2-44cd-af2f-dd4021f44e65.jpg?type=w800",
     "images": [
@@ -2566,8 +2577,7 @@
     ],
     "summary": "🔥 시지 욱수동 신상 카페! 스타벅스 대구월드컵대로DT점 솔직 후기 드디어 대구 시지, 욱수동 근처에 번쩍번쩍한 새 스타벅스가 문을 열었습니다!",
     "parsed_success": true,
-    "date": "2025. 10. 9.",
-    "country": "대한민국"
+    "date": "2025. 10. 9."
   },
   {
     "logNo": "224030951162",
@@ -2653,7 +2663,7 @@
     "logNo": "224031041599",
     "title": "☕️ 고분뷰와 쑥라떼? 경주 오아르미술관 속 '오아르커피' 솔직 후기",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/224031041599",
+    "url": "https://m.blog.naver.com/cybereunny/224031041599",
     "place": {
       "name": "☕️ 고분뷰와 쑥라떼? 경주 오아르미술관 속 '오아르커피' 솔직",
       "address": "",
@@ -2665,6 +2675,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMDNfMjI3/MDAxNzU5NDkzNDk2NDUw.ERhfM3l7_0dPZmmFZU3CXJwPBMc5tkxfyXerybq7OXIg.68yVEKQEkg42nzHfiTDq8IiAuamNc2ry-LvQrdWq9aUg.JPEG/SE-26d6ca9f-8764-4538-a0fb-f1361e955caf.jpg?type=w800",
     "images": [
@@ -2676,8 +2687,7 @@
     ],
     "summary": "☕️ 고분뷰와 쑥라떼? 경주 오아르미술관 속 '오아르커피' 솔직 후기 경주 오아르미술관에서 전시를 보고 나니 감동의 여운을 즐길 공간이 간절해졌어요.",
     "parsed_success": true,
-    "date": "2025. 10. 4.",
-    "country": "대한민국"
+    "date": "2025. 10. 4."
   },
   {
     "logNo": "224030929921",
@@ -2723,7 +2733,7 @@
     "logNo": "224030916689",
     "title": "🎯 라벨라쿠치나 10년만의 방문, 추억과 현실 사이 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224030916689",
+    "url": "https://m.blog.naver.com/cybereunny/224030916689",
     "place": {
       "name": "🎯 라벨라쿠치나 10년만의 방문, 추억과 현실 사이 솔직",
       "address": "",
@@ -2735,6 +2745,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTEwMDNfMTM0/MDAxNzU5NDgzODQzOTY2.6Pxv1hVcXVVQtf-H219VWopQ-MIrS1jtohvSMtlF-x8g.mJJfe4DC9R7NyjKYaEMNYXiKuHQnFNaac59kdU9oEcsg.JPEG/20250831_120709.jpg?type=w800",
     "images": [
@@ -2746,14 +2757,13 @@
     ],
     "summary": "🎯 라벨라쿠치나 10년만의 방문, 추억과 현실 사이 솔직 후기 \"10년이면 강산도 변한다는데, 제 추억 속 그 레스토랑은 어떨까요?\"",
     "parsed_success": true,
-    "date": "2025. 10. 3.",
-    "country": "대한민국"
+    "date": "2025. 10. 3."
   },
   {
     "logNo": "224023643481",
     "title": "🎯 들안길 맨션5, 무화과데니쉬 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224023643481",
+    "url": "https://m.blog.naver.com/cybereunny/224023643481",
     "place": {
       "name": "🎯 들안길 맨션5, 무화과데니쉬",
       "address": "",
@@ -2765,6 +2775,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA5MjdfNiAg/MDAxNzU4OTUwMzgxMzUx.mhmqyLEjVbzpksTpp5q7pYAia3YNcZKDRj-p7btz4-Yg.89kVU66jvQ0LdTSyUN_a5BSSMrVe3KIJsQx2MYBE2fgg.JPEG/20250927_125000.jpg?type=w800",
     "images": [
@@ -2776,14 +2787,13 @@
     ],
     "summary": "🎯 들안길 맨션5, 무화과데니쉬 후기 들안길에서 맛있는 밥 먹고 나서, \"이제 어디 가지?\" 이 고민 다들 해보셨죠?",
     "parsed_success": true,
-    "date": "2025. 9. 28.",
-    "country": "대한민국"
+    "date": "2025. 9. 28."
   },
   {
     "logNo": "224015698226",
     "title": "🔥 룰리커피 고모점 앞 신상 '룰리바베큐 고모점' 솔직 후기 (웨이팅, 주차 꿀팁)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224015698226",
+    "url": "https://m.blog.naver.com/cybereunny/224015698226",
     "place": {
       "name": "🔥 룰리커피 고모점 앞 신상 '룰리바베큐 고모점' 솔직",
       "address": "",
@@ -2795,6 +2805,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA5MjBfMTA3/MDAxNzU4Mzc4MzM1MTQ2.2AZljsXrDLgCUG-u4h0L8Qa6FxcHcKbHK8sTEZaJqsQg.2v420jF6V-QczMZuyPFsi0tcAG5kEDRE0oIGacIhdGwg.JPEG/20250920_135556.jpg?type=w800",
     "images": [
@@ -2806,14 +2817,13 @@
     ],
     "summary": "🔥 룰리커피 고모점 앞 신상 '룰리바베큐 고모점' 솔직 후기 (웨이팅, 주차 꿀팁) 대구에서 가장 핫한 카페를 꼽으라면 많은 분들이 '룰리커피'를 떠올리시죠?",
     "parsed_success": true,
-    "date": "2025. 9. 20.",
-    "country": "대한민국"
+    "date": "2025. 9. 20."
   },
   {
     "logNo": "224007750772",
     "title": "🔥 대구 만촌동 신상 카페 '아눅 만촌점' 솔직 후기 (주차, 브런치, 웨이팅 꿀팁)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/224007750772",
+    "url": "https://m.blog.naver.com/cybereunny/224007750772",
     "place": {
       "name": "🔥 대구 만촌동 신상 카페 '아눅 만촌점' 솔직",
       "address": "",
@@ -2825,6 +2835,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTRfMTIg/MDAxNzU3ODQ3ODkzMzYw.FPDNbwM8LO44g_GcCEtC72asnLH2Ps8wwI_W7uB9aqMg.gSnzn30gxE5oXwqxbJivDDqArN5XYa1AJ1PpLv-PXUUg.JPEG/SE-e5ff7e39-d953-47d7-843b-f9669c29c7db.jpg?type=w800",
     "images": [
@@ -2836,8 +2847,7 @@
     ],
     "summary": "🔥 대구 만촌동 신상 카페 '아눅 만촌점' 솔직 후기 (주차, 브런치, 웨이팅 꿀팁) 요즘 인스타그램 피드를 도배하고 있는 대구에서 가장 핫한 신상 카페, 다들 아시죠?",
     "parsed_success": true,
-    "date": "2025. 9. 16.",
-    "country": "대한민국"
+    "date": "2025. 9. 16."
   },
   {
     "logNo": "224007668572",
@@ -2963,7 +2973,7 @@
     "logNo": "223985731324",
     "title": "안국역 카페 레이어드, 스콘 맛집이라더니 동화 속으로 들어감 (웨이팅 꿀팁)",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/223985731324",
+    "url": "https://m.blog.naver.com/cybereunny/223985731324",
     "place": {
       "name": "안국역 카페 레이어드, 스콘 맛집이라더니 동화 속으로 들어감 (웨이팅 꿀팁)",
       "address": "",
@@ -2975,6 +2985,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA4MjdfMjA1/MDAxNzU2MjkwNzA2NDIw.IJ84mzwmHsrWZNN_iQWm3M_KuipDdBv8dvFmIZ3FoPcg.ZgEhBJuPHZOT-7mGiEnItZQh1MxIXef58FjNOx9sHUwg.JPEG/SE-99911b17-20b6-414e-9622-2affacec0f4e.jpg?type=w800",
     "images": [
@@ -2986,8 +2997,7 @@
     ],
     "summary": "안국역 카페 레이어드, 스콘 맛집이라더니 동화 속으로 들어감 (웨이팅 꿀팁) \"스콘 맛집이 거기서 거기지\" 라고 생각하셨나요? 솔직히 저도 그랬어요.",
     "parsed_success": true,
-    "date": "2025. 8. 28.",
-    "country": "대한민국"
+    "date": "2025. 8. 28."
   },
   {
     "logNo": "223985617911",
@@ -3033,7 +3043,7 @@
     "logNo": "223980650336",
     "title": "대구 교동 또 신상? | 브런치 카페 '잔상화' 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223980650336",
+    "url": "https://m.blog.naver.com/cybereunny/223980650336",
     "place": {
       "name": "대구 교동 또 신상? | 브런치 카페 '잔상화' 솔직",
       "address": "",
@@ -3045,6 +3055,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA4MjNfNDYg/MDAxNzU1OTMxMjg3ODk2._BNbPYB8ZUTKaU9k1kgHVvrxsBp2ECKrRyLKZTxN0VUg.CoAa9lr5C13nlN2cdh2RoMu-kDDeakY2Kqbu4liuZD8g.JPEG/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C_(28).jpg?type=w800",
     "images": [
@@ -3054,8 +3065,7 @@
     ],
     "summary": "대구 교동 또 신상? | 브런치 카페 '잔상화' 솔직 후기 \"교동에 또 새로운 카페가 생겼다고?\" 네, 맞아요! 정말 쉴 틈 없이 핫플이 생겨나네요.",
     "parsed_success": true,
-    "date": "2025. 8. 26.",
-    "country": "대한민국"
+    "date": "2025. 8. 26."
   },
   {
     "logNo": "223980641511",
@@ -3101,7 +3111,7 @@
     "logNo": "223980634828",
     "title": "수성못 근처, 유럽 감성 인테리어에 디저트 특화된 카페 2곳, 아직도 안 가봤어? | 브리튼 헨지 수성못점, 디저트39 수성못점",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223980634828",
+    "url": "https://m.blog.naver.com/cybereunny/223980634828",
     "place": {
       "name": "수성못 근처, 유럽 감성 인테리어에 디저트 특화된 카페 2곳, 아직도 안 가봤어? | 브리튼 헨지 수성못점, 디저트39 수성못점",
       "address": "",
@@ -3113,6 +3123,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA4MjNfMTA0/MDAxNzU1OTMwNDIzMjU1.y9Lrw6xlhzMwaPyfQDAJAy8Z6sz1DXyJs5OX15Je28gg.pJZyuN3ag-mhvuOtS83x_8-I2Eok5KS5qX5HiM-fG3Eg.PNG/ChatGPT_Image_2025%EB%85%84_8%EC%9B%94_23%EC%9D%BC_%EC%98%A4%ED%9B%84_03_26_42.png?type=w800",
     "images": [
@@ -3124,8 +3135,7 @@
     ],
     "summary": "수성못 근처, 유럽 감성 인테리어에 디저트 특화된 카페 2곳, 아직도 안 가봤어? | 브리튼 헨지 수성못점, 디저트39 수성못점 대구 수성못 근처, 유럽 감성 인테리어에 디저트 특화된 카페 중 두 곳을 엄선했어요.",
     "parsed_success": true,
-    "date": "2025. 8. 24.",
-    "country": "대한민국"
+    "date": "2025. 8. 24."
   },
   {
     "logNo": "223980617026",
@@ -3536,7 +3546,7 @@
     "logNo": "223940255191",
     "title": "대구 신세계 맛집, 크리스탈제이드 상하이 시그니처 세트메뉴 솔직 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223940255191",
+    "url": "https://m.blog.naver.com/cybereunny/223940255191",
     "place": {
       "name": "대구 신세계 맛집, 크리스탈제이드 상하이 시그니처 세트메뉴 솔직",
       "address": "",
@@ -3548,6 +3558,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA3MjBfMTY1/MDAxNzUyOTc4NTg0ODI0.eXjXhgPGMWbk6URUYdhlbAq1nBjzySJmi0EzSaJlv9sg.uwRX0KWXsepBEb2sljZ5tOmga1fAtAZK7AZFEYgtRxMg.JPEG/20250718_174003.jpg?type=w800",
     "images": [
@@ -3559,8 +3570,7 @@
     ],
     "summary": "대구 신세계 맛집, 크리스탈제이드 상하이 시그니처 세트메뉴 솔직 후기 대구 신세계백화점에서 쇼핑하고 나면 \"저녁 뭐 먹지?\" 이 고민, 저만 하는 거 아니죠?",
     "parsed_success": true,
-    "date": "2025. 7. 20.",
-    "country": "대한민국"
+    "date": "2025. 7. 20."
   },
   {
     "logNo": "223922710206",
@@ -3615,18 +3625,29 @@
     "logNo": "223907194255",
     "title": "대구 수성구 '덕담 수성점' 방문기 - 2인 세트 메뉴 후기 (수비드 스테이크, 부라타 파스타, 착즙오렌지)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223907194255",
+    "url": "https://m.blog.naver.com/cybereunny/223907194255",
     "place": {
-      "name": "대구 수성구 '덕담 수성점' 방문기 - 2인 세트 메뉴",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "덕담 수성점",
+      "address": "대구광역시 수성구 상록로 15 상가 119호",
+      "lat": 35.8609798,
+      "lng": 128.6230887,
       "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "placeId": "1164481950",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/1287015"
     },
-    "all_places": [],
-    "city_district": "대구",
+    "all_places": [
+      {
+        "name": "덕담 수성점",
+        "address": "대구광역시 수성구 상록로 15 상가 119호",
+        "lat": 35.8609798,
+        "lng": 128.6230887,
+        "tel": "",
+        "placeId": "1164481950",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/1287015"
+      }
+    ],
+    "city_district": "대구 수성구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA2MjFfMTYg/MDAxNzUwNDgyMzA5NzMy.YrHDuDlCUCl1g4ObOUOaiBAZCG3PGqbXytD5xM4ck0kg.IJcpcjfmC4NMl5DN4d5vsBpYSLbrgMm6HnzXXeb6g2Qg.JPEG/900%EF%BC%BF20250621%EF%BC%BF132310%EF%BC%880%EF%BC%89.jpg?type=w800",
     "images": [
@@ -3638,8 +3659,7 @@
     ],
     "summary": "대구 수성구 '덕담 수성점' 방문기 - 2인 세트 메뉴 후기 (수비드 스테이크, 부라타 파스타, 착즙오렌지) 오늘은 범어센트럴푸르지오 상가에 위치한 덕담 수성점에 다녀왔습니다. 주소 : 대구 수성구 상록로 15 상가 119호",
     "parsed_success": true,
-    "date": "2025. 6. 21.",
-    "country": "대한민국"
+    "date": "2025. 6. 21."
   },
   {
     "logNo": "223899073252",
@@ -3725,7 +3745,7 @@
     "logNo": "223897457223",
     "title": "[대구 수성구 범어동 샤브샤브 맛집] 이로운샤브, 한우 부채살 샤브와 계란죽 후기 및 솔직 리뷰!",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223897457223",
+    "url": "https://m.blog.naver.com/cybereunny/223897457223",
     "place": {
       "name": "[대구 수성구 범어동 샤브샤브 맛집] 이로운샤브, 한우 부채살 샤브와 계란죽",
       "address": "",
@@ -3737,6 +3757,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA1MzFfMjc3/MDAxNzQ4NjU2NDc2OTc4.zsPqUpxnHyf38DUfKOG8W7c1dnTGVhLTBdeJWbRx_ykg.YI-peHS5ADHDRPD30gT9F8anUr-YZFowVrmM5_igU1Ig.JPEG/900%EF%BC%BF20250530%EF%BC%BF173414.jpg?type=w800",
     "images": [
@@ -3748,8 +3769,7 @@
     ],
     "summary": "[대구 수성구 범어동 샤브샤브 맛집] 이로운샤브, 한우 부채살 샤브와 계란죽 후기 및 솔직 리뷰! 수성구 범어동에서 샤브샤브 전문점을 찾고 계신가요? 최근 방문한 ‘이로운샤브’의 방문 후기를 소개해드릴게요. 한우 부채살 샤브와 계란죽을 중심으로, 현장 분위기와 실제 먹어본 맛 등 자세히 담았습니다. 대구 수성구 범어동, 범어도서관 인근에 위치한 이로운샤브는 깔끔한 내부 인테리어와 밝은 분위기로 첫인상부터 좋았습니다. 화이트와 그린톤이 어우러진 ",
     "parsed_success": true,
-    "date": "2025. 6. 12.",
-    "country": "대한민국"
+    "date": "2025. 6. 12."
   },
   {
     "logNo": "223896090758",
@@ -4355,7 +4375,7 @@
     "logNo": "223850120340",
     "title": "대구 수성구 바르미명품한우센터 방문 후기｜1++ 한우 맛집, 가격, 서비스 완벽 리뷰",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223850120340",
+    "url": "https://m.blog.naver.com/cybereunny/223850120340",
     "place": {
       "name": "대구 수성구 바르미명품한우센터 방문",
       "address": "",
@@ -4367,6 +4387,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAzMTJfMjk3/MDAxNzQxNzczMzY1Njk3.XhCmVF1j2D5-fDy7kmnFKQgx5WbWDZNV2HmrVAdTOEMg.zMoichENft3hda81PIWSRq2efKZ0q20dmlo_Gm0vHxAg.JPEG/900%EF%BC%BF20250214%EF%BC%BF135921.jpg?type=w800",
     "images": [
@@ -4378,14 +4399,13 @@
     ],
     "summary": "대구 수성구 바르미명품한우센터 방문 후기｜1++ 한우 맛집, 가격, 서비스 완벽 리뷰 한우 좋아하세요? 대구 수성구에서 가성비 좋은 '명품 한우'를 만난 이야기를 들려드릴게요! 대구 수성구 바르미명품한우센터",
     "parsed_success": true,
-    "date": "2025. 4. 29.",
-    "country": "대한민국"
+    "date": "2025. 4. 29."
   },
   {
     "logNo": "223839036165",
     "title": "대구 대게 포장배달 추천, 속초회대게 신선함 집에서 즐기기 – 대구의 속초회대게 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223839036165",
+    "url": "https://m.blog.naver.com/cybereunny/223839036165",
     "place": {
       "name": "대구 대게 포장배달 추천, 속초회대게 신선함 집에서 즐기기 – 대구의 속초회대게",
       "address": "",
@@ -4397,6 +4417,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTA0MThfMTc1/MDAxNzQ0OTcwMjYxNjk1.OLwR4fG6KimCkHSSrGub_6tiwgmZMXg3eq3l93QQ0Rcg.7pAyN5Ttv4uM-FA9iVH0wsr66OdJfIuIJrutJYKE0Q8g.JPEG/SE-44aeb4f1-5355-44d4-a6e5-ae1941ef1eb6.jpg?type=w800",
     "images": [
@@ -4408,8 +4429,7 @@
     ],
     "summary": "대구 대게 포장배달 추천, 속초회대게 신선함 집에서 즐기기 – 대구의 속초회대게 후기 대게를 좋아하는 분들이라면, 신선하고 푸짐한 대게를 집에서 편하게 즐길 수 있는 포장 배달 서비스를 한 번쯤 고민해보셨을 거예요. 오늘은 대구에서 속초의 신선한 대게를 맛볼 수 있는 '대구의 속초회대게'의 대게 포장 배달 후기를 상세하게 소개해드릴게요. 대구의 속초회대게, 왜 특별할까?",
     "parsed_success": true,
-    "date": "2025. 4. 18.",
-    "country": "대한민국"
+    "date": "2025. 4. 18."
   },
   {
     "logNo": "223832641056",
@@ -5015,7 +5035,7 @@
     "logNo": "223788637110",
     "title": "텍사스 로드하우스 더 현대 대구점 솔직 후기 | 스테이크 전문점 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223788637110",
+    "url": "https://m.blog.naver.com/cybereunny/223788637110",
     "place": {
       "name": "텍사스 로드하우스 더 현대 대구점 솔직",
       "address": "",
@@ -5027,6 +5047,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAzMDhfMTk3/MDAxNzQxNDEyNTk0Njc5.4ip8vVb93JnA3MbnTFpERojjwFgBbp2YjSKY728ey-Eg.heJiIpmUVEistXOrYr6Ha34R5UkHpHAO205P252aW9Qg.JPEG/SE-3958fded-b0e0-4403-93ef-994f8e06d862.jpg?type=w800",
     "images": [
@@ -5038,8 +5059,7 @@
     ],
     "summary": "텍사스 로드하우스 더 현대 대구점 솔직 후기 | 스테이크 전문점 후기 최근텍사스 로드하우스 더 현대 대구점을 방문하여스테이크와 다양한 홈메이드 사이드 메뉴를 맛볼 기회가 있었습니다. 이번 방문은 두 번째인데 이제야 포스팅을 남기네요. 이번 방문에서는설로인 스테이크와뉴욕 스트립 스테이크를 선택하고, 각각의 스테이크에 어울리는세 가지 홈메이드 사이드 메뉴를 함께 즐겼습니다.",
     "parsed_success": true,
-    "date": "2025. 3. 8.",
-    "country": "대한민국"
+    "date": "2025. 3. 8."
   },
   {
     "logNo": "223788074079",
@@ -5085,7 +5105,7 @@
     "logNo": "223786628616",
     "title": "대구 | 범어동 맛집 톤쇼우 후기: 버크셔K 특로스카츠 한정판 맛보기! 웨이팅부터 맛까지 완벽 정리",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223786628616",
+    "url": "https://m.blog.naver.com/cybereunny/223786628616",
     "place": {
       "name": "대구 | 범어동 맛집 톤쇼우",
       "address": "",
@@ -5097,6 +5117,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAzMDNfODUg/MDAxNzQwOTcyNTk4NTM0.XrK0jhgN_XFJ5eIC4g8CU3jEoJsIu5vX3n_HYZVwW_Ag.eiJ1FeXbsdXesLHJcd1Q2yCkToF1D7UthV1cGDTGXdsg.JPEG/900%EF%BC%BF1740972546101%EF%BC%8D2.jpg?type=w800",
     "images": [
@@ -5108,8 +5129,7 @@
     ],
     "summary": "대구 | 범어동 맛집 톤쇼우 후기: 버크셔K 특로스카츠 한정판 맛보기! 웨이팅부터 맛까지 완벽 정리 오늘은 대구에서 꼭 가봐야 할 돈카츠 맛집, ‘톤쇼우’ 방문 후기를 들려드리려고 해요. 항상 대기줄이 많아서 패스했었는데 드디어 이곳을 찾았답니다! 돈카츠 마니아라면 한 번쯤 들어봤을 ‘톤쇼우’, 과연 얼마나 특별할까요? 줄 서서 기다리는 과정부터, 최고급 ‘버크셔 K 스페셜 카츠’까지 모든 경험을 공유할게요! 📍주소:대구 수성구 달구벌대로502",
     "parsed_success": true,
-    "date": "2025. 3. 6.",
-    "country": "대한민국"
+    "date": "2025. 3. 6."
   },
   {
     "logNo": "223779822854",
@@ -5155,7 +5175,7 @@
     "logNo": "223774765819",
     "title": "대구 현대백화점 속 초록빛 휴식처, 아무하 플라워카페 방문기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223774765819",
+    "url": "https://m.blog.naver.com/cybereunny/223774765819",
     "place": {
       "name": "대구 현대백화점 속 초록빛 휴식처, 아무하 플라워카페 방문기",
       "address": "",
@@ -5167,6 +5187,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAyMjZfMTY0/MDAxNzQwNTQzMDUxMjYz.n8rl7QdUZjzAQjZ4ypo2lAgs-M9Tzd46a84Jw3uP98cg.wpsKe6clXt40xXUL9GNbJBGlq5Uj4zha9e4qo3Do99Eg.JPEG/900%EF%BC%BF20250226%EF%BC%BF123750.jpg?type=w800",
     "images": [
@@ -5178,8 +5199,7 @@
     ],
     "summary": "대구 현대백화점 속 초록빛 휴식처, 아무하 플라워카페 방문기 오늘은 대구 현대백화점 4층에 위치한 '아무하 플라워카페(AMUHA)'를 다녀온 후기를 들려드리려고 해요. 쇼핑으로 지친 발걸음을 잠시 쉬어가기 좋은 이곳은 꽃과 커피가 함께하는 특별한 공간이었답니다.",
     "parsed_success": true,
-    "date": "2025. 2. 26.",
-    "country": "대한민국"
+    "date": "2025. 2. 26."
   },
   {
     "logNo": "223773516502",
@@ -5745,7 +5765,7 @@
     "logNo": "223726708156",
     "title": "경주 황리단길 맛집 엘라토(El Rato) | 멕시코 음식 파히타부터 퀘사디아까지 완벽 가이드",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/223726708156",
+    "url": "https://m.blog.naver.com/cybereunny/223726708156",
     "place": {
       "name": "경주 황리단길 맛집 엘라토(El Rato) | 멕시코 음식 파히타부터 퀘사디아까지 완벽 가이드",
       "address": "",
@@ -5757,6 +5777,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAxMTNfMTA1/MDAxNzM2Njk0MzQzOTMz.olHr4cZ6HaxcqlvfFhuNzEv_8Pv9WHRmZ9Jvax1UEEgg.vZ1d3RhTjB7JFr3fM1VHKjIUGx3XBInQ39XzBg_2B4Ig.JPEG/KakaoTalk_20250111_182256921_07.jpg?type=w800",
     "images": [
@@ -5768,25 +5789,35 @@
     ],
     "summary": "경주 황리단길 맛집 엘라토(El Rato) | 멕시코 음식 파히타부터 퀘사디아까지 완벽 가이드 엘라토(El Rato) 경주 멕시코, 남미음식",
     "parsed_success": true,
-    "date": "2025. 1. 17.",
-    "country": "대한민국"
+    "date": "2025. 1. 17."
   },
   {
     "logNo": "223725943134",
     "title": "[경주 소소밀밀 북카페] 무열왕릉 근처 한옥 그림책방 카페 2025년 최신 정보 총정리 - 위치, 영업시간, 메뉴",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/223725943134",
+    "url": "https://m.blog.naver.com/cybereunny/223725943134",
     "place": {
-      "name": "[경주 소소밀밀 북카페] 무열왕릉 근처 한옥 그림책방 카페 2025년 최신 정보 총정리 - 위치, 영업시간, 메뉴",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "소소밀밀",
+      "address": "경상북도 경주시 능남길 15 주2동",
+      "lat": 35.8234014,
+      "lng": 129.1854915,
       "tel": "",
-      "placeId": "",
+      "placeId": "1181171240",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "경북",
+    "all_places": [
+      {
+        "name": "소소밀밀",
+        "address": "경상북도 경주시 능남길 15 주2동",
+        "lat": 35.8234014,
+        "lng": 129.1854915,
+        "tel": "",
+        "placeId": "1181171240",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "경상북도 경주시",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAxMTNfMTI3/MDAxNzM2Njk0NzY2NzYx.sjLAOy0B5me_RUEByBsAXdzOeVKDzyLSIoC7ApIE6Ekg.1rQySRry-J3F94FFs3-8m-bj8r_PyEzndXne1AIDtsgg.JPEG/KakaoTalk_20250111_182335824_04.jpg?type=w800",
     "images": [
@@ -5798,14 +5829,13 @@
     ],
     "summary": "[경주 소소밀밀 북카페] 무열왕릉 근처 한옥 그림책방 카페 2025년 최신 정보 총정리 - 위치, 영업시간, 메뉴 경주의 특별한 북카페, 소소밀밀을 찾아서 고즈넉한 경주의 서악동, 무열왕릉 근처에 자리 잡은 소소밀밀은 '성긴 곳은 더욱 성기게, 빽빽한 곳은 더욱 빽빽하게'라는 의미를 담고 있는 특별한 북카페입니다. 2016년에 문을 연 이곳은 오래된 한옥을 개조하여 만든 카페로, 시골집에 온 듯한 포근한 분위기를 자아냅니다.",
     "parsed_success": true,
-    "date": "2025. 1. 16.",
-    "country": "대한민국"
+    "date": "2025. 1. 16."
   },
   {
     "logNo": "223724805546",
     "title": "[서울 논현동 카페] 눈 오는 날 업사이드커피 논현점, 따뜻한 음료 리뷰 | 테이크아웃 1000원 할인",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/223724805546",
+    "url": "https://m.blog.naver.com/cybereunny/223724805546",
     "place": {
       "name": "[서울 논현동 카페] 눈 오는 날 업사이드커피 논현점, 따뜻한 음료 리뷰 | 테이크아웃 1000원 할인",
       "address": "",
@@ -5817,6 +5847,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://postfiles.pstatic.net/MjAyNTAxMTNfMTAx/MDAxNzM2NzM4NTA0NzQy.X2966bky3xnbRC7N57SPDXcWN1r2ap4dpEQLKl4dc5cg.1QzP8SYasfrH7pCdjv-kSddtDzSH-DHXo8kIQCSwk9Yg.JPEG/%EB%82%B4%EB%8F%88%EB%82%B4%EC%82%B0.jpg?type=w800",
     "images": [
@@ -5828,14 +5859,13 @@
     ],
     "summary": "[서울 논현동 카페] 눈 오는 날 업사이드커피 논현점, 따뜻한 음료 리뷰 | 테이크아웃 1000원 할인 업사이드커피 논현점 하얀 눈이 갑자기 내리는 추운날, 논현동 거리를 걷다가 우연히 발견한 업사이드커피입니다. 차가운 바람을 피해 들어간 이곳에서 저는 뜻밖의 행복한 커피 타임을 가질 수 있었어요. 마감전이라서 테이크 아웃만 가능했어요.",
     "parsed_success": true,
-    "date": "2025. 1. 15.",
-    "country": "대한민국"
+    "date": "2025. 1. 15."
   },
   {
     "logNo": "223723856398",
     "title": "[경주 맛집] 20년 전통의 정갈한 한정식 맛집 | 연화바루, 건강한 한 끼의 특별한 만남 | 사찰음식 후기",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/223723856398",
+    "url": "https://m.blog.naver.com/cybereunny/223723856398",
     "place": {
       "name": "[경주 맛집] 20년 전통의 정갈한 한정식 맛집 | 연화바루, 건강한 한 끼의 특별한 만남 | 사찰음식",
       "address": "",
@@ -5847,6 +5877,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAxMTNfMzIg/MDAxNzM2Njk1NTY5Njg3.RWDr_50jfBjC4ldp72dT3C37NE12hDmaSZEeYNuUfs4g.HT4qk6McM6bzYVzQxMtbti62pDsxBEBE6FR8sDJkgQMg.JPEG/SE-e928ae7d-bfb7-4328-881b-8d775ef4c57e.jpg?type=w800",
     "images": [
@@ -5858,8 +5889,7 @@
     ],
     "summary": "[경주 맛집] 20년 전통의 정갈한 한정식 맛집 | 연화바루, 건강한 한 끼의 특별한 만남 | 사찰음식 후기 평소 육식 위주의 식단에 지쳐있던 차에 경주 여행길, 특별한 식사를 하고 싶어 찾아간 연화바루. 조계종에서 직접 운영하는 20년 전통의 사찰음식점이라는 점이 믿음직스러웠습니다. 📍 주소 : 경상북도 경주시 대경로 4827",
     "parsed_success": true,
-    "date": "2025. 1. 14.",
-    "country": "대한민국"
+    "date": "2025. 1. 14."
   },
   {
     "logNo": "223724228376",
@@ -5985,7 +6015,7 @@
     "logNo": "223716117332",
     "title": "[대구 수성못 맛집] 현지 셰프가 선보이는 정통 인도요리 푸나왈라 | 프리미엄 인도 레스토랑",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223716117332",
+    "url": "https://m.blog.naver.com/cybereunny/223716117332",
     "place": {
       "name": "[대구 수성못 맛집] 현지 셰프가 선보이는 정통 인도요리 푸나왈라 | 프리미엄 인도 레스토랑",
       "address": "",
@@ -5997,6 +6027,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAxMDZfMjY5/MDAxNzM2MTMzNTMxMjc4.UKdZvh1wvUizO9f0WbM04UClOxFT98WnLcKF4SBSNEgg.OWKHWeol8DRR9BiHvDWqWCxGknZTVjJG195--XBM_0wg.JPEG/SE-c56f1cd4-ca5c-11ef-9be6-538a33ba64b2.jpg?type=w800",
     "images": [
@@ -6008,8 +6039,7 @@
     ],
     "summary": "[대구 수성못 맛집] 현지 셰프가 선보이는 정통 인도요리 푸나왈라 | 프리미엄 인도 레스토랑 대구의 핫플레이스 수성못에서 색다른 맛의 여행을 떠나보세요. 3층에 자리 잡은 푸나왈라는 20년 경력의 인도 현지 호텔 셰프가 선보이는 정통 인도 요리를 맛볼 수 있는 프리미엄 레스토랑입니다. 주소 :대구 수성구 수성못2길 3 3층(수성못역 1번 출구에서 854m미터)",
     "parsed_success": true,
-    "date": "2025. 1. 6.",
-    "country": "대한민국"
+    "date": "2025. 1. 6."
   },
   {
     "logNo": "223715078108",
@@ -6055,7 +6085,7 @@
     "logNo": "223714595488",
     "title": "[대구 범어동 카페] 이명재커피 - 로스터의 손길이 닿은 스페셜티 커피의 성지, 솔직 방문 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223714595488",
+    "url": "https://m.blog.naver.com/cybereunny/223714595488",
     "place": {
       "name": "[대구 범어동 카페] 이명재커피 - 로스터의 손길이 닿은 스페셜티 커피의 성지, 솔직 방문",
       "address": "",
@@ -6067,6 +6097,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNTAxMDRfMTE3/MDAxNzM1OTY4NDIxMjc4.l7psJdZg--DunxGZesEQN2jMobWIhJ9gJJFCNj_kaoYg.iXNfOVoyE2cwlFxAuqHmxTqgHcLXNUscvKo_moTbZgwg.JPEG/900%EF%BC%BF20250104%EF%BC%BF141231.jpg?type=w800",
     "images": [
@@ -6078,8 +6109,7 @@
     ],
     "summary": "[대구 범어동 카페] 이명재커피 - 로스터의 손길이 닿은 스페셜티 커피의 성지, 솔직 방문 후기 대구 범어동 카페 투어 커피 마니아들의 성지",
     "parsed_success": true,
-    "date": "2025. 1. 4.",
-    "country": "대한민국"
+    "date": "2025. 1. 4."
   },
   {
     "logNo": "223701203680",
@@ -6165,7 +6195,7 @@
     "logNo": "223695817816",
     "title": "12월 17일! 맛장우의 새로운 도전, '부창제과' 대구 2호점 오픈!",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223695817816",
+    "url": "https://m.blog.naver.com/cybereunny/223695817816",
     "place": {
       "name": "12월 17일! 맛장우의 새로운 도전, '부창제과' 대구 2호점 오픈!",
       "address": "",
@@ -6177,6 +6207,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMTZfMjA2/MDAxNzM0MzU5MzE4MTEy.bowtyB0z7RB4QoeKGH5ArB_4gpHUxS73eNyXRxQrC2gg.aLDpXlpRpEhiO2F0cvX0do0jBc1IUUOoUQutnFcDNLIg.JPEG/PS24101800789.jpg?type=w800",
     "images": [
@@ -6188,8 +6219,7 @@
     ],
     "summary": "12월 17일! 맛장우의 새로운 도전, '부창제과' 대구 2호점 오픈! '부창제과' 대구 2호점 오픈! 배우 이장우 호두과자 2호점",
     "parsed_success": true,
-    "date": "2024. 12. 16.",
-    "country": "대한민국"
+    "date": "2024. 12. 16."
   },
   {
     "logNo": "223693996426",
@@ -6235,7 +6265,7 @@
     "logNo": "223693967553",
     "title": "대구 | 범어동 | 스타벅스 제니스점 | 2024 스타벅스 크리스마스 MD 구매 가이드 🎄",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223693967553",
+    "url": "https://m.blog.naver.com/cybereunny/223693967553",
     "place": {
       "name": "대구 | 범어동 | 스타벅스 제니스점 | 2024 스타벅스 크리스마스 MD 구매 가이드 🎄",
       "address": "",
@@ -6247,6 +6277,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMTVfODYg/MDAxNzM0MjIyNjMzNjY0.wt1WRIL_WDb7s3U0BHnUfusTwEkiv77rt0l-dmBUCzQg.XgNDyIPjy5xQ4z7_3yUdVHw361-7o7FlNj58dEFF588g.JPEG/900%EF%BC%BF1734221421883%EF%BC%8D3.jpg?type=w800",
     "images": [
@@ -6258,14 +6289,13 @@
     ],
     "summary": "대구 | 범어동 | 스타벅스 제니스점 | 2024 스타벅스 크리스마스 MD 구매 가이드 🎄 스타벅스 크리스마스 MD 스타벅스 제니스점",
     "parsed_success": true,
-    "date": "2024. 12. 15.",
-    "country": "대한민국"
+    "date": "2024. 12. 15."
   },
   {
     "logNo": "223693377173",
     "title": "서울 | 특별한 날을 더욱 특별하게, 서울 호텔 '파인다이닝 Best 6 ' 가이드",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/223693377173",
+    "url": "https://m.blog.naver.com/cybereunny/223693377173",
     "place": {
       "name": "서울 | 특별한 날을 더욱 특별하게, 서울 호텔 '파인다이닝 Best 6 ' 가이드",
       "address": "",
@@ -6277,6 +6307,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMTRfMTQ2/MDAxNzM0MTU2NDYzODUz.NdEbhWONt6c4-pGuYKqljeWiZdQjxy3K9xWCXmli8Bsg.OTXTQm75uDbzFa9nLumcDqFezqRfmiRtk5AfwA6_6Bkg.PNG/image.png?type=w800",
     "images": [
@@ -6288,14 +6319,13 @@
     ],
     "summary": "서울 | 특별한 날을 더욱 특별하게, 서울 호텔 '파인다이닝 Best 6 ' 가이드 서울 호텔 파인다이닝 가이드 특별한 날을 더욱 특별하게",
     "parsed_success": true,
-    "date": "2024. 12. 14.",
-    "country": "대한민국"
+    "date": "2024. 12. 14."
   },
   {
     "logNo": "223690426393",
     "title": "🌿 대구 | 지산동 | 건강한 한 끼, 정이채소밥상에서 찾은 일상의 여유 🍚",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223690426393",
+    "url": "https://m.blog.naver.com/cybereunny/223690426393",
     "place": {
       "name": "🌿 대구 | 지산동 | 건강한 한 끼, 정이채소밥상에서 찾은 일상의 여유 🍚",
       "address": "",
@@ -6307,6 +6337,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMDdfMjcy/MDAxNzMzNTY1NDE1NDg2.a5q8GNHVonVEb2AWJ2Tvz-70ztCMYMuS9X5bQZK3T20g.Rd-mojBx1KrpTLuJKoNiWkiK4-MYKGyFjzK3fDfWZ7Yg.JPEG/900%EF%BC%BF20241207%EF%BC%BF155804.jpg?type=w800",
     "images": [
@@ -6318,8 +6349,7 @@
     ],
     "summary": "🌿 대구 | 지산동 | 건강한 한 끼, 정이채소밥상에서 찾은 일상의 여유 🍚 건강한 한 끼, 정이채소밥상 10:00 - 20:30( 정기휴무  매주 수요일)",
     "parsed_success": true,
-    "date": "2024. 12. 12.",
-    "country": "대한민국"
+    "date": "2024. 12. 12."
   },
   {
     "logNo": "223685894526",
@@ -6365,7 +6395,7 @@
     "logNo": "223674488163",
     "title": "대구 | '다운타우너 대구빌리브헤리티지'에서 즐기는 수제 햄버거 포장후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223674488163",
+    "url": "https://m.blog.naver.com/cybereunny/223674488163",
     "place": {
       "name": "대구 | '다운타우너 대구빌리브헤리티지'에서 즐기는 수제 햄버거 포장후기",
       "address": "",
@@ -6377,6 +6407,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDEwMjBfMTg1/MDAxNzI5MzkyMjM4ODIw.lnofJVEJDevnJ-hJrbMpsUhaTdlJBM29IqnNmbioSDcg.8aaPQJ_8143U7tMQoGav0yG5U3KxvUf4FdwuQioqGM0g.JPEG/20240918%EF%BC%BF193133.jpg?type=w800",
     "images": [
@@ -6388,8 +6419,7 @@
     ],
     "summary": "대구 | '다운타우너 대구빌리브헤리티지'에서 즐기는 수제 햄버거 포장후기 다운타우너 대구빌리브헤리티지 대구 수성구 들안로73길 20 302동 1층 204호",
     "parsed_success": true,
-    "date": "2024. 11. 27.",
-    "country": "대한민국"
+    "date": "2024. 11. 27."
   },
   {
     "logNo": "223671281839",
@@ -6435,18 +6465,29 @@
     "logNo": "223666482813",
     "title": "대구 | 수성구 마파두부의 진수, 중화요리 '수'에서 만나다.",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223666482813",
+    "url": "https://m.blog.naver.com/cybereunny/223666482813",
     "place": {
-      "name": "대구 | 수성구 마파두부의 진수, 중화요리 '수'에서 만나다.",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "수",
+      "address": "대구광역시 수성구 상록로2길 6",
+      "lat": 35.8602208,
+      "lng": 128.6243761,
       "tel": "",
       "placeId": "",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "대구",
+    "all_places": [
+      {
+        "name": "수",
+        "address": "대구광역시 수성구 상록로2길 6",
+        "lat": 35.8602208,
+        "lng": 128.6243761,
+        "tel": "",
+        "placeId": "",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "대구 수성구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDExMDZfMTQ1/MDAxNzMwODg2MjUyNjc1.j4bZpUINeUVAEGe-gFLcpDb5Dbe9yl8l-l3bZqUM-wEg.4PiAmXe1TQWwePWY8ugiOk2X_jgHZgJS2dh5M3GXcPAg.JPEG/20241106%EF%BC%BF175640.jpg?type=w800",
     "images": [
@@ -6458,8 +6499,7 @@
     ],
     "summary": "대구 | 수성구 마파두부의 진수, 중화요리 '수'에서 만나다. 대구광역시 수성구 상록로2길 6 1층, 2층 0507-1461-0266",
     "parsed_success": true,
-    "date": "2024. 11. 19.",
-    "country": "대한민국"
+    "date": "2024. 11. 19."
   },
   {
     "logNo": "223664008704",
@@ -6505,7 +6545,7 @@
     "logNo": "223659211115",
     "title": "대구 | 수성구 커피 맛집 - ☕커피 맛을 조금 아는 남자 본점 방문 🏠",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223659211115",
+    "url": "https://m.blog.naver.com/cybereunny/223659211115",
     "place": {
       "name": "대구 | 수성구 커피 맛집 - ☕커피 맛을 조금 아는 남자 본점 방문 🏠",
       "address": "",
@@ -6517,6 +6557,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDExMTBfNzgg/MDAxNzMxMjI3NDI1OTE4.Z_9sS485J2E8QGrc1ZKVclRg-3Wlr0oo9stIbNIpiewg.qbuTYeGcq4_tqPT84HlYIs3zoG_nMiu4QlZYLDOTXmEg.JPEG/20241110%EF%BC%BF125348.jpg?type=w800",
     "images": [
@@ -6528,8 +6569,7 @@
     ],
     "summary": "대구 | 수성구 커피 맛집 - ☕커피 맛을 조금 아는 남자 본점 방문 🏠 커피 맛을 조금 아는 남자 대구 수성구 범어천로 153 1층",
     "parsed_success": true,
-    "date": "2024. 11. 13.",
-    "country": "대한민국"
+    "date": "2024. 11. 13."
   },
   {
     "logNo": "223654663203",
@@ -6695,7 +6735,7 @@
     "logNo": "223646757170",
     "title": "대구 | 삼덕동카페, ​로코피플 Loco ppL 배달 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223646757170",
+    "url": "https://m.blog.naver.com/cybereunny/223646757170",
     "place": {
       "name": "대구 | 삼덕동카페, ​로코피플 Loco ppL 배달",
       "address": "",
@@ -6707,6 +6747,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDExMDJfMjYz/MDAxNzMwNTExNDA2NDQ2.avHClkylTRACLM09wRYkaOeLGlWD8sPTaNJ9GB-eU7Ag.waa4BmHX-7i3pxQGXJ7KZ-k6PMhG3bigi6-z7Hj9MqQg.PNG/SE-3842b8fe-85db-4879-b290-09e7d38d459e.png?type=w800",
     "images": [
@@ -6718,8 +6759,7 @@
     ],
     "summary": "대구 | 삼덕동카페, ​로코피플 Loco ppL 배달 후기 로코피플 Loco ppL 주소: 대구 중구 달구벌대로447길 8-14 1층",
     "parsed_success": true,
-    "date": "2024. 11. 4.",
-    "country": "대한민국"
+    "date": "2024. 11. 4."
   },
   {
     "logNo": "223645039692",
@@ -7253,18 +7293,29 @@
     "logNo": "223605221639",
     "title": "대구 | 만촌동의 맛있는 보물을 찾아서 : 동네 이탈리아 맛집 ~ 오스테리아밀스(Mills)",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223605221639",
+    "url": "https://m.blog.naver.com/cybereunny/223605221639",
     "place": {
-      "name": "대구 | 만촌동의 맛있는 보물을 찾아서",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "오스테리아밀즈",
+      "address": "대구광역시 수성구 동원로1길 26 1층",
+      "lat": 35.8598062,
+      "lng": 128.6386169,
       "tel": "",
-      "placeId": "",
+      "placeId": "1634025271",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "대구",
+    "all_places": [
+      {
+        "name": "오스테리아밀즈",
+        "address": "대구광역시 수성구 동원로1길 26 1층",
+        "lat": 35.8598062,
+        "lng": 128.6386169,
+        "tel": "",
+        "placeId": "1634025271",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "대구 수성구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDEwMDJfMTI1/MDAxNzI3ODQyNzEzMjE2.wsI-SLRHvfb9V-fogeRGgRsA12Npm-2d4GPF__uuGkwg.YsJ7qRskuxIr-sbTs92gIwYX9xTTzAJ_mzyNcVpD2Rkg.JPEG/20241001%EF%BC%BF114752.jpg?type=w800",
     "images": [
@@ -7276,8 +7327,7 @@
     ],
     "summary": "대구 | 만촌동의 맛있는 보물을 찾아서 : 동네 이탈리아 맛집 ~ 오스테리아밀스(Mills) 대구 수성구 동원로1길 26 1층 11:00 - 21:00",
     "parsed_success": true,
-    "date": "2024. 10. 3.",
-    "country": "대한민국"
+    "date": "2024. 10. 3."
   },
   {
     "logNo": "223603294589",
@@ -8203,18 +8253,29 @@
     "logNo": "223513674649",
     "title": "대구 | 봉산동 | 감성 분위기 카페 ~ 코타 커피 방문",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223513674649",
+    "url": "https://m.blog.naver.com/cybereunny/223513674649",
     "place": {
-      "name": "대구 | 봉산동 | 감성 분위기 카페 ~ 코타 커피 방문",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "코타커피",
+      "address": "대구광역시 중구 봉산문화길 86 1층",
+      "lat": 35.863725,
+      "lng": 128.5969213,
       "tel": "",
-      "placeId": "",
+      "placeId": "1336833582",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "대구",
+    "all_places": [
+      {
+        "name": "코타커피",
+        "address": "대구광역시 중구 봉산문화길 86 1층",
+        "lat": 35.863725,
+        "lng": 128.5969213,
+        "tel": "",
+        "placeId": "1336833582",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "대구 중구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA3MTVfNTcg/MDAxNzIxMDM0MTIxMDQ5.UFwIhjfJBc2t1sW6ZgivjbljgzkN1podKKYrZXxQR0wg.5MORUpZZv4COMvsZlaGOl9yEJIK1Zfd1ENMOMSdMQJYg.JPEG/SE-6fd76974-4280-11ef-9401-bdd95a8501a6.jpg?type=w800",
     "images": [
@@ -8226,8 +8287,7 @@
     ],
     "summary": "대구 | 봉산동 | 감성 분위기 카페 ~ 코타 커피 방문 대구 중구 봉산문화길 86 1층 매일 11:00 - 22:00",
     "parsed_success": true,
-    "date": "2024. 7. 15.",
-    "country": "대한민국"
+    "date": "2024. 7. 15."
   },
   {
     "logNo": "223508240262",
@@ -8593,7 +8653,7 @@
     "logNo": "223479180017",
     "title": "대구 | 범어동 | 장어 맛집 ~ 양산도 배달 도시락 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223479180017",
+    "url": "https://m.blog.naver.com/cybereunny/223479180017",
     "place": {
       "name": "대구 | 범어동 | 장어 맛집 ~ 양산도 배달 도시락",
       "address": "",
@@ -8605,6 +8665,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "맛집/식당",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA2MTRfMjI4/MDAxNzE4MzMxMDY3OTcz.dNTyBJECmV6pF947kEYF48YOkAINVl8ut72ZC-d2M8gg.Fmd2PVvobk2Z2--9NzFhdGPogSco9DfLK25661UNjM0g.JPEG/20240601%EF%BC%BF194819.jpg?type=w800",
     "images": [
@@ -8616,8 +8677,7 @@
     ],
     "summary": "대구 | 범어동 | 장어 맛집 ~ 양산도 배달 도시락 후기 양산도 장어 덮밥도 배달 된다고 하길래 배달 도시락을 주문해 보았답니다. 2층 용기에 정갈하게 담겨 배달 왔습니다.",
     "parsed_success": true,
-    "date": "2024. 6. 14.",
-    "country": "대한민국"
+    "date": "2024. 6. 14."
   },
   {
     "logNo": "223473578817",
@@ -9183,7 +9243,7 @@
     "logNo": "223432196851",
     "title": "대구 | 생고기와 육회를 즐길 수 있는 봉산동 생고기집 방문",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223432196851",
+    "url": "https://m.blog.naver.com/cybereunny/223432196851",
     "place": {
       "name": "대구 | 생고기와 육회를 즐길 수 있는 봉산동 생고기집 방문",
       "address": "",
@@ -9195,6 +9255,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDA0MzBfMTg3/MDAxNzE0NDcxMDAxNTcy.ihSjaZw85CQXNSW5PNnnEP6dY2M2ds5Nxe87t6LvYzog.m9n5IgSWUDmNZPaAZTXUvqo0xn5KGY_PXd592nm-RGog.JPEG/20240426%EF%BC%BF171058.jpg?type=w800",
     "images": [
@@ -9206,8 +9267,7 @@
     ],
     "summary": "대구 | 생고기와 육회를 즐길 수 있는 봉산동 생고기집 방문 생고기 전문점인 봉산동 생고기집을 방문해 보았답니다. 일단 주차는 근처 공영 주차장에 하거나 주변 동네에 하면 됩니다. 도로가 공영 주차장은 5시 이후에는 주차요원이 퇴근하는 것 같아요.  3시간 정도에 5,000원 받으시네요.",
     "parsed_success": true,
-    "date": "2024. 4. 30.",
-    "country": "대한민국"
+    "date": "2024. 4. 30."
   },
   {
     "logNo": "223429798644",
@@ -10093,18 +10153,29 @@
     "logNo": "223394979542",
     "title": "경북 | 동명 | 조미료를 사용하지 않는 건강 밥상, 한정식 '초당' 방문후기",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/223394979542",
+    "url": "https://m.blog.naver.com/cybereunny/223394979542",
     "place": {
-      "name": "경북 | 동명 | 조미료를 사용하지 않는 건강 밥상, 한정식 '초당' 방문후기",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "초당",
+      "address": "경상북도 칠곡군 한티로 633",
+      "lat": 36.0114416,
+      "lng": 128.593103,
       "tel": "",
       "placeId": "",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "경북",
+    "all_places": [
+      {
+        "name": "초당",
+        "address": "경상북도 칠곡군 한티로 633",
+        "lat": 36.0114416,
+        "lng": 128.593103,
+        "tel": "",
+        "placeId": "",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "경상북도 칠곡군",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDAzMjVfMzAw/MDAxNzExMzYyNjg1MTA5.xPulpUzKayBqBxm7tKAcFMGDuaMfa56gGwroMliMarwg.PnZo2gm6LkFZFE-H9fhMGaHrSaWn_DqsGD_j2w65Dfog.JPEG/20240217_122052.jpg?type=w800",
     "images": [
@@ -10116,8 +10187,7 @@
     ],
     "summary": "경북 | 동명 | 조미료를 사용하지 않는 건강 밥상, 한정식 '초당' 방문후기 경북 칠곡군 동명면 한티로 633 0507-1325-1438",
     "parsed_success": true,
-    "date": "2024. 3. 26.",
-    "country": "대한민국"
+    "date": "2024. 3. 26."
   },
   {
     "logNo": "223393533389",
@@ -12075,18 +12145,29 @@
     "logNo": "223317498499",
     "title": "제주 | 구좌 | 제주 핫플 베이글 맛집, 런던베이글뮤지엄 제주 방문",
     "sub_category": "카페·맛집 어때-제주",
-    "url": "https://blog.naver.com/cybereunny/223317498499",
+    "url": "https://m.blog.naver.com/cybereunny/223317498499",
     "place": {
-      "name": "제주 | 구좌 | 제주 핫플 베이글 맛집, 런던베이글뮤지엄 제주 방문",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "런던베이글뮤지엄 제주점",
+      "address": "제주특별자치도 제주시 구좌읍 동복로 85 제2동 1층",
+      "lat": 33.5535452,
+      "lng": 126.7154182,
       "tel": "",
-      "placeId": "",
+      "placeId": "1422544447",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "제주",
+    "all_places": [
+      {
+        "name": "런던베이글뮤지엄 제주점",
+        "address": "제주특별자치도 제주시 구좌읍 동복로 85 제2동 1층",
+        "lat": 33.5535452,
+        "lng": 126.7154182,
+        "tel": "",
+        "placeId": "1422544447",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "제주 제주시",
+    "country": "대한민국",
     "food_type": "베이커리/빵",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDAxMDlfMTk4/MDAxNzA0ODAxNzI5MTU0.NDAteyVgrwnBwutk_REOI61JjueTbrrA1I130YCMcCsg.TBeJjfCHEpmEaH1meyeNm9DQVyirrbk1VFJf1Cwi1F0g.JPEG.cybereunny/20240107_165101.jpg?type=w800",
     "images": [
@@ -12098,8 +12179,7 @@
     ],
     "summary": "제주 | 구좌 | 제주 핫플 베이글 맛집, 런던베이글뮤지엄 제주 방문 런던베이글뮤지엄 제주점 제주 제주시 구좌읍 동복로 85 제2동 1층",
     "parsed_success": true,
-    "date": "2024. 1. 12.",
-    "country": "대한민국"
+    "date": "2024. 1. 12."
   },
   {
     "logNo": "223317651058",
@@ -12225,18 +12305,29 @@
     "logNo": "223309247540",
     "title": "수성구 범어동 | 단체모임 추천 중식당 맛집 | '수'",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223309247540",
+    "url": "https://m.blog.naver.com/cybereunny/223309247540",
     "place": {
-      "name": "수성구 범어동 | 단체모임 추천 중식당 맛집 | '수'",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "수",
+      "address": "대구광역시 수성구 상록로2길 6",
+      "lat": 35.8603417,
+      "lng": 128.6243652,
       "tel": "",
       "placeId": "",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "대구",
+    "all_places": [
+      {
+        "name": "수",
+        "address": "대구광역시 수성구 상록로2길 6",
+        "lat": 35.8603417,
+        "lng": 128.6243652,
+        "tel": "",
+        "placeId": "",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "대구 수성구",
+    "country": "대한민국",
     "food_type": "양식/브런치",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNDAxMDFfNDQg/MDAxNzA0MDk4MzkyMDg3.F9TMnWGk8j75_0qyAwOHAV9KSx4w64bviYSOcrGwhMMg.ksBmPYr0OQ3Ok-QPEttV0B0r7kFP7yzEa3g5y17dZ2Eg.JPEG.cybereunny/SE-9f10a96a-d3b1-49f9-b754-a4d41d2e5252.jpg?type=w800",
     "images": [
@@ -12248,8 +12339,7 @@
     ],
     "summary": "수성구 범어동 | 단체모임 추천 중식당 맛집 | '수' 대구 수성구 상록로2길 6 1층, 2층 매일 11:00 - 22:00",
     "parsed_success": true,
-    "date": "2024. 1. 5.",
-    "country": "대한민국"
+    "date": "2024. 1. 5."
   },
   {
     "logNo": "223308248938",
@@ -12695,7 +12785,7 @@
     "logNo": "223256869155",
     "title": "대구 | 두산동 맛집 | 진화된 짬뽕 뉴욕 스타일을 만나다 | 짬뽕류 방문 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223256869155",
+    "url": "https://m.blog.naver.com/cybereunny/223256869155",
     "place": {
       "name": "대구 | 두산동 맛집 | 진화된 짬뽕 뉴욕 스타일을 만나다 | 짬뽕류 방문",
       "address": "",
@@ -12707,6 +12797,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "일식/초밥",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzExMDZfMjMw/MDAxNjk5MjM1MTU1MjQ4.H8wEnASrFeQq2RVU3Zb7iZ_NE3EPfDmUS6i_B9dpkxYg.JMSQv5tA1YvLp67VDowOh_BiUTkn9TcTRWN_Oa3S5EIg.JPEG.cybereunny/KakaoTalk_20231104_174505314_10.jpg?type=w800",
     "images": [
@@ -12718,8 +12809,7 @@
     ],
     "summary": "대구 | 두산동 맛집 | 진화된 짬뽕 뉴욕 스타일을 만나다 | 짬뽕류 방문 후기 대구 수성구 동대구로 59 f/7(황금역에서 도보로 이동 트럼프월드 입구) 0507-1483-0831",
     "parsed_success": true,
-    "date": "2023. 11. 6.",
-    "country": "대한민국"
+    "date": "2023. 11. 6."
   },
   {
     "logNo": "223249978938",
@@ -14085,18 +14175,29 @@
     "logNo": "223184190178",
     "title": "대구 | 대봉동 김광석거리 | 감성 카페 이에커피, 힙스터 성지 ee커피에서 차 한잔하실래요?",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223184190178",
+    "url": "https://m.blog.naver.com/cybereunny/223184190178",
     "place": {
-      "name": "대구 | 대봉동 김광석거리 | 감성 카페 이에커피, 힙스터 성지 ee커피에서 차 한잔하실래요?",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
+      "name": "이에커피",
+      "address": "대구광역시 중구 달구벌대로446길 31 1층 eecoffee",
+      "lat": 35.8609038,
+      "lng": 128.6056375,
       "tel": "",
-      "placeId": "",
+      "placeId": "1365962964",
       "bookingUrl": ""
     },
-    "all_places": [],
-    "city_district": "대구",
+    "all_places": [
+      {
+        "name": "이에커피",
+        "address": "대구광역시 중구 달구벌대로446길 31 1층 eecoffee",
+        "lat": 35.8609038,
+        "lng": 128.6056375,
+        "tel": "",
+        "placeId": "1365962964",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "대구 중구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA4MTVfOCAg/MDAxNjkyMDc3OTE4MjQx.16X0Ofh8za8IQNzjexdBp5YBFaSS1XFNaeaYTPmHp2Ug.fBh1IKIOxmCxi4K8S3J1gdjGUkYiOpv-wlO__6gTM3sg.JPEG.cybereunny/20230815_121552.jpg?type=w800",
     "images": [
@@ -14108,8 +14209,7 @@
     ],
     "summary": "대구 | 대봉동 김광석거리 | 감성 카페 이에커피, 힙스터 성지 ee커피에서 차 한잔하실래요? 대구 중구 달구벌대로446길 31 1층 eecoffee Open 10:30 - 18:30 ( 정기휴무 수요일)",
     "parsed_success": true,
-    "date": "2023. 8. 15.",
-    "country": "대한민국"
+    "date": "2023. 8. 15."
   },
   {
     "logNo": "223181664998",
@@ -14844,7 +14944,7 @@
     "logNo": "223163674355",
     "title": "대구/봉산동 소금빵 맛집/아날로그 감성의 교동과자점 방문 후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223163674355",
+    "url": "https://m.blog.naver.com/cybereunny/223163674355",
     "place": {
       "name": "대구/봉산동 소금빵 맛집/아날로그 감성의 교동과자점 방문",
       "address": "",
@@ -14856,6 +14956,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "베이커리/빵",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA3MjNfODIg/MDAxNjkwMDcwODA1MzQ1.pelXiJ81Y0-UwEjjVSltd3tQSw9otFq8qlVMc8rOO-wg.TQeQxvb1Yy6q98Sldt5xI_j19rH-SpXzltbxZl72Assg.JPEG.cybereunny/20230722_144524.jpg?type=w800",
     "images": [
@@ -14867,8 +14968,7 @@
     ],
     "summary": "대구/봉산동 소금빵 맛집/아날로그 감성의 교동과자점 방문 후기 대구 중구 봉산문화길 25 1층 교동과자점 Open 14:00 - 20:00 (정기휴무 월, 화, 수)",
     "parsed_success": true,
-    "date": "2023. 7. 23.",
-    "country": "대한민국"
+    "date": "2023. 7. 23."
   },
   {
     "logNo": "223163243059",
@@ -14994,7 +15094,7 @@
     "logNo": "223160818646",
     "title": "대구/범어동/스구식탁 1인혼밥 샤브샤브를 경험하다.",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223160818646",
+    "url": "https://m.blog.naver.com/cybereunny/223160818646",
     "place": {
       "name": "대구/범어동/스구식탁 1인혼밥 샤브샤브를 경험하다.",
       "address": "",
@@ -15006,6 +15106,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA3MTlfMjkx/MDAxNjg5NzYyMzM2NjY5.TzKRZMXsaErzp6sUOEuFsAuSL-w8PcmYr9hYW-W7SAEg.cDcFSI3AFVJ1km5i4yGLU3kwE54M7p0_m-3VXTBiIFwg.JPEG.cybereunny/SE-0f31ca9e-b021-4717-9959-58d710391fb6.jpg?type=w800",
     "images": [
@@ -15017,8 +15118,7 @@
     ],
     "summary": "대구/범어동/스구식탁 1인혼밥 샤브샤브를 경험하다. 대구 수성구 상록로 15 범어센트럴푸르지오 상가 1층 131호 범어역 1번 출구에서204m",
     "parsed_success": true,
-    "date": "2023. 7. 19.",
-    "country": "대한민국"
+    "date": "2023. 7. 19."
   },
   {
     "logNo": "223156922404",
@@ -15144,7 +15244,7 @@
     "logNo": "223154853467",
     "title": "대구/신세계백화점 동대구점/피에프창(P.F.Chang's) 방문후기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223154853467",
+    "url": "https://m.blog.naver.com/cybereunny/223154853467",
     "place": {
       "name": "대구/신세계백화점 동대구점/피에프창(P.F.Chang's) 방문후기",
       "address": "",
@@ -15156,6 +15256,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA3MTNfMjAz/MDAxNjg5MjA5ODgyMjI4.CiBhHHvx0uUaKDIMV1FAgg41XXrsKUDOY92-sc9_sXAg.y_nLcEi8D3CHxv-tfXuKFGCDnElVw7BW1QCyehrF1jog.JPEG.cybereunny/KakaoTalk_20230713_094526046_02.jpg?type=w800",
     "images": [
@@ -15167,8 +15268,7 @@
     ],
     "summary": "대구/신세계백화점 동대구점/피에프창(P.F.Chang's) 방문후기 피에프창 신세계백화점 동대구 대구 동구 동부로 149 신세계 백화점 8층",
     "parsed_success": true,
-    "date": "2023. 7. 13.",
-    "country": "대한민국"
+    "date": "2023. 7. 13."
   },
   {
     "logNo": "223153842136",
@@ -15734,7 +15834,7 @@
     "logNo": "223142396225",
     "title": "대구/수성구/범어동/본점/비오는 날엔 조조칼국수 ~",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223142396225",
+    "url": "https://m.blog.naver.com/cybereunny/223142396225",
     "place": {
       "name": "대구/수성구/범어동/본점/비오는 날엔 조조칼국수 ~",
       "address": "",
@@ -15746,6 +15846,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "한식/고기",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA2MjlfMTk3/MDAxNjg4MDM2MDAzOTQ0.4_wMmICSW39a7irHyxoPmj2XV5Ok339XiOAd9LmGog0g.lBdv32A_V6cu4X8_x_EqA5MGADqSpzYZkwetJ_77_E0g.JPEG.cybereunny/SE-84e92516-fe90-44d3-8bcc-1ad4dedb9951.jpg?type=w800",
     "images": [
@@ -15757,8 +15858,7 @@
     ],
     "summary": "대구/수성구/범어동/본점/비오는 날엔 조조칼국수 ~ 대구 수성구 국채보상로 912 1층 10:30 - 22:00",
     "parsed_success": true,
-    "date": "2023. 6. 29.",
-    "country": "대한민국"
+    "date": "2023. 6. 29."
   },
   {
     "logNo": "223140802461",
@@ -15884,7 +15984,7 @@
     "logNo": "223138780421",
     "title": "가창/한옥카페/베이커리/디저트/\"까사드테하\"에 가다",
     "sub_category": "카페·맛집 어때-경북",
-    "url": "https://blog.naver.com/cybereunny/223138780421",
+    "url": "https://m.blog.naver.com/cybereunny/223138780421",
     "place": {
       "name": "가창/한옥카페/베이커리/디저트/\"까사드테하\"에 가다",
       "address": "",
@@ -15896,6 +15996,7 @@
     },
     "all_places": [],
     "city_district": "경북",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA2MjVfMjg4/MDAxNjg3NzAyMDI5NDcx.c6xSvi4_xlUc6puZXpv4X_4eJNTbimvymNDd6Zp3aAMg.KJ3eB5GIIW0-jhWYpqV8VRmGf1apq6b7sUpkDvzYcqMg.JPEG.cybereunny/SE-81bb8da4-36a6-4d01-94e9-95301c40270c.jpg?type=w800",
     "images": [
@@ -15907,8 +16008,7 @@
     ],
     "summary": "가창/한옥카페/베이커리/디저트/\"까사드테하\"에 가다 대구 달성군 가창면 녹문길 16-11 1층 단체석, 주차, 포장, 예약, 무선 인터넷",
     "parsed_success": true,
-    "date": "2023. 6. 26.",
-    "country": "대한민국"
+    "date": "2023. 6. 26."
   },
   {
     "logNo": "223137671660",
@@ -16034,7 +16134,7 @@
     "logNo": "223137534610",
     "title": "대구/범어동/그로잉/브런치카페/브런치 다이닝 카페 그로잉 방문기",
     "sub_category": "카페·맛집 어때-대구",
-    "url": "https://blog.naver.com/cybereunny/223137534610",
+    "url": "https://m.blog.naver.com/cybereunny/223137534610",
     "place": {
       "name": "대구/범어동/그로잉/브런치카페/브런치 다이닝 카페 그로잉 방문기",
       "address": "",
@@ -16046,6 +16146,7 @@
     },
     "all_places": [],
     "city_district": "대구",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA2MjRfMjcw/MDAxNjg3NTczNTc4NDU4.9HaEXzI3ch0fQZBeWk3iL-y21vfAbyhgk44kQUayRA8g.izA82I6MN1WdrgX_15cmWO6mzjHFCV3z4Tgc-UNU8zgg.JPEG.cybereunny/20230624_110251.jpg?type=w800",
     "images": [
@@ -16057,8 +16158,7 @@
     ],
     "summary": "대구/범어동/그로잉/브런치카페/브런치 다이닝 카페 그로잉 방문기 대구 범어동 그로잉 주차불가, 인근 공영주차장 및 유료주차장 이용해야 함.",
     "parsed_success": true,
-    "date": "2023. 6. 24.",
-    "country": "대한민국"
+    "date": "2023. 6. 24."
   },
   {
     "logNo": "223133211445",
@@ -16504,7 +16604,7 @@
     "logNo": "222998211003",
     "title": "고든램지버거 ~ 하이엔드 버거는 맛이 특별한가?",
     "sub_category": "카페·맛집 어때-서울",
-    "url": "https://blog.naver.com/cybereunny/222998211003",
+    "url": "https://m.blog.naver.com/cybereunny/222998211003",
     "place": {
       "name": "고든램지버거 ~ 하이엔드 버거는 맛이 특별한가?",
       "address": "",
@@ -16516,6 +16616,7 @@
     },
     "all_places": [],
     "city_district": "서울",
+    "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA3MDNfMTgy/MDAxNjg4MzQ1NTU1NDM3.KHDeDARrPNwPN9DnocKJyeQNgRjjj8Dmxogkx2gWOjQg.X_Ad4ZPBJAOavh9WGK9l-q7iGEwAl-ocYb04rI9klXAg.PNG.cybereunny/img.png?type=w800",
     "images": [
@@ -16523,7 +16624,6 @@
     ],
     "summary": "고든램지버거 ~ 하이엔드 버거는 맛이 특별한가? 요즘 롯데월드몰에서 핫하다는 세계적인 미쉐린 3스타 셰프인 고든램지의 하이엔드 컨셉의 햄버거 레스토랑인 고든램지버거에 가보았습니다. 호불호는 있겠지만 가격에 한 번 놀라고 양과 비주얼에 또 한 번 놀라게 되네요~ 음료와 함께 먹으면 배가 불러요~",
     "parsed_success": true,
-    "date": "2023. 1. 29.",
-    "country": "대한민국"
+    "date": "2023. 1. 29."
   }
 ]

@@ -339,7 +339,7 @@ def get_all_post_headers():
                 
                 page_posts = data.get("postList", [])
                 if not page_posts:
-                    break
+                    raise RuntimeError("게시글 목록이 비어 있습니다. 기존 데이터를 보존합니다.")
                 
                 for p in page_posts:
                     title = urllib.parse.unquote_plus(p.get("title", ""))
@@ -358,13 +358,15 @@ def get_all_post_headers():
                 page += 1
                 time.sleep(0.1)
         except Exception as e:
-            print(f"[!] 목록 조회 오류 (page {page}): {e}")
-            break
+            raise RuntimeError(f"목록 조회 오류 (page {page}); 기존 데이터 보존") from e
             
     return posts
 
 def parse_post_detail(log_no, cached_data=None):
-    if cached_data and cached_data.get("logNo") == log_no and cached_data.get("parsed_success"):
+    if (cached_data and cached_data.get("logNo") == log_no
+            and cached_data.get("parsed_success")
+            and cached_data.get("place", {}).get("lat")
+            and cached_data.get("place", {}).get("lng")):
         return cached_data
 
     url = f"https://m.blog.naver.com/{BLOG_ID}/{log_no}"
@@ -379,6 +381,8 @@ def parse_post_detail(log_no, cached_data=None):
         # 1. Title
         title_el = soup.find(class_=re.compile(r'se-title-text|tit_h3'))
         title = title_el.get_text(strip=True) if title_el else ""
+        if not title:
+            raise ValueError("글 본문을 읽지 못했습니다 (비공개 또는 일시적인 응답 오류).")
         
         # 2. Category
         cat_el = soup.find(class_=re.compile(r'blog_category|se-category'))
@@ -392,16 +396,16 @@ def parse_post_detail(log_no, cached_data=None):
                 try:
                     place_info = json.loads(data_linkdata)
                     places.append({
-                        "name": place_info.get("name", "").strip(),
-                        "address": place_info.get("address", "").strip(),
-                        "lat": float(place_info.get("latitude", 0)),
-                        "lng": float(place_info.get("longitude", 0)),
-                        "tel": place_info.get("tel", "").strip(),
-                        "placeId": str(place_info.get("placeId", "")),
-                        "bookingUrl": place_info.get("bookingUrl", "")
+                        "name": (place_info.get("name") or "").strip(),
+                        "address": (place_info.get("address") or "").strip(),
+                        "lat": float(place_info.get("latitude") or 0),
+                        "lng": float(place_info.get("longitude") or 0),
+                        "tel": (place_info.get("tel") or "").strip(),
+                        "placeId": str(place_info.get("placeId") or ""),
+                        "bookingUrl": place_info.get("bookingUrl") or ""
                     })
-                except Exception:
-                    pass
+                except (ValueError, TypeError) as e:
+                    raise ValueError(f"장소 태그 해석 실패: {e}") from e
         
         # 4. Images
         images = []
@@ -527,6 +531,10 @@ def run_crawler():
             print(f" -> 진척도: {idx}/{len(post_headers)} 완료 (신규 파싱: {new_count}개)")
             
     # 3. 캐시 저장
+    failed_posts = [item["logNo"] for item in all_results if not item.get("parsed_success")]
+    if failed_posts:
+        raise RuntimeError(f"글 수집 실패; 기존 데이터 보존: {', '.join(failed_posts)}")
+
     with open(CACHE_FILE, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, ensure_ascii=False, indent=2)
         

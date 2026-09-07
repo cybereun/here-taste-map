@@ -49,7 +49,13 @@ export const App: React.FC = () => {
 
   // Load places data
   useEffect(() => {
-    fetch('/data/places.json')
+    let disposed = false;
+    let loaded = false;
+    let pending = false;
+    const loadPlaces = () => {
+      if (pending) return;
+      pending = true;
+      fetch('/data/places.json', { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) {
           throw new Error('데이터를 불러오지 못했습니다.');
@@ -57,14 +63,31 @@ export const App: React.FC = () => {
         return res.json();
       })
       .then((data: Place[]) => {
-        setAllPlaces(data);
+        if (disposed) return;
+        loaded = true;
+        setAllPlaces((previous) => JSON.stringify(previous) === JSON.stringify(data) ? previous : data);
+        setError(null);
         setLoading(false);
       })
       .catch((err) => {
         console.error(err);
-        setError('블로그 맛집 데이터를 로드하는 중 오류가 발생했습니다.');
+        if (disposed) return;
+        if (!loaded) setError('블로그 맛집 데이터를 로드하는 중 오류가 발생했습니다.');
         setLoading(false);
-      });
+      })
+      .finally(() => { pending = false; });
+    };
+    const refreshVisible = () => {
+      if (document.visibilityState === 'visible') loadPlaces();
+    };
+    loadPlaces();
+    const timer = window.setInterval(refreshVisible, 5 * 60 * 1000);
+    document.addEventListener('visibilitychange', refreshVisible);
+    return () => {
+      disposed = true;
+      window.clearInterval(timer);
+      document.removeEventListener('visibilitychange', refreshVisible);
+    };
   }, []);
 
   // Request GPS Location
