@@ -1108,16 +1108,26 @@
     "sub_category": "카페·맛집 어때-부산",
     "url": "https://m.blog.naver.com/cybereunny/224273212623",
     "place": {
-      "name": "[광안리 미쉐린 가이드] 아웃트로 바이 비토 메뉴 추천 및 캐치테이블 예약 팁",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "name": "아웃트로바이비토",
+      "address": "부산광역시 수영구 민락본동로19번길 18 1층 아웃트로바이비토",
+      "lat": 35.1583531,
+      "lng": 129.1278544,
+      "tel": "051-758-7123",
+      "placeId": "1918145699",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/1678957"
     },
-    "all_places": [],
-    "city_district": "부산",
+    "all_places": [
+      {
+        "name": "아웃트로바이비토",
+        "address": "부산광역시 수영구 민락본동로19번길 18 1층 아웃트로바이비토",
+        "lat": 35.1583531,
+        "lng": 129.1278544,
+        "tel": "051-758-7123",
+        "placeId": "1918145699",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/1678957"
+      }
+    ],
+    "city_district": "부산 수영구",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDNfOTUg/MDAxNzc3Nzc3OTAzOTQy.h2_Cs9hmYOtQNak1-upAzITTdf_CgT8ju5Vefyhzdyog.C99_34mCpGLzUYhQD1moUxyNOT14U_0KAh6h2SWvgk8g.JPEG/20260404_192447.jpg?type=w800",
@@ -1138,16 +1148,26 @@
     "sub_category": "카페·맛집 어때-부산",
     "url": "https://m.blog.naver.com/cybereunny/224273181420",
     "place": {
-      "name": "[부산 해운대 파인다이닝] 에드워드 권 '랩24 바이 쿠무다' 런치 코스 예약 및 실사용기|미쉐린 가이드 부산 선정! 송정 랩24 바이 쿠무다",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "name": "랩24 바이 쿠무다",
+      "address": "부산광역시 해운대구 송정광어골로 41 4층 랩24 바이 쿠무다",
+      "lat": 35.1774288,
+      "lng": 129.197185,
+      "tel": "0507-1421-1302",
+      "placeId": "1511716815",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/641802"
     },
-    "all_places": [],
-    "city_district": "부산",
+    "all_places": [
+      {
+        "name": "랩24 바이 쿠무다",
+        "address": "부산광역시 해운대구 송정광어골로 41 4층 랩24 바이 쿠무다",
+        "lat": 35.1774288,
+        "lng": 129.197185,
+        "tel": "0507-1421-1302",
+        "placeId": "1511716815",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/641802"
+      }
+    ],
+    "city_district": "부산 해운대구",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDNfMjY3/MDAxNzc3Nzc1NjMyMTk5.MnleDMQt_xCRZ2W3vyg5lZA2HvQl-fNnIZlHs0ch6D0g.YTpn-3VJOpcu9PDEXwC8s-7XafUIW496OrJcoMxP7Mwg.JPEG/20260405_130751.jpg?type=w800",
@@ -1286,16 +1306,26 @@
     "sub_category": "카페·맛집 어때-부산",
     "url": "https://m.blog.naver.com/cybereunny/224245673207",
     "place": {
-      "name": "기장 빌라쥬 드 아난티 중식당 루(Ru) | 뷰는 5성급, 맛은 글쎄요? 솔직",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "name": "빌라쥬 드 아난티 루",
+      "address": "부산광역시 기장군 기장읍 기장해안로 267-7 빌라쥬 드 아난티 클리퍼 A동 1층",
+      "lat": 35.1986531,
+      "lng": 129.2211582,
+      "tel": "051-662-7084",
+      "placeId": "1907855654",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/995623"
     },
-    "all_places": [],
-    "city_district": "부산",
+    "all_places": [
+      {
+        "name": "빌라쥬 드 아난티 루",
+        "address": "부산광역시 기장군 기장읍 기장해안로 267-7 빌라쥬 드 아난티 클리퍼 A동 1층",
+        "lat": 35.1986531,
+        "lng": 129.2211582,
+        "tel": "051-662-7084",
+        "placeId": "1907855654",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/995623"
+      }
+    ],
+    "city_district": "부산 기장군",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MDhfMjI2/MDAxNzc1NjQ5NzgyNDc2.1hd8Wl0v4PXIqZhrBY13up8FdSz9dxS5VGo4VzR5m7wg.8W1FXD9B2Racz9ddL2eLttkQJ9Q8i8GiifiXyzjmumYg.JPEG/20260404_130616.jpg?type=w800",
