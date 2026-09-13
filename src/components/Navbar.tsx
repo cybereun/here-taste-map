@@ -11,6 +11,8 @@ interface NavbarProps {
   onOpenLocationModal: () => void;
   totalCount: number;
   filteredCount: number;
+  isUpdatingBlog?: boolean;
+  onUpdateBlog?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -22,7 +24,9 @@ export const Navbar: React.FC<NavbarProps> = ({
   locationName,
   onOpenLocationModal,
   totalCount,
-  filteredCount
+  filteredCount,
+  isUpdatingBlog = false,
+  onUpdateBlog
 }) => {
   return (
     <header className="bg-white/98 backdrop-blur-md border-b border-orange-100 z-30 px-3.5 py-2 shadow-xs flex flex-col gap-2 shrink-0">
@@ -55,26 +59,45 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Location Selector Button */}
-        <button
-          onClick={onOpenLocationModal}
-          className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold transition-all shadow-xs border ${
-            hasLocation
-              ? 'bg-orange-50 border-orange-300 text-orange-700 shadow-orange-100'
-              : 'bg-gray-100 border-gray-200 text-gray-700 hover:bg-gray-200'
-          }`}
-          title="내 위치 / 기준 동네 설정"
-        >
-          {isLocating ? (
-            <RefreshCw className="w-3 h-3 animate-spin text-orange-500" />
-          ) : (
-            <Navigation className={`w-3 h-3 ${hasLocation ? 'fill-orange-500 text-orange-500' : 'text-gray-500'}`} />
-          )}
-          <span className="truncate max-w-[85px] text-[11px]">
-            {hasLocation ? locationName || '내 주변' : '위치 설정'}
-          </span>
-          <ChevronDown className="w-3 h-3 text-gray-400" />
-        </button>
+        {/* Right Action Bar: Blog Update Button & Location Selector Button */}
+        <div className="flex items-center gap-1.5">
+          {/* Naver Blog Update Button */}
+          <button
+            type="button"
+            onClick={onUpdateBlog}
+            disabled={isUpdatingBlog}
+            className={`flex items-center justify-center p-1.5 rounded-full border text-xs transition-all shadow-xs ${
+              isUpdatingBlog
+                ? 'bg-orange-100/70 border-orange-300 text-orange-400 cursor-not-allowed'
+                : 'bg-orange-50 border-orange-200 text-orange-600 hover:bg-orange-100 hover:border-orange-300 active:scale-95'
+            }`}
+            title={isUpdatingBlog ? '블로그 최신 글 파싱 중...' : '네이버 블로그 최신 글 업데이트'}
+            aria-label="네이버 블로그 최신 글 업데이트"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${isUpdatingBlog ? 'animate-spin text-orange-500' : 'text-orange-600'}`} />
+          </button>
+
+          {/* Location Selector Button */}
+          <button
+            onClick={onOpenLocationModal}
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold transition-all shadow-xs border ${
+              hasLocation
+                ? 'bg-orange-50 border-orange-300 text-orange-700 shadow-orange-100'
+                : 'bg-gray-100 border-gray-200 text-gray-700 hover:bg-gray-200'
+            }`}
+            title="내 위치 / 기준 동네 설정"
+          >
+            {isLocating ? (
+              <RefreshCw className="w-3 h-3 animate-spin text-orange-500" />
+            ) : (
+              <Navigation className={`w-3 h-3 ${hasLocation ? 'fill-orange-500 text-orange-500' : 'text-gray-500'}`} />
+            )}
+            <span className="truncate max-w-[85px] text-[11px]">
+              {hasLocation ? locationName || '내 주변' : '위치 설정'}
+            </span>
+            <ChevronDown className="w-3 h-3 text-gray-400" />
+          </button>
+        </div>
       </div>
 
       {/* Search Bar (검색창 터치 시 바텀시트 자동 최소화) */}

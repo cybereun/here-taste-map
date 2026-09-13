@@ -9,6 +9,27 @@ import { LocationSelectModal } from './components/LocationSelectModal';
 import { calculateDistance } from './utils/geo';
 import { parseAddressRegion } from './utils/region';
 import { LocationPreset } from './utils/locations';
+import { fetchLatestBlogPlaces } from './utils/naverBlogUpdater';
+import { Toast, ToastMessage } from './components/Toast';
+
+const SYNCED_STORAGE_KEY = 'here_taste_map_synced_places';
+
+const loadLocalSyncedPlaces = (): Place[] => {
+  try {
+    const raw = localStorage.getItem(SYNCED_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+};
+
+const saveLocalSyncedPlaces = (places: Place[]) => {
+  try {
+    localStorage.setItem(SYNCED_STORAGE_KEY, JSON.stringify(places));
+  } catch (e) {
+    console.warn('로컬 스토리지 저장 실패:', e);
+  }
+};
 
 const getPlaceCountry = (place: Place): string => {
   if (place.country) return place.country;
@@ -24,6 +45,10 @@ export const App: React.FC = () => {
   const [allPlaces, setAllPlaces] = useState<Place[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Blog update state & Toast notification
+  const [isUpdatingBlog, setIsUpdatingBlog] = useState<boolean>(false);
+  const [toast, setToast] = useState<ToastMessage | null>(null);
 
   // Filter & Search states
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -65,7 +90,14 @@ export const App: React.FC = () => {
       .then((data: Place[]) => {
         if (disposed) return;
         loaded = true;
-        setAllPlaces((previous) => JSON.stringify(previous) === JSON.stringify(data) ? previous : data);
+        const localSynced = loadLocalSyncedPlaces();
+        const remoteIds = new Set(data.map((p) => p.id));
+        const unmergedLocal = localSynced.filter((p) => !remoteIds.has(p.id));
+        if (unmergedLocal.length !== localSynced.length) {
+          saveLocalSyncedPlaces(unmergedLocal);
+        }
+        const combined = [...unmergedLocal, ...data];
+        setAllPlaces((previous) => (JSON.stringify(previous) === JSON.stringify(combined) ? previous : combined));
         setError(null);
         setLoading(false);
       })
@@ -89,6 +121,76 @@ export const App: React.FC = () => {
       document.removeEventListener('visibilitychange', refreshVisible);
     };
   }, []);
+
+  // 네이버 블로그 최신 글 업데이트 핸들러
+  const handleUpdateBlog = async () => {
+    if (isUpdatingBlog) return;
+    setIsUpdatingBlog(true);
+    setToast({
+      id: 'updating',
+      type: 'loading',
+      message: '네이버 블로그 최신 글 확인 중...',
+      subMessage: '새로 등록된 카페·맛집 정보를 수집합니다.'
+    });
+
+    try {
+      const existingIds = new Set(allPlaces.map((p) => p.id));
+      const result = await fetchLatestBlogPlaces(existingIds);
+
+      if (result.newPlaces.length > 0) {
+        // 1. 상태 업데이트 (중복 제거)
+        setAllPlaces((prev) => {
+          const existing = new Set(prev.map((p) => p.id));
+          const freshPlaces = result.newPlaces.filter((p) => !existing.has(p.id));
+          return [...freshPlaces, ...prev];
+        });
+
+        // 2. 로컬 스토리지에 신규 장소 보존
+        const currentLocal = loadLocalSyncedPlaces();
+        const updatedLocal = [
+          ...result.newPlaces,
+          ...currentLocal.filter((p) => !result.newPlaces.some((np) => np.id === p.id))
+        ];
+        saveLocalSyncedPlaces(updatedLocal);
+
+        // 3. 가장 최근 추가된 장소 자동 포커스 및 모달 표시
+        const newest = result.newPlaces[0];
+        setSelectedPlace(newest);
+        setModalPlace(newest);
+
+        // 필터가 걸려있어 안 보일 수 있으므로 전체 보기로 자동 리셋
+        setSelectedScope('국내');
+        setSelectedCategory('전체');
+        setSelectedProvince('전체');
+        setSelectedDistrict('전체');
+        setSearchQuery('');
+
+        setToast({
+          id: String(Date.now()),
+          type: 'success',
+          message: `🎉 ${result.newPlaces.length}곳의 맛집이 추가되었습니다!`,
+          subMessage: result.newPlaces.map((p) => p.place_name).join(', ')
+        });
+      } else {
+        setToast({
+          id: String(Date.now()),
+          type: 'info',
+          message: result.message || '이미 최신 글이 모두 반영되어 있습니다.',
+          subMessage: `총 ${allPlaces.length}곳의 맛집이 지도에 등록되어 있습니다.`
+        });
+      }
+    } catch (err: any) {
+      console.error('블로그 글 업데이트 실패:', err);
+      setToast({
+        id: String(Date.now()),
+        type: 'error',
+        message: '블로그 글 업데이트 중 오류가 발생했습니다.',
+        subMessage: err?.message || '잠시 후 다시 시도해 주세요.'
+      });
+    } finally {
+      setIsUpdatingBlog(false);
+    }
+  };
 
   // Request GPS Location
   const handleRequestGps = () => {
@@ -321,6 +423,9 @@ export const App: React.FC = () => {
     <div className="h-full min-h-[100dvh] w-screen bg-[#faf7f2] flex justify-center items-center overflow-hidden p-0 sm:p-4">
       {/* Mobile Frame Container */}
       <div className="w-full h-[100dvh] max-w-[440px] bg-white flex flex-col relative overflow-hidden shadow-2xl sm:rounded-[36px] sm:border sm:border-[#e8e2d5] sm:shadow-[0_20px_50px_rgba(180,160,130,0.18)]">
+        {/* In-app Toast Notification */}
+        <Toast toast={toast} onClose={() => setToast(null)} />
+
         {/* Top Navbar */}
         <Navbar
           searchQuery={searchQuery}
@@ -337,6 +442,8 @@ export const App: React.FC = () => {
           onOpenLocationModal={() => setIsLocationModalOpen(true)}
           totalCount={placesForFilters.length}
           filteredCount={filteredPlaces.length}
+          isUpdatingBlog={isUpdatingBlog}
+          onUpdateBlog={handleUpdateBlog}
         />
 
         {/* 3-Level Dropdown Filter Bar (종류, 도시, 구) */}
