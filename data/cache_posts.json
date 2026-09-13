@@ -1,5 +1,45 @@
 [
   {
+    "logNo": "224409671557",
+    "title": "대구 아로제 런치 코스 후기: 5만 원대 수성구 프렌치 파인다이닝 솔직 평가",
+    "sub_category": "카페·맛집 어때-대구",
+    "url": "https://m.blog.naver.com/cybereunny/224409671557",
+    "place": {
+      "name": "아로제",
+      "address": "대구광역시 수성구 청호로67길 84 1층 A동 레스토랑 아로제",
+      "lat": 35.8483621,
+      "lng": 128.6356433,
+      "tel": "0507-1409-0252",
+      "placeId": "1509726002",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/985218"
+    },
+    "all_places": [
+      {
+        "name": "아로제",
+        "address": "대구광역시 수성구 청호로67길 84 1층 A동 레스토랑 아로제",
+        "lat": 35.8483621,
+        "lng": 128.6356433,
+        "tel": "0507-1409-0252",
+        "placeId": "1509726002",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/985218"
+      }
+    ],
+    "city_district": "대구 수성구",
+    "country": "대한민국",
+    "food_type": "카페/디저트",
+    "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTJfMTM4/MDAxNzg5MjIwMDYyOTE0.02nHWP6XC1swsDmTngbrL9N4X_2_lAMfjErF_OvTeCog.jSbJjl7nPGaSyzJBMZ9hygjvI5LBHx_u3kSC7bNY-xQg.PNG/ChatGPT_Image_2026%EB%85%84_9%EC%9B%94_12%EC%9D%BC_%EC%98%A4%ED%9B%84_10_34_11.png?type=w800",
+    "images": [
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTJfMTM4/MDAxNzg5MjIwMDYyOTE0.02nHWP6XC1swsDmTngbrL9N4X_2_lAMfjErF_OvTeCog.jSbJjl7nPGaSyzJBMZ9hygjvI5LBHx_u3kSC7bNY-xQg.PNG/ChatGPT_Image_2026%EB%85%84_9%EC%9B%94_12%EC%9D%BC_%EC%98%A4%ED%9B%84_10_34_11.png?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTJfMTIw/MDAxNzg5MjIwNjE2NTY2.Gd84spJYtLFvr-GosISv4-RH21cgoc7VmHiYiRM11-Ag.RI3psuF3XxF6eqLWclKvM806VNU_8qT5cRc9kTGv_Vgg.PNG/SE-fcaccdf9-9a01-456f-9482-e88a82ccd92b.png?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTJfMTQz/MDAxNzg5MjIwNDc0MzMz.lvLxh5bzwurB2sCcnGYRuivC9y5scMSrJWO6pCqNQdcg.CFSNokGbiW8MFGduKEhDoC1BtRlTSJ3-J1-L19feFW8g.PNG/image.png?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTJfNDgg/MDAxNzg5MjIwNDkwMzQ1.aEguU09t4ZCryKEL2ww6hEqwPRbz-uPvv_np6NLoAJUg.06hVG2Sox7PAW_b9JV-G7gLmbsu7dusKru9pqyTDgWIg.PNG/image.png?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTJfOTgg/MDAxNzg5MjIwNTAzMjUy.v1hLBagi4LnsHSmPYGAe17zSBv2Fhc_MRQ7lSA4rUtsg.bDO3ebXc1DHC6SiBwIhHXp-Sy7xq3eCs-7iH2oxbURgg.PNG/image.png?type=w800"
+    ],
+    "summary": "대구 아로제 런치 코스 후기: 5만 원대 수성구 프렌치 파인다이닝 솔직 평가 대구 아로제에서 정갈하고 품격 있는 프렌치 런치 코스로 점심 식사를 하고 왔습니다. 특별한 기념일이나 조용하고 근사한 식사 자리를 찾다 보면 가격대가 부담스러워 망설여질 때가 많은데,대구 아로제는 1인 5만 원대라는 합리적인 가격에 수준 높은 코스 요리를 선보여 만족도가 무척 높은 곳이었습니다. 대구 수성구 범어동(범어역 1번 출구 인근)에 자리 잡은 이곳은 화이트톤의",
+    "parsed_success": true,
+    "date": "20시간 전"
+  },
+  {
     "logNo": "224402201253",
     "title": "아임도넛 성수 글레이즈드·생프렌치 크룰러 딸기초코 솔직 후기",
     "sub_category": "카페·맛집 어때-서울",
@@ -1108,16 +1148,26 @@
     "sub_category": "카페·맛집 어때-부산",
     "url": "https://m.blog.naver.com/cybereunny/224273212623",
     "place": {
-      "name": "[광안리 미쉐린 가이드] 아웃트로 바이 비토 메뉴 추천 및 캐치테이블 예약 팁",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "name": "아웃트로바이비토",
+      "address": "부산광역시 수영구 민락본동로19번길 18 1층 아웃트로바이비토",
+      "lat": 35.1583531,
+      "lng": 129.1278544,
+      "tel": "051-758-7123",
+      "placeId": "1918145699",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/1678957"
     },
-    "all_places": [],
-    "city_district": "부산",
+    "all_places": [
+      {
+        "name": "아웃트로바이비토",
+        "address": "부산광역시 수영구 민락본동로19번길 18 1층 아웃트로바이비토",
+        "lat": 35.1583531,
+        "lng": 129.1278544,
+        "tel": "051-758-7123",
+        "placeId": "1918145699",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/1678957"
+      }
+    ],
+    "city_district": "부산 수영구",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDNfOTUg/MDAxNzc3Nzc3OTAzOTQy.h2_Cs9hmYOtQNak1-upAzITTdf_CgT8ju5Vefyhzdyog.C99_34mCpGLzUYhQD1moUxyNOT14U_0KAh6h2SWvgk8g.JPEG/20260404_192447.jpg?type=w800",
@@ -1138,16 +1188,26 @@
     "sub_category": "카페·맛집 어때-부산",
     "url": "https://m.blog.naver.com/cybereunny/224273181420",
     "place": {
-      "name": "[부산 해운대 파인다이닝] 에드워드 권 '랩24 바이 쿠무다' 런치 코스 예약 및 실사용기|미쉐린 가이드 부산 선정! 송정 랩24 바이 쿠무다",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "name": "랩24 바이 쿠무다",
+      "address": "부산광역시 해운대구 송정광어골로 41 4층 랩24 바이 쿠무다",
+      "lat": 35.1774288,
+      "lng": 129.197185,
+      "tel": "0507-1421-1302",
+      "placeId": "1511716815",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/641802"
     },
-    "all_places": [],
-    "city_district": "부산",
+    "all_places": [
+      {
+        "name": "랩24 바이 쿠무다",
+        "address": "부산광역시 해운대구 송정광어골로 41 4층 랩24 바이 쿠무다",
+        "lat": 35.1774288,
+        "lng": 129.197185,
+        "tel": "0507-1421-1302",
+        "placeId": "1511716815",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/641802"
+      }
+    ],
+    "city_district": "부산 해운대구",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDNfMjY3/MDAxNzc3Nzc1NjMyMTk5.MnleDMQt_xCRZ2W3vyg5lZA2HvQl-fNnIZlHs0ch6D0g.YTpn-3VJOpcu9PDEXwC8s-7XafUIW496OrJcoMxP7Mwg.JPEG/20260405_130751.jpg?type=w800",
@@ -1286,16 +1346,26 @@
     "sub_category": "카페·맛집 어때-부산",
     "url": "https://m.blog.naver.com/cybereunny/224245673207",
     "place": {
-      "name": "기장 빌라쥬 드 아난티 중식당 루(Ru) | 뷰는 5성급, 맛은 글쎄요? 솔직",
-      "address": "",
-      "lat": 0.0,
-      "lng": 0.0,
-      "tel": "",
-      "placeId": "",
-      "bookingUrl": ""
+      "name": "빌라쥬 드 아난티 루",
+      "address": "부산광역시 기장군 기장읍 기장해안로 267-7 빌라쥬 드 아난티 클리퍼 A동 1층",
+      "lat": 35.1986531,
+      "lng": 129.2211582,
+      "tel": "051-662-7084",
+      "placeId": "1907855654",
+      "bookingUrl": "https://booking.naver.com/booking/6/bizes/995623"
     },
-    "all_places": [],
-    "city_district": "부산",
+    "all_places": [
+      {
+        "name": "빌라쥬 드 아난티 루",
+        "address": "부산광역시 기장군 기장읍 기장해안로 267-7 빌라쥬 드 아난티 클리퍼 A동 1층",
+        "lat": 35.1986531,
+        "lng": 129.2211582,
+        "tel": "051-662-7084",
+        "placeId": "1907855654",
+        "bookingUrl": "https://booking.naver.com/booking/6/bizes/995623"
+      }
+    ],
+    "city_district": "부산 기장군",
     "country": "대한민국",
     "food_type": "카페/디저트",
     "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MDhfMjI2/MDAxNzc1NjQ5NzgyNDc2.1hd8Wl0v4PXIqZhrBY13up8FdSz9dxS5VGo4VzR5m7wg.8W1FXD9B2Racz9ddL2eLttkQJ9Q8i8GiifiXyzjmumYg.JPEG/20260404_130616.jpg?type=w800",
