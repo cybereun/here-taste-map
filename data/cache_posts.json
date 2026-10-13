@@ -1,5 +1,45 @@
 [
   {
+    "logNo": "224440058871",
+    "title": "청계천 골목 속 숨은 한옥 아지트, 아마츄어작업실 청계점 첫 방문 가이드",
+    "sub_category": "서울-경기 맛집·카페",
+    "url": "https://m.blog.naver.com/cybereunny/224440058871",
+    "place": {
+      "name": "아마츄어작업실 청계점",
+      "address": "서울특별시 종로구 청계천로 97-8",
+      "lat": 37.5686113,
+      "lng": 126.9883525,
+      "tel": "",
+      "placeId": "1634513138",
+      "bookingUrl": ""
+    },
+    "all_places": [
+      {
+        "name": "아마츄어작업실 청계점",
+        "address": "서울특별시 종로구 청계천로 97-8",
+        "lat": 37.5686113,
+        "lng": 126.9883525,
+        "tel": "",
+        "placeId": "1634513138",
+        "bookingUrl": ""
+      }
+    ],
+    "city_district": "서울 종로구",
+    "country": "대한민국",
+    "food_type": "카페/디저트",
+    "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTNfODcg/MDAxNzkxODU4NzkwNDky.cFwNjFUkKVFQni2lHQVo8KPQ-LqBUI7_ZFM6qDskJnAg.dS9lC9Xh1cl1ikxyyJm97xwXaAP9lQzAvGs_-Lk1zDIg.PNG/image.png?type=w800",
+    "images": [
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTNfODcg/MDAxNzkxODU4NzkwNDky.cFwNjFUkKVFQni2lHQVo8KPQ-LqBUI7_ZFM6qDskJnAg.dS9lC9Xh1cl1ikxyyJm97xwXaAP9lQzAvGs_-Lk1zDIg.PNG/image.png?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTNfMTg2/MDAxNzkxODU4Njg0MTEz.9L57x7IB1PZkoB7Xx_w_quTJCV-xVAc6EzqL52BXCi8g.OuKswyAwXPSRAQhorOG9Iu0Sbk3OjWl0wikrPg2TF7kg.JPEG/%EC%B2%AD%EA%B3%84%EC%B2%9C-%EA%B3%A8%EB%AA%A9-%EC%86%8D-%EC%88%A8%EC%9D%80-%ED%95%9C%EC%98%A5-%EC%95%84%EC%A7%80%ED%8A%B8,-%EC%95%84%EB%A7%88%EC%B8%84%EC%96%B4%EC%9E%91%EC%97%85%EC%8B%A4-%EC%B2%AD%EA%B3%84%EC%A0%90-%EC%B2%AB-%EB%B0%A9%EB%AC%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-3.jpg?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTNfMTUx/MDAxNzkxODU5MTM3NzYx.-QwHBwlAqaa7DWZO8ugp1yLOHPsGpfnHhcoezbfcnk8g.5RxdFbW_dgZ-yaYRgM_zc_i_BN9RlORJ78Q1dnvrugQg.PNG/image.png?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTNfMTI4/MDAxNzkxODU4OTE0OTY3._9Rpdjd_c9JAPYL7Vtrw1REDJgWW-jx5CI_o72f_6EAg.jA0vFuqH_xG2WHVqfAqVd3n6r8jxu7a9am2_l4AWiA0g.JPEG/SE-9499db93-514d-4211-bc18-d96cad8fda33.jpg?type=w800",
+      "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTNfODEg/MDAxNzkxODU4ODU4Mjk2.LQbdiIDKWPeO586IzQB_hj9ni5X7lRTVCsW474N4iOUg.2Fhv88i5Me1YX1KRlRWT6MsfGGfAyMtv6FnwfL-Lepkg.PNG/image.png?type=w800"
+    ],
+    "summary": "청계천 골목 속 숨은 한옥 아지트, 아마츄어작업실 청계점 첫 방문 가이드 출처 :아마츄어작업실 청계점 복잡한 종로와 을지로 빌딩 숲을 걷다 보면 마치 시간 여행을 떠난 듯 아늑한 한옥 공간이 반겨줍니다. 오늘 소개해 드릴 곳은 커피와 디저트는 물론 저녁에는 가벼운 주류까지 함께 즐길 수 있는 아마츄어작업실 청계점입니다.",
+    "parsed_success": true,
+    "date": "15분 전"
+  },
+  {
     "logNo": "224439359217",
     "title": "대구 범어동 점심 추천! 정갈한 오픈 주방이 돋보이는 쌀국수 맛집 미분당 범어점 솔직 후기",
     "sub_category": "대구 맛집·카페",
