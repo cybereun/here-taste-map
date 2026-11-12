@@ -17316,5 +17316,31 @@
     "parsed_success": true,
     "date": "2023. 1. 30.",
     "country": "대한민국"
+  },
+  {
+    "logNo": "222998211003",
+    "title": "고든램지버거 ~ 하이엔드 버거는 맛이 특별한가?",
+    "sub_category": "서울-경기 맛집·카페",
+    "url": "https://m.blog.naver.com/cybereunny/222998211003",
+    "place": {
+      "name": "고든램지버거 ~ 하이엔드 버거는 맛이 특별한가?",
+      "address": "",
+      "lat": 0.0,
+      "lng": 0.0,
+      "tel": "",
+      "placeId": "",
+      "bookingUrl": ""
+    },
+    "all_places": [],
+    "city_district": "기타",
+    "country": "대한민국",
+    "food_type": "카페/디저트",
+    "thumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMzA3MDNfMTgy/MDAxNjg4MzQ1NTU1NDM3.KHDeDARrPNwPN9DnocKJyeQNgRjjj8Dmxogkx2gWOjQg.X_Ad4ZPBJAOavh9WGK9l-q7iGEwAl-ocYb04rI9klXAg.PNG.cybereunny/img.png?type=w800",
+    "images": [
+      "https://mblogthumb-phinf.pstatic.net/MjAyMzA3MDNfMTgy/MDAxNjg4MzQ1NTU1NDM3.KHDeDARrPNwPN9DnocKJyeQNgRjjj8Dmxogkx2gWOjQg.X_Ad4ZPBJAOavh9WGK9l-q7iGEwAl-ocYb04rI9klXAg.PNG.cybereunny/img.png?type=w800"
+    ],
+    "summary": "고든램지버거 ~ 하이엔드 버거는 맛이 특별한가? 요즘 롯데월드몰에서 핫하다는 세계적인 미쉐린 3스타 셰프인 고든램지의 하이엔드 컨셉의 햄버거 레스토랑인 고든램지버거에 가보았습니다. 호불호는 있겠지만 가격에 한 번 놀라고 양과 비주얼에 또 한 번 놀라게 되네요~ 음료와 함께 먹으면 배가 불러요~",
+    "parsed_success": true,
+    "date": "2023. 1. 29."
   }
 ]
